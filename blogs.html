@@ -39,18 +39,15 @@ li a.active {
   color: white;
   background-color:  #66d9ff;
 }
-
-.container {
-  position: relative; /* 设定相对定位 */
-  height: 150px; /* 父容器高度 */
-  border: 1px solid #000; /* 边框 */
-  padding: 10px; /* 内边距 */
-}
   
 .bottom {
-  position: absolute; /* 绝对定位 */
-  bottom: 10px; /* 距离底部10px */
-  left: 10px; /* 距离左侧10px */
+    position: fixed; /* 固定定位 */
+    bottom: 0; /* 距离底部为0 */
+    left: 0; /* 距离左侧为0 */
+    width: 100%; /* 宽度100% */
+    background-color: lightgray; /* 背景颜色 */
+    text-align: center; /* 居中对齐 */
+    padding: 10px; /* 内边距 */
 }
 </style>
 </head>
