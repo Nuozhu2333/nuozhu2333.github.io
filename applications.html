@@ -6,9 +6,9 @@
 <link rel="icon" href="/avatar.png">
 <title>应用</title>
 <style>
-body {
-  background-color: #ffffff;
-}
+  html, body {
+    margin: 0;
+  }
   
 ul {
   list-style-type: none;
@@ -39,16 +39,6 @@ li a.active {
   color: white;
   background-color: #008ae6;
 }
-  
-.bottom {
-    position: fixed; /* 固定定位 */
-    bottom: 0; /* 距离底部为0 */
-    left: 0; /* 距离左侧为0 */
-    width: 100%; /* 宽度100% */
-    background-color: Gainsboro; /* 背景颜色 */
-    text-align: center; /* 居中对齐 */
-    padding: 10px; /* 内边距 */
-}
 </style>
 </head>
 <body>
@@ -60,17 +50,10 @@ li a.active {
   <li><a href="games.html">游戏</a></li>
   <li><a href="res.html">资源</a></li>
 </ul>
-<h1>应用</h1>
-<p><a href="apps/DragonLanguageTranslator.html">龙语翻译</a></p>
-<div class="container">
-  <span class="bottom" style="text-align: center;display:block;">
-    <p>© 糯竹 2022-2024<br><br>Powered by</p>
-  <a href="https://github.com/">
-    <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default">
-    <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
-    </svg>
-  </a>
-  </span>
+
+<div style="margin:10px">
+  <h1>应用</h1>
+  <p><a href="apps/DragonLanguageTranslator.html">龙语翻译</a></p>
 </div>
 </body>
 </html>
