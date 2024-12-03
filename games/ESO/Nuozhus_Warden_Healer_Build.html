@@ -40,10 +40,19 @@ li a.active {
   background-color: #008ae6;
 }
 </style>
+  <script>
+    function naavigaeUp(){
+      if (history.length() > 1){
+        window.history.back();
+      } else {
+        window.close();
+      }
+    }
+  </script>
 </head>
 <body>
 <ul>
-  <li><a class="active" href="javascript:history.back()">返回</a></li>
+  <li><a class="active" href="navigateUp()">返回</a></li>
 </ul>
     <div style="margin:10px">
       <h1>糯竹的窝登奶Build</h1>
