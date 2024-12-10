@@ -40,6 +40,10 @@ li a.active {
   background-color: #008ae6;
 }
 </style>
+<script>
+  var lastModified = document.lastModified;
+  document.getElementById('lastModified').textContent = '上次修改时间：' + lastModified;
+</script>
 </head>
 <body>
 <ul>
@@ -460,7 +464,8 @@ li a.active {
         </tr>
       </table>
       <br>
-      <p>This page is under construction.</p>
+      <p>创建时间：2024/10/06</p>
+      <p id="lastModified"></p>
 </div>
 </body>
 </html>
