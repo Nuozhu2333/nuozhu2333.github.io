@@ -41,8 +41,9 @@ li a.active {
 }
 </style>
 <script>
-  var lastModified = document.lastModified;
-  document.getElementById('lastModified').textContent = '上次修改时间：' + lastModified;
+  function lastModifiedTime(){
+      var lastModified = document.lastModified;document.getElementById('lastModified').textContent = '上次修改时间：' + lastModified;
+  }
 </script>
 </head>
 <body>
