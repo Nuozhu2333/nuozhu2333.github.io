@@ -40,6 +40,12 @@ li a.active {
   background-color: #008ae6;
 }
 </style>
+  
+<script>
+  function showAnswer() {
+    document.getElementById("answer").innerText = "<b>参考答案：</b>次级狂怒和次级信念都可以通过砸地施加给队友，后者是奶妈必带的技能；而回蓝的词条在不缺资源的版本下可有可无，所以总体而言这套装备不常用。";
+  }
+</script>
 </head>
 <body>
 <ul>
@@ -414,7 +420,7 @@ li a.active {
             <td>建筑大师</td>
             <td><img src="res/Master_Architect.png" alt="建筑大师"></td>
             <td>轻甲</td>
-            <td>四人本常用，试炼用则需要两个人保证全覆盖</td>
+            <td>四人本常用，试炼用则需要两个人（OT和工具人）使用保证全覆盖</td>
           </tr>
           <tr>
             <td>强力突袭</td>
@@ -425,7 +431,7 @@ li a.active {
         </table></center>
       </div>
       <br>
-      <p>下面是一些比较常用的装备，可以考虑使用。</p>
+      <p>下面是一些不主流的装备，但也可以考虑使用。</p>
       <br>
       <div>
         <center><table <table sytle="text-align: center;">
@@ -445,13 +451,13 @@ li a.active {
             <td>空心牙之渴</td>
             <td><img src="res/Hollowfang_Thirst.png" alt="空心牙之渴"></td>
             <td>轻甲</td>
-            <td>时代的眼泪，可以刷一套逗逗老外玩</td>
+            <td>时代的眼泪，当前版本不太缺资源，所以资源套的重要性下降</td>
           </tr>
           <tr>
             <td>凛冬之憩</td>
             <td><img src="res/Winters_Respite.png" alt="凛冬之憩"></td>
             <td>轻甲</td>
-            <td>非常推荐的新手过渡套，弥补初期CP不够导致治疗量小的问题，而且地图套可以买，相当不错（但不推荐老登用这套，经常看到CP2000+的老外用，看着就很不专业的样子）</td>
+            <td>非常推荐的新手过渡套，弥补初期CP不够导致治疗量不足的问题，而且地图套可以买，价格也较为低廉（但不推荐老登用这套，因为只是纯加血而无法提供buff，经常看到CP2000+的老外用，看着就很不专业的样子）</td>
           </tr>
         </table></center>
       </div>
@@ -470,37 +476,37 @@ li a.active {
             <td>大德鲁伊德维里克</td>
             <td><img src="res/Archdruid_Devyric.png" alt="大德鲁伊德维里克"></td>
             <td>怪物套</td>
-            <td></td>
+            <td>重击可以提供高级脆弱，Rojo可以考虑</td>
           </tr>
           <tr>
             <td>地血</td>
             <td><img src="res/Earthgore.png" alt="地血"></td>
             <td>怪物套</td>
-            <td></td>
+            <td>移除AoE效果</td>
           </tr>
           <tr>
             <td>娜扎莱</td>
             <td><img src="res/Nazaray.png" alt="娜扎莱"></td>
             <td>怪物套</td>
-            <td></td>
+            <td>一般是坦克带，但奶妈的大招流转快，也可以考虑使用</td>
           </tr>
           <tr>
             <td>夜焰</td>
             <td><img src="res/Nightflame.png" alt="夜焰"></td>
             <td>怪物套</td>
-            <td></td>
+            <td>纯补血头，可以拿来过渡</td>
           </tr>
           <tr>
             <td>炼狱奥泽赞</td>
             <td><img src="res/Ozezan_the_Inferno.png" alt="炼狱奥泽赞"></td>
             <td>怪物套</td>
-            <td></td>
+            <td>过量治疗给护甲和次级活力，极大提升队伍生存能力，个人非常推荐</td>
           </tr>
           <tr>
             <td>利刃交响曲</td>
             <td><img src="res/Symphony_of_Blades.png" alt="利刃交响曲"></td>
             <td>怪物套</td>
-            <td></td>
+            <td>应该是全游戏最强的资源套</td>
           </tr>
         </table></center>
       </div>
@@ -519,31 +525,34 @@ li a.active {
             <td>盛大复苏</td>
             <td><img src="res/Grand_Rejuvenation.png" alt="盛大复苏"></td>
             <td>奶杖</td>
-            <td></td>
+            <td>搭配大治疗术使用，使奶圈同时具有回少量资源的作用（施放时才给盛大复苏buff）</td>
           </tr>
           <tr>
             <td>治疗师结界</td>
             <td><img src="res/Menders_Ward.png" alt="治疗师结界"></td>
             <td>奶杖</td>
-            <td></td>
+            <td>搭配坚固结界使用，可以用于ss奶冰墓</td>
           </tr>
           <tr>
             <td>毁灭肩甲</td>
             <td><img src="res/Spaulder_of_Ruin.png" alt="毁灭肩甲"></td>
             <td>轻甲-肩部</td>
-            <td></td>
+            <td>牺牲自己资源，给队友双伤，一般是Rojo奶带</td>
           </tr>
           <tr>
             <td>埃尔诺菲的珍珠项链</td>
             <td><img src="res/Pearls_of_Ehlnofey.png" alt="埃尔诺菲的珍珠项链"></td>
             <td>项链</td>
-            <td></td>
+            <td>通过控制自己的蓝量在50%以下快速获得终极点，一般是spc奶带，可以使用奶线刷U，注意耐系奶技也可触发（如黄伟哥）</td>
           </tr>
         </table></center>
       </div>
-      <br>
-      <center><img src="res/Stones_Accord.png" alt="石头盟约"></center>
+      <br> 
       <center><p>思考题，为什么石头盟约这套装备不常用？</p></center>
+      <center><img src="res/Stones_Accord.png" alt="石头盟约"></center>
+      <center><button onClick="showAnswer()">点击显示参考答案</button></center>
+      <center><p id="answer"></p></center>
+      <br>
       <p>This page is under construction.</p>
     </div>
 </body>
