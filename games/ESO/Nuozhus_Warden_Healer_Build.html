@@ -43,7 +43,8 @@ li a.active {
   
 <script>
   function showAnswer() {
-    document.getElementById("answer").innerText = "<b>参考答案：</b>次级狂怒和次级信念都可以通过砸地施加给队友，后者是奶妈必带的技能；而回蓝的词条在不缺资源的版本下可有可无，所以总体而言这套装备不常用。";
+    document.getElementById("answer").innerText = "参考答案：次级狂怒和次级信念都可以通过砸地施加给队友，后者是奶妈必带的技能；而回蓝的词条在不缺资源的版本下可有可无，所以总体而言这套装备不常用。";
+    document.getElementById("button").innerText = "已显示参考答案";
   }
 </script>
 </head>
@@ -550,7 +551,7 @@ li a.active {
       <br> 
       <center><p>思考题，为什么石头盟约这套装备不常用？</p></center>
       <center><img src="res/Stones_Accord.png" alt="石头盟约"></center>
-      <center><button onClick="showAnswer()">点击显示参考答案</button></center>
+      <center><button id="button" onClick="showAnswer()">点击显示参考答案</button></center>
       <center><p id="answer"></p></center>
       <br>
       <p>This page is under construction.</p>
