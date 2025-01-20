@@ -64,11 +64,11 @@ padding: 10px 15px;
 /* 标题文本 */
 .titlefont {
   margin-left:50px; 
-  margin-top:12.5px;
+  margin-top:0px;
 }
 
 /* 主容器 */
-.maincontent {
+.maincontainer {
   margin-left:50px;
   margin-top:75px;
 }
