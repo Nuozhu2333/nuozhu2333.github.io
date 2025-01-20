@@ -1,66 +1,40 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" href="/avatar.png">
-<title>糯竹的小站</title>
-<style>
-  html, body {
-    margin: 0;
-  }
-  
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #ffffff;
-}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/avatar.png">
+    <link rel="stylesheet" href="/general_style.css">
+    <title>糯竹的小站</title>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: #666;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #ddd;
-}
-
-li a.active {
-  color: white;
-  background-color: #008ae6;
-}
-
-.bottom {
-    position: fixed; /* 固定定位 */
-    bottom: 0; /* 距离底部为0 */
-    left: 0; /* 距离左侧为0 */
-    width: 100%; /* 宽度100% */
-    background-color: Gainsboro; /* 背景颜色 */
-    text-align: center; /* 居中对齐 */
-    padding: 0px; /* 内边距 */
-}
-</style>
-</head>
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+    </head>
 <body>
-<ul>
-  <li><a class="active" href="#">主页</a></li>
-  <li><a href="blogs.html">博客</a></li>
-  <li><a href="articles.html">文章</a></li>
-  <li><a href="applications.html">应用</a></li>
-  <li><a href="games.html">游戏</a></li>
-  <li><a href="res.html">资源</a></li>
-</ul>
-  <div style="margin:10px">
+  <span class="titlebar"> 
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <p class="titlefont">糯竹的窝登奶Build</p>
+  </span>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">╳</a>
+    <a href="javascript:history.back()" class="navupbtn">🡠</a>
+    <br>
+    <a href="/index.html">主页</a>
+    <a href="/blogs.html">博客</a>
+    <a href="/articles.html">文章</a>
+    <a href="/applications.html">应用</a>
+    <a href="/games.html">游戏</a>
+    <a href="/res.html">资源</a>
+  </div>
+  <div class="maincontainer">
     <h1>糯竹的小站</h1>
     <p>欢迎访问糯竹的小站！本站仍在建设中。</p>
   </div>
