@@ -11,6 +11,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  user-select: none;
 }
 
 .sidenav a {
@@ -20,6 +21,7 @@
   color: #B0B0B0 ;
   display: block;
   transition: 0.3s;
+  user-select: none;
 }
 
 .sidenav a:hover {
@@ -72,12 +74,13 @@ position: absolute;
 
 /* 标题栏 */
 .titlebar {
-position: fixed;
+  position: fixed;
   top: 0;             
   left: 0;
   width: 100vw;     
   height: 50px;
   background-color: white;
+  user-select: none;
 }
 
 /* 标题文本 */
