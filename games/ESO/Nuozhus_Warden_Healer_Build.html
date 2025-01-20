@@ -20,6 +20,11 @@
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
+
+    function home(){
+      window.open('/index.html');
+      window.close()
+    }
   </script>
 </head>
 <body>
@@ -29,8 +34,9 @@
   </span>
 
   <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">╳</a>
-        <a href="javascript:history.back()" class="navupbtn">🡠</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a>
+    <a href="javascript:void(0)" class="homebtn" onclick="home()">〇</a>
+    <a class="navupbtn" href="javascript:history.back()">◁</a>
         <br>
         <a href="/index.html">主页</a>
         <a href="/blogs.html">博客</a>
