@@ -4,49 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/avatar.png">
-    <title>新人奶常见误区</title>
-    <style>
-      html, body {
-        margin: 0;
-      }
-
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        border: 1px solid #e7e7e7;
-        background-color: #ffffff;
-      }
-      
-      li {
-        float: left;
-      }
-
-      li a {
-        display: block;
-        color: #666;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      li a:hover:not(.active) {
-        background-color: #ddd;
-      }
-      
-      li a.active {
-        color: white;
-        background-color: #008ae6;
-      }
-    </style>
+    <link rel="stylesheet" href="/general_style.css">
+    <title>新人奶的常见误区</title>
+    <script src="/script.js"></script>
   </head>
   <body>
-    <ul>
-      <li><a class="active" href="javascript:history.back()">返回</a></li>
-    </ul>
-    <div style="margin:10px">
-      <h1>新人奶常见误区</h1>
+    <span class="titlebar"> 
+      <button class="openbtn" onclick="openNav()">☰</button>
+      <p class="titlefont">新人奶的常见误区</p>
+    </span>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a>
+      <a href="javascript:void(0)" class="homebtn" onclick="close()">〇</a>
+      <a class="navupbtn" href="javascript:history.back()">◁</a>
+      <br>
+      <a href="/index.html">主页</a>
+      <a href="/blogs.html">博客</a>
+      <a href="/articles.html">文章</a>
+      <a href="/applications.html">应用</a>
+      <a href="/games.html">游戏</a>
+      <a href="/res.html">资源</a>
+    </div>
+    <div class="maincontainer">
+      <h1>新人奶的常见误区</h1>
       <p><b>误区1：</b>他们动不动就说优化奶妈，经常7k只要1t3d不要h，奶妈作用不大</p>
       <p><b>分析：</b>多数情况下，副本无太大治疗压力的时候，自奶d可以应对治疗场景；但是，对于高难度副本和试炼，奶妈不仅可以提供治疗，处理机制，利于dd专注输出循环，还能提供额外资源，提升队伍容错，因此奶妈实际上是极其重要的角色。</p>
       <br>
@@ -82,6 +63,6 @@
       <br>
       <p>创建时间：2024/10/05</p>
       <p>上次修订时间：2024/12/10</p>
-  </div>
-</body>
+    </div>
+  </body>
 </html>
