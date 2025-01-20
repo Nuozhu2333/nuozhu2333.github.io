@@ -4,48 +4,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/avatar.png">
+    <link rel="stylesheet" href="/general_style.css">
     <title>Simple Diagram for vDSA Final Boss</title>
+    <script src="/script.js"></script>
     <style>
-      html, body {
-        margin: 0;
-      }
-
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        border: 1px solid #e7e7e7;
-        background-color: #ffffff;
-      }
-      
-      li {
-        float: left;
-      }
-
-      li a {
-        display: block;
-        color: #666;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      li a:hover:not(.active) {
-        background-color: #ddd;
-      }
-      
-      li a.active {
-        color: white;
-        background-color: #008ae6;
-      }
+       iframe {
+         width: 80%;
+         height: 80%;
+         border: 1px solid #ccc; }
     </style>
   </head>
   <body>
-    <ul>
-      <li><a class="active" href="javascript:history.back()">Back</a></li>
-    </ul>
-    <div style="margin:10px">
+    <span class="titlebar"> 
+      <button class="openbtn" onclick="openNav()">☰</button>
+      <p class="titlefont">Simple Diagram for vDSA Final Boss</p>
+    </span>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a>
+      <a href="javascript:void(0)" class="homebtn" onclick="close()">〇</a>
+      <a class="navupbtn" href="javascript:history.back()">◁</a>
+      <br>
+      <a href="/index.html">主页</a>
+      <a href="/blogs.html">博客</a>
+      <a href="/articles.html">文章</a>
+      <a href="/applications.html">应用</a>
+      <a href="/games.html">游戏</a>
+      <a href="/res.html">资源</a>
+    </div>
+    <div class="maincontainer">
+      <iframe src="/framework/language_english_only.html"></iframe>
       <h1>Simple Diagram for vDSA Final Boss</h1>
       <p>Dragonstar Arena is not difficult, but it is very long. Therefore, a team composed of one tank and three damage dealers (DDs) is usually more efficient and time-saving for farming. Here is a simple diagram to explain how to defeat the final boss quickly and easily.</p>
       <p><strong>Requirements:</strong> The total DPS should exceed 100k. One of the DDs can taunt the boss. Both the tank and one of the DDs should be able to provide a Barrier.</p>
@@ -65,6 +53,6 @@
       <br>
       <p>Created on：2024/12/26</p>
       <p>Last Modified on：2024/12/26</p>
-  </div>
-</body>
+    </div>
+  </body>
 </html>
