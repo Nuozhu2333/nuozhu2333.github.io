@@ -63,7 +63,9 @@ padding: 10px 15px;
 
 /* 标题文本 */
 .titlefont {
-  margin-left:50px; 
+  position: fixed;
+  top: 0px;
+  left: 50px;
   margin-top:0px;
 }
 
