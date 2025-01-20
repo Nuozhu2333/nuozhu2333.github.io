@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color:#202020;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -14,7 +14,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 18px;
-  color: #818181;
+  color: #B0B0B0 ;
   display: block;
   transition: 0.3s;
 }
@@ -25,20 +25,31 @@
 
 /* 关闭按钮 */
 .closebtn {
-  position: absolute;
-  top: 0;
-  right: 15px;
-  font-size: 36px;
-  margin-left: 50px;
+position: absolute;
+  top: 5px;
+  left: -5px;
+  font-size: 10px;
+  margin-left: 0px;
   user-select: none;
 }
 
-.navupbtn {
+/* 主页按钮 */
+.homebtn {
 position: absolute;
-  top: 0;
-  left: 0px;
+  top: 5px;
+  left: -5px;
   font-size: 10px;
-  margin-left: 0px;
+  margin-left: 90px;
+  user-select: none;
+}
+
+/* 返回按钮 */
+ .navupbtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 36px;
+  margin-left: 50px;
   user-select: none;
 }
 
@@ -51,7 +62,7 @@ position: absolute;
   border: none;
   position: fixed;
   top: 0px;
-  left: 0px;
+  left: 10px;
   padding: 12.5px 15px;
   user-select: none;
 }
