@@ -13,7 +13,7 @@ padding-top: 60px;
 .sidenav a {
 padding: 8px 8px 8px 32px;
 text-decoration: none;
-font-size: 20px;
+font-size: 18px;
 color: #818181;
 display: block;
 transition: 0.3s;
@@ -53,20 +53,21 @@ left: 0px;
 padding: 10px 15px;
 }
 
-/* 标题栏 */
+/* 标题栏 
 .titlebar {
   background-color: white;
   position: fixed;
   display: block;
   width: 100%;
 }
+*/
 
 /* 标题文本 */
 .titlefont {
   position: fixed;
   top: 0px;
   left: 50px;
-  margin-top: 0px;
+  margin-top: 10px;
   padding: 10px 15px;
 }
 
