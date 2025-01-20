@@ -53,9 +53,25 @@ left: 0px;
 padding: 10px 15px;
 }
 
+/* 标题栏 */
+.titlebar {
+  background-color: white;
+  position: fixed;
+  top: 5px;
+  left: 0px; 
+  padding: 10px 15px; 
+  display: block;
+  width: 100%;
+}
+
 /* 标题文本 */
 .titlefont {
-  font-size: 20px;
-  margin: 50px;
-  position: fixed;
+  margin-left:50px;
+  margin-top:4px;
+}
+
+/* 主容器 */
+.maincontent {
+  margin-left:50px;
+  margin-top:75px;
 }
