@@ -53,14 +53,15 @@ position: absolute;
   padding: 12.5px 15px;
 }
 
-/* 标题栏 
+/* 标题栏 */
 .titlebar {
+  position: fixed;       
+  top: 0;             
+  left: 0;
+  width: 100vw; 
+  height: 50px;
   background-color: white;
-  position: fixed;
-  display: block;
-  width: 100%;
 }
-*/
 
 /* 标题文本 */
 .titlefont {
