@@ -8,7 +8,6 @@ function closeNav() {
   document.getElementById("copyright").style.visibility = "hidden";
 }
 
-function home(){
-  window.open('/index.html');
+function close(){
   window.close()
 }
