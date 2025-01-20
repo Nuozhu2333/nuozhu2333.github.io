@@ -7,15 +7,36 @@
   <link rel="stylesheet" href="/general_style.css">
   <title>糯竹的窝登奶Build</title>
   <script>
-  function showAnswer() {
-    document.getElementById("answer").innerText = "参考答案：次级狂怒和次级信念都可以通过砸地施加给队友，后者是奶妈必带的技能；而回蓝的词条在不缺资源的版本下可有可无，所以总体而言这套装备不常用。";
-    document.getElementById("button").innerText = "已显示参考答案";
+    function showAnswer() {
+      document.getElementById("answer").innerText = "参考答案：次级狂怒和次级信念都可以通过砸地施加给队友，后者是奶妈必带的技能；而回蓝的词条在不缺资源的版本下可有可无，所以总体而言这套装备不常用。";
+      document.getElementById("button").innerText = "已显示参考答案";
   }
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
   </script>
 </head>
 <body>
-    <button class="openbtn" onclick="openNav()">☰</button>
-    <p style="margin-left:50px">糯竹的窝登奶Build</p>
+  <button class="openbtn" onclick="openNav()">☰</button>
+  <p style="margin-left:50px">糯竹的窝登奶Build</p>
+  <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">╳</a>
+        <a href="javascript:history.back()" class="navupbtn">🡠</a>
+        <br>
+        <a href="/index.html">主页</a>
+        <a href="/blogs.html">博客</a>
+        <a href="/articles.html">文章</a>
+        <a href="/applications.html">应用</a>
+        <a href="/games.html">游戏</a>
+        <a href="/res.html">资源</a>
+    </div>
+  
     <div style="margin:50px">
       <h1>糯竹的窝登奶Build</h1>
       <center><img src="res/Warden_Healer.png" width="205" height="365" alt="亚龙人窝登奶幻化"></center>
