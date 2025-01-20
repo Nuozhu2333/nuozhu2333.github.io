@@ -64,10 +64,10 @@ padding: 10px 15px;
 
 /* 标题文本 */
 .titlefont {
-  position: fixed;
+position: fixed;
   top: 0px;
   left: 50px;
-  padding: 10px 15px;
+  padding: 12.5px 10px;
 }
 
 /* 主容器 */
