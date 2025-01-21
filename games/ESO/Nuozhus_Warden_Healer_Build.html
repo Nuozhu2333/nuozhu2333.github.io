@@ -12,6 +12,7 @@
     function showAnswer() {
       document.getElementById("answer").innerText = "参考答案：次级狂怒和次级信念都可以通过砸地施加给队友，后者是奶妈必带的技能；而回蓝的词条在不缺资源的版本下可有可无，所以总体而言这套装备不常用。";
       document.getElementById("button").innerText = "已显示参考答案";
+      document.getElementById("button").disabled = true
   }
   </script>
 </head>
@@ -165,7 +166,8 @@
           <td><img src="res/Betty_Netch.png"></td>
           <td>
             <p>雌性气母，一个技能同时解决资源问题和法术伤害问题，不消耗资源的同时还附带净化效果，堪称神技。根据资源选回蓝回耐进阶。窝登奶大概率带的技能。</p>
-            <p>P.S.在PVP里，如果资源不够没法治疗自己，可以靠狂搓气母蹭回血被动苟命。</p>
+            <p>P.S.如果资源不够没法治疗自己，可以靠狂搓气母蹭回血被动苟命。狂搓气母也可以消除自己的debuff。</p>
+            <p>一个争议点：气母究竟是不是必需的？如果你打hm甚至三合一，大力丸是当水喝的，气母提供双伤的作用大大降低，为了队伍buff大概率会下掉；但如果平时打本只喝渣蓝，为了维持双伤面板，气母就是必需的。</p>
           </td>
         </tr>
         <tr>
@@ -179,7 +181,7 @@
       <table border="0">
         <tr>
           <td><img src="res/Secluded_Grove.png"></td>
-          <td><p>大招种树，终极点消耗非常少，因此诞生出了一种种树窝登流。不过PVE里，一般是用号角+屏障，种树无用武之地。</p></td>
+          <td><p>大招种树，终极点消耗非常少，因此诞生出了一种种树窝登流。不过PVE里，一般是用号角+屏障的组合，种树用得不多（但由于其流转快，仍然可选）。</p></td>
         </tr>
         <tr>
           <td><img src="res/Enchanted_Growth.png"></td>
@@ -269,7 +271,7 @@
       <table border="0">
         <tr>
           <td><img src="res/Ring_of_Preservation.png"></td>
-          <td><p>守护之环（Ring of Protection），进阶为守护之环（Ring of Preservation），少见的耐系hot技能，美中不足的是范围实在太小。如果把范围扩大到8米或者10米会好很多。如果是像圣殿净化圈那种12米的大圈将会是绝杀。</p></td>
+          <td><p>守护之环（Ring of Protection），进阶为守护之环（Ring of Preservation），少见的耐系hot技能，美中不足的是范围实在太小。</p></td>
         </tr>
       </table>
       <p>根据需要点被动。</p>
@@ -316,11 +318,11 @@
       <table border="0">
         <tr>
           <td><img src="res/Replenishing_Barrier.png"></td>
-          <td><p>屏障，两个进阶均可选用，复活屏障带hot效果，滋养屏障大招流转加快。新手可以先用复活屏障，熟练后改为滋养屏障。奶妈必带技能。</p></td>
+          <td><p>屏障，两个进阶均可选用，复活屏障带hot效果，滋养屏障大招流转加快。高难本下承伤高，屏障持续时间低，更推荐滋养屏障。奶妈必带技能。</p></td>
         </tr>
         <tr>
           <td><img src="res/Purge.png"></td>
-          <td><p>净化，一般用得少。耗蓝惊人。</p></td>
+          <td><p>净化，为队友祛除debuff，用得较少。耗蓝较多。</p></td>
         </tr>
         <tr>
           <td><img src="res/Mystic_Guard.png"></td>
@@ -533,9 +535,86 @@
       <br> 
       <center><p>思考题，为什么石头盟约这套装备不常用？</p></center>
       <center><img src="res/Stones_Accord.png" alt="石头盟约"></center>
-      <center><button id="button" onClick="showAnswer()">点击显示参考答案</button></center>
+      <center><button id="button" style="user-select:none;" onClick="showAnswer()">点击显示参考答案</button></center>
       <center><p id="answer"></p></center>
       <br>
+      <p>至于装备的穿着，也和其他位置搭配一样遵循“三选二”原则，即：怪物套、古物和竞技场武器三种装备中最多只能选两种。</p>
+      <p>下面给出我的装备搭配。</p>
+      <br>
+      <table border="1" style="border-collapse: collapse;text-align: center;">
+        <tr>
+          <td><b>头部</b></td>
+          <td>炼狱奥泽赞面甲</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>肩部</b></td>
+          <td>炼狱奥泽赞护肩</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>胸部</b></td>
+          <td>约尔沃德的指引长袍</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>手部</b></td>
+          <td>约尔沃德的指引手套</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>腰部</b></td>
+          <td>约尔沃德的指引饰带</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>腿部</b></td>
+          <td>约尔沃德的指引长裤</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>脚部</b></td>
+          <td>约尔沃德的指引鞋子</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>项链</b></td>
+          <td>决胜时机的完美护符</td>
+          <td>注魔</td>
+          <td><span style="color: gold;">真正超凡提高魔法损害雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>戒指1</b></td>
+          <td>决胜时机的完美戒指</td>
+          <td>注魔</td>
+          <td><span style="color: gold;">真正超凡提高魔法损害雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>戒指2</b></td>
+          <td>决胜时机的完美戒指</td>
+          <td>注魔</td>
+          <td><span style="color: gold;">真正超凡提高魔法损害雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>主手武器</b></td>
+          <td>大师完美恢复法杖</td>
+          <td>动力</td>
+          <td><span style="color: gold;">真正超凡武器伤害雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>副手武器</b></td>
+          <td>完美决胜时机寒冰法杖</td>
+          <td>注魔</td>
+          <td><span style="color: gold;">真正超凡削弱雕文</span></td>
+        </tr>
+      </table>
       <p>This page is under construction.</p>
     </div>
 </body>
