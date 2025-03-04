@@ -12,13 +12,26 @@ function close(){
   window.close()
 }
 
-    function showTooltip() {
-      var content = "<font style='color:red'>这是一个红色文本</font><br>这是一行新的文本！";
-      document.getElementById("tooltipContent").innerHTML = content; // 设置传入的富文本内容
-      document.getElementById("tooltip").style.display = "block"; // 显示 Tooltip
+ function showTooltip(fixedValue) {
+      const tooltipContent = document.getElementById("tooltipContent");
+      const tooltip = document.getElementById("tooltip");
+
+      if (tooltipContent && tooltip) {
+        tooltipContent.innerHTML = fixedValue; // 设置传入的内容
+        tooltip.style.display = "block"; // 显示 Tooltip
+      } else {
+        console.error("Tooltip elements not found!");
+      }
     }
 
     // 关闭 Tooltip
     function closeTooltip() {
-      document.getElementById("tooltip").style.display = "none"; // 隐藏 Tooltip
+      const tooltip = document.getElementById("tooltip");
+
+      if (tooltip) {
+        tooltip.style.display = "none"; // 隐藏 Tooltip
+      } else {
+        console.error("Tooltip element not found!");
+      }
     }
+
