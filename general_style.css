@@ -118,12 +118,12 @@ position: absolute;
 /* 信息框关闭按钮 */
 .tooltip .close-btn {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 0px;
+  right: 0px;
   background: transparent;
   color: white;
   border: none;
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
 }
 
