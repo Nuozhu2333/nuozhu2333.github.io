@@ -97,3 +97,35 @@ position: absolute;
   margin-left:50px;
   margin-top:75px;
 }
+
+    .tooltip {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 90%;
+      max-height: 80%;
+      overflow: auto;
+      z-index: 1000;
+      display: none; /* 默认不显示 */
+    }
+
+    .tooltip .close-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: transparent;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .tooltip-content {
+      white-space: pre-wrap; /* 支持换行 */
+      word-wrap: break-word;
+    }
