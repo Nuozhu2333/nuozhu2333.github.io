@@ -15,7 +15,7 @@ function close(){
 function showTooltip(event, content) {
   const tooltip = document.getElementById('tooltip');
   const tooltipContent = document.getElementById('tooltip_content');
-  tooltipContent.innerHTML = content; 
+  tooltipContent.innerHTML = "1"; 
   tooltip.style.display = 'block';
 }
 
