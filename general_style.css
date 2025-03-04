@@ -100,28 +100,27 @@ position: absolute;
 
 /* 信息框 */
 .tooltip { 
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: none; 
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   padding: 30px;
   border-radius: 5px;
-  z-index: 9999;
-  width: 300px;
-  max-width: 90%;
+  font-size: 14px;
+  z-index: 1000;
+  max-width: 300px;
+  word-wrap: break-word; 
+  word-break: break-word; 
 }
 
 /* 信息框关闭按钮 */
 .tooltipclosebtn {
   position: absolute;
-  top: -25px;
-  right: -25px;
+  top: 5px;
+  right: 5px;
   background: none;
   border: none;
   color: white;
-  font-size: 25px;
+  font-size: 16px;
   cursor: pointer;
 }
