@@ -58,7 +58,7 @@ position: absolute;
   user-select: none;
 }
 
-/* 打开按钮样式 */
+/* 打开按钮 */
 .openbtn {
   font-size: 20px;
   cursor: pointer;
@@ -96,4 +96,31 @@ position: absolute;
 .maincontainer {
   margin-left:50px;
   margin-top:75px;
+}
+
+/* 信息框 */
+.tooltip { 
+  display: none; 
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 1000;
+  max-width: 300px;
+  word-wrap: break-word; 
+  word-break: break-word; 
+}
+
+/* 信息框关闭按钮 */
+.tooltipclosebtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
