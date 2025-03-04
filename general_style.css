@@ -110,7 +110,7 @@ position: absolute;
   z-index: 1000;
   max-width: 300px;
   word-wrap: break-word; 
-  word-break: break-word; 
+  word-break: normal; 
 }
 
 /* 信息框关闭按钮 */
