@@ -14,8 +14,14 @@ function close(){
 
 function showTooltip(event, content) {
   const tooltip = document.getElementById('tooltip');
-  const tooltipContent = document.getElementById('tooltip_content');
-  tooltipContent.innerHTML = "1"; 
+  const tooltipContent = document.getElementById('tooltip-content');
+
+  tooltipContent.innerHTML = content; 
+
+  const rect = event.target.getBoundingClientRect();
+
+  tooltip.style.left = rect.left + "px";
+  tooltip.style.top = rect.bottom + 10 + "px";
   tooltip.style.display = 'block';
 }
 
