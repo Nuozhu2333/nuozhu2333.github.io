@@ -13,17 +13,20 @@ function close(){
 }
 
  function showTooltip(valueName) {
-      const tooltipContent = document.getElementById("tooltipContent");
-      const tooltip = document.getElementById("tooltip");
-
+   const tooltipContent = document.getElementById("tooltipContent");
+   const tooltip = document.getElementById("tooltip");
+   let content = "No eligible items found"
+   
       if (tooltipContent && tooltip) {
         switch (valueName) {
           case "蛊惑的糖果骷髅头":  
-            tooltipContent.innerHTML = "<center><font style=\'align:center; color: gold;\'>蛊惑的糖果骷髅头</font></center><br>提升<font style=\'color: red;\'>生命上限</font>4620点，<font style=\'color: DeepSkyBlue;\'>法力上限</font>和<font style=\'color: green;\'>耐力上限</font>4250点，<font style=\'color: red;\'>生命回复</font>462点，持续2小时";
-            tooltip.style.display = "block";
+            content = "<center><font style=\'align:center; color: gold;\'>蛊惑的糖果骷髅头</font></center><br>提升<font style=\'color: red;\'>生命上限</font>4620点，<font style=\'color: DeepSkyBlue;\'>法力上限</font>和<font style=\'color: green;\'>耐力上限</font>4250点，<font style=\'color: red;\'>生命回复</font>462点，持续2小时";
           default:
             console.log("值不在预期范围内");
-        }
+        }        
+        
+        tooltipContent.innerHTML = content;
+        tooltip.style.display = "block";
       } else {
         console.error("Tooltip elements not found!");
       }
