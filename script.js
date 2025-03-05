@@ -21,6 +21,8 @@ function close(){
           case "蛊惑的糖果骷髅头":
             val content ="<center><font style=\'align:center; color: gold;\'>蛊惑的糖果骷髅头</font></center><br>提升<font style=\'color: red;\'>生命上限</font>4620点，<font style=\'color: DeepSkyBlue;\'>法力上限</font>和<font style=\'color: green;\'>耐力上限</font>4250点，<font style=\'color: red;\'>生命回复</font>462点，持续2小时";
             break;
+          default:
+            console.log("值不在预期范围内");
         }
         tooltipContent.innerHTML = content; // 设置传入的内容
         tooltip.style.display = "block"; // 显示 Tooltip
