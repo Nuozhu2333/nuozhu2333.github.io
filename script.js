@@ -20,40 +20,40 @@ function close(){
       if (tooltipContent && tooltip) {
         switch (intent) {
           case "属性点：生命":  
-            content = "<center><font style=\'align:center; color: gold;\'>属性点：生命</font></center><br><font style=\'color: red;\'>生命上限</font>提升122点";
+            content = "<center><font style=\'align:center; color: red;\'>属性点：生命</font></center><br><font style=\'color: red;\'>生命上限</font>提升122点";
             break;
           case "属性点：耐力":  
-            content = "<center><font style=\'align:center; color: gold;\'>属性点：耐力</font></center><br><font style=\'color: green;\'>耐力上限</font>提升111点";
+            content = "<center><font style=\'align:center; color: green;\'>属性点：耐力</font></center><br><font style=\'color: green;\'>耐力上限</font>提升111点";
             break;
           case "属性点：法力":  
-            content = "<center><font style=\'align:center; color: gold;\'>属性点：法力</font></center><br><font style=\'color: DeepSkyBlue;\'>法力上限</font>提升111点";
+            content = "<center><font style=\'align:center; color: DeepSkyBlue;\'>属性点：法力</font></center><br><font style=\'color: DeepSkyBlue;\'>法力上限</font>提升111点";
             break; 
           case "勇士点数：天马赐福":  
-            content = "<center><font style=\'align:center; color: gold;\'>勇士点数：天马赐福</font></center><br>脱战移动速度每阶段提高0.4%";
+            content = "<center><font style=\'align:center; color: green;\'>勇士点数：天马赐福</font></center><br>脱战移动速度每阶段提高0.4%";
             break;
           case "勇士点数：决斗者的不屑":  
-            content = "<center><font style=\'align:center; color: gold;\'>勇士点数：决斗者的不屑</font></center><br>受到的单体攻击伤害每阶段降低3%";
+            content = "<center><font style=\'align:center; color: DeepSkyBlue;\'>勇士点数：决斗者的不屑</font></center><br>受到的单体攻击伤害每阶段降低3%";
             break;
           case "勇士点数：持久信念":  
-            content = "<center><font style=\'align:center; color: gold;\'>勇士点数：持久信念</font></center><br>受到的持续伤害每阶段降低3%";
+            content = "<center><font style=\'align:center; color: DeepSkyBlue;\'>勇士点数：持久信念</font></center><br>受到的持续伤害每阶段降低3%";
             break;
           case "勇士点数：无懈可击":  
-            content = "<center><font style=\'align:center; color: gold;\'>勇士点数：无懈可击</font></center><br>受到的范围攻击伤害每阶段降低3%";
+            content = "<center><font style=\'align:center; color: DeepSkyBlue;\'>勇士点数：无懈可击</font></center><br>受到的范围攻击伤害每阶段降低3%";
             break;
           case "勇士点数：壁垒":  
-            content = "<center><font style=\'align:center; color: gold;\'>勇士点数：壁垒</font></center><br>装备盾牌或寒霜法杖时，你的法术和物理抗性提高1900";
+            content = "<center><font style=\'align:center; color: DeepSkyBlue;\'>勇士点数：壁垒</font></center><br>装备盾牌或寒霜法杖时，你的法术和物理抗性提高1900";
             break; 
           case "勇士点数：敏捷":  
-            content = "<center><font style=\'align:center; color: gold;\'>勇士点数：敏捷</font></center><br>移动速度每阶段提高2%";
+            content = "<center><font style=\'align:center; color: red;\'>勇士点数：敏捷</font></center><br>移动速度每阶段提高2%";
             break;
           case "勇士点数：矫健":  
-            content = "<center><font style=\'align:center; color: gold;\'>勇士点数：矫健</font></center><br>被失能效果影响后，可无消耗自动挣脱束缚。触发该效果后会获得疲惫效果，并在21秒内无法再次触发该效果或其他与之类似的效果";
+            content = "<center><font style=\'align:center; color: red;\'>勇士点数：矫健</font></center><br>被失能效果影响后，可无消耗自动挣脱束缚。触发该效果后会获得疲惫效果，并在21秒内无法再次触发该效果或其他与之类似的效果";
             break;
           case "勇士点数：专家闪避":  
-            content = "<center><font style=\'align:center; color: gold;\'>勇士点数：专家闪避</font></center><br>下一次翻滚闪避不产生消耗。该效果使用后，30秒内无法再次获得该效果";
+            content = "<center><font style=\'align:center; color: red;\'>勇士点数：专家闪避</font></center><br>下一次翻滚闪避不产生消耗。该效果使用后，30秒内无法再次获得该效果";
             break;
           case "勇士点数：无限活力":  
-            content = "<center><font style=\'align:center; color: gold;\'>勇士点数：无限活力</font></center><br>每阶段提高28<font style=\'color: red;\'>生命上限</font>";
+            content = "<center><font style=\'align:center; color: red;\'>勇士点数：无限活力</font></center><br>每阶段提高28<font style=\'color: red;\'>生命上限</font>";
             break;
           case "蛊惑的糖果骷髅头":  
             content = "<center><font style=\'align:center; color: gold;\'>蛊惑的糖果骷髅头</font></center><br>提升<font style=\'color: red;\'>生命上限</font>4620点，<font style=\'color: DeepSkyBlue;\'>法力上限</font>和<font style=\'color: green;\'>耐力上限</font>4250点，<font style=\'color: red;\'>生命回复</font>462点，持续2小时";
