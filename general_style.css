@@ -154,6 +154,7 @@ position: absolute;
   float:right;
   margin-top:0px;
   display: inline-block;
+  z-index: 999;
 }
 
 /* 目录下拉菜单内容 */
@@ -165,7 +166,7 @@ position: absolute;
   background-color: #f1f1f1; 
   min-width: 160px; 
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 2;
+  z-index: 999;
 }
 
 .dropdown:hover .dropdown-content {
