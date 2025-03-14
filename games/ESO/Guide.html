@@ -89,12 +89,18 @@
       const sections = document.querySelectorAll("h2");
 
       sections.forEach((section, index) => { // 创建一个目录链接
-                
-      const tocLink = document.createElement("a");
+        const tocLink = document.createElement("a");
         tocLink.href = `#${section.id}`; // 指向对应的章节
         tocLink.textContent = section.textContent;
+        // 点击目录链接时触发的事件
+        tocLink.addEventListener("click", function (e) {
+          // 使用 scrollIntoView 进行滚动到对应章节
+          document.getElementById(section.id).scrollIntoView({ behavior: 'smooth' });
+          // 通过 replaceState 修改 URL 但不添加历史记录
+          history.replaceState(null, '', `#${section.id}`);
+        });
         tocContainer.appendChild(tocLink);
-      });      
+      });
     });
 </script>
 </body>
