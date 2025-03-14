@@ -94,7 +94,6 @@
         tocLink.textContent = section.textContent;
         // 点击目录链接时触发的事件
         tocLink.addEventListener("click", function (e) {
-          e.preventDefault(); // 阻止默认的跳转行为
           // 使用 scrollIntoView 进行滚动到对应章节
           document.getElementById(section.id).scrollIntoView({ behavior: 'smooth' });
           // 通过 replaceState 修改 URL 但不添加历史记录
