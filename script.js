@@ -43,6 +43,9 @@ function close(){
           case "勇士点数：壁垒":  
             content = "<center><font style=\'align:center; color: DeepSkyBlue;\'>勇士点数：壁垒</font></center><br>装备盾牌或寒霜法杖时，你的法术和物理抗性提高1900";
             break; 
+          case "勇士点数：准备就绪":  
+            content = "<center><font style=\'align:center; color: DeepSkyBlue;\'>勇士点数：准备就绪</font></center><br>受到的非玩家伤害每阶段降低5%";
+            break;
           case "勇士点数：敏捷":  
             content = "<center><font style=\'align:center; color: red;\'>勇士点数：敏捷</font></center><br>移动速度每阶段提高2%";
             break;
