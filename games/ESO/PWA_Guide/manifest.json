@@ -2,7 +2,7 @@
   "name": "ESO新手指南",
   "short_name": "ESO新手指南",
   "display": "standalone",
-  "start_url": "../Guide.html",
+  "start_url": "/game/ESO/",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "icons": [
