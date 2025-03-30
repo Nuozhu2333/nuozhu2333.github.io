@@ -1,10 +1,10 @@
 {
-  "name": "ESO新手教程",
-  "short_name": "ESO新手教程",
+  "name": "ESO新手指南",
+  "short_name": "ESO新手指南",
   "display": "standalone",
-  "start_url": "/",
+  "start_url": "../Guide.html",
   "theme_color": "#ffffff",
-  "background_color": "#aaaaff",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "logo.png",
