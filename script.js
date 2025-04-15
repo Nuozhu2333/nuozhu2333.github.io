@@ -12,6 +12,13 @@ function close(){
   window.close()
 }
 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
  function showTooltip(intent) {
    const tooltipContent = document.getElementById("tooltipContent");
    const tooltip = document.getElementById("tooltip");
