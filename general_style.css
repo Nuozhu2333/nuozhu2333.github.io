@@ -184,6 +184,24 @@ position: absolute;
   background-color: #ddd;
 }
 
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+#backToTop.show {
+  display: block;
+}
+
 table {
   border-collapse: collapse;
 }
