@@ -202,7 +202,7 @@ position: absolute;
   display: block;
 }
 
-#默认表格样式
+/* 默认表格样式 */
 .defaultTable {
   border-collapse: collapse;
   margin: auto;
