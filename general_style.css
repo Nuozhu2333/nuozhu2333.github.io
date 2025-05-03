@@ -204,6 +204,7 @@ position: absolute;
 
 /* 默认表格样式 */
 .defaultTable {
+  max-width: 100%;
   border-collapse: collapse;
   margin: auto;
   border: 0px;
