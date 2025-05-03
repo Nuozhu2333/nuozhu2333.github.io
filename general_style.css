@@ -210,7 +210,6 @@ position: absolute;
 .defaultTable {
   max-width: 100%;
   border-collapse: collapse;
-  margin: auto;
   border: 0px;
 }
 
