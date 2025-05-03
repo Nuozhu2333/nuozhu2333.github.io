@@ -203,6 +203,10 @@ position: absolute;
 }
 
 /* 默认表格样式 */
+.tableContainer {
+  overflow-x: auto;
+}
+
 .defaultTable {
   max-width: 100%;
   border-collapse: collapse;
