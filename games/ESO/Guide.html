@@ -631,51 +631,53 @@
       <p>精炼原材料可获得精炼后的材料、特质材料、样式材料与品质提升材料。拥有制作分解被动和绿CP细致拆解可提升精炼出品质提升材料的几率。</p>
       <p>精炼原材料不会获得灵感。</p>
       <p>这是精炼获得品质提升材料的概率。</p>
-      <table class="defaultTable">
-        <tr>
-          <th rowspan="2">材料品质</th>
-          <th colspan="5">几率</th>
-        </tr>
-        <tr>
-          <th>无分解被动</th>
-          <th>1级被动</th>
-          <th>2级被动</th>
-          <th>3级被动</th>
-          <th>3级被动+细致拆解</th>
-        </tr>
-        <tr>
-          <td>优良</td>
-          <td>1.00%</td>
-          <td>1.15%</td>
-          <td>1.31%</td>
-          <td>1.50%</td>
-          <td>1.69%</td>
-        </tr>
-        <tr>
-          <td>上乘</td>
-          <td>0%</td>
-          <td>0.96%</td>
-          <td>1.09%</td>
-          <td>1.25%</td>
-          <td>1.41%</td>
-        </tr>
-        <tr>
-          <td>史诗</td>
-          <td>0%</td>
-          <td>0%</td>
-          <td>0.66%</td>
-          <td>0.75%</td>
-          <td>0.84%</td>
-        </tr>
-        <tr>
-          <td>传奇</td>
-          <td>0%</td>
-          <td>0%</td>
-          <td>0%</td>
-          <td>0.50%</td>
-          <td>0.56%</td>
-        </tr>
-      </table>
+      <div class="tableContainer">
+         <table class="defaultTable">
+           <tr>
+             <th rowspan="2">材料品质</th>
+            <th colspan="5">几率</th>
+          </tr>
+          <tr>
+            <th>无分解被动</th>
+            <th>1级被动</th>
+            <th>2级被动</th>
+            <th>3级被动</th>
+            <th>3级被动+细致拆解</th>
+          </tr>
+          <tr>
+            <td>优良</td>
+            <td>1.00%</td>
+            <td>1.15%</td>
+            <td>1.31%</td>
+            <td>1.50%</td>
+            <td>1.69%</td>
+          </tr>
+          <tr>
+            <td>上乘</td>
+            <td>0%</td>
+            <td>0.96%</td>
+            <td>1.09%</td>
+            <td>1.25%</td>
+            <td>1.41%</td>
+          </tr>
+          <tr>
+            <td>史诗</td>
+            <td>0%</td>
+            <td>0%</td>
+            <td>0.66%</td>
+            <td>0.75%</td>
+            <td>0.84%</td>
+          </tr>
+          <tr>
+            <td>传奇</td>
+            <td>0%</td>
+            <td>0%</td>
+            <td>0%</td>
+            <td>0.50%</td>
+            <td>0.56%</td>
+          </tr>
+         </table>
+      </div>
       <p>数据来源：<a href="https://en.uesp.net/wiki/Online:Crafting#Refinement" target="_blank">UESP</a>，仅供参考</p>
       <br>
       <h4>4.3.4 制作物品</h4>
@@ -701,175 +703,176 @@
       <p>特质是装备的固有性质。它们可以提升装备的数值，并作用到玩的家面板数值上。</p>
       <p>特质分为武器特质、护甲特质和珠宝特质三种，分别作用于不同类型的装备。</p>
       <p>武器特质</p>
-      <table class="defaultTable">
-        <tr>
-          <th rowspan="2">特质</th>
-          <th rowspan="2">材料</th>
-          <th rowspan="2" colspan="2">效果</th>
-          <th colspan="5">数值</th>
-        </tr>
-        <tr>
-          <th>普通</th>
-          <th>优良</th>
-          <th>上乘</th>
-          <th>史诗</th>
-          <th>传奇</th>
-        </tr>
-        <tr>
-          <th rowspan="2">动力</th>
-          <td rowspan="2">橄榄石</td>
-          <td rowspan="2">Increase healing done by …</td>
-          <td>1H</td>
-          <td>2.5%</td>
-          <td>3%</td>
-          <td>3.5%</td>
-          <td>4%</td>
-          <td>4.5%/td>
-        </tr>
-        <tr>
-          <td>2H</td>
-          <td>5%</td>
-          <td>6%</td>
-          <td>7%</td>
-          <td>8%</td>
-          <td>9%</td>
-        </tr>
-        <tr>
-          <th rowspan="2">充能</th>
-          <td rowspan="2">紫水晶</td>
-          <td rowspan="2">Increase your chance to apply status effects by …</td>
-          <td>1H</td>
-          <td>97.5%</td>
-          <td>102.5%</td>
-          <td>107.5%</td>
-          <td>112.5%</td>
-          <td>117.5%</td>
-        </tr>
-        <tr>
-          <td>2H</td>
-          <td>195%</td>
-          <td>205%</td>
-          <td>215%</td>
-          <td>225%</td>
-          <td>235%</td>
-        </tr>
-        <tr>
-          <th rowspan="2">精确</th>
-          <td rowspan="2">红宝石</td>
-          <td rowspan="2">Increases Weapon and Spell Critical values by …</td>
-          <td>1H</td>
-          <td>1.6%</td>
-          <td>2.1%</td>
-          <td>2.6%</td>
-          <td>3.1%</td>
-          <td>3.6%</td>
-        </tr>
-        <tr>
-          <td>2H</td>
-          <td>3.2%</td>
-          <td>4.2%</td>
-          <td>5.2%</td>
-          <td>6.2%</td>
-          <td>7.2%</td>
-        </tr>
-        <tr>
-          <th>注魔</th>
-          <td>翡翠</td>
-          <td colspan="2">Increase weapon enchantment effect by … and reduces enchantment cooldown by 50%</td>
-          <td>10%</td>
-          <td>15%</td>
-          <td>20%</td>
-          <td>25%</td>
-          <td>30%</td>
-        </tr>
-        <tr>
-          <th rowspan="2">防御</th>
-          <td rowspan="2">绿松石</td>
-          <td rowspan="2">Increases Physical and Spell Resistance by …
-          </td>
-          <td>1H</td>
-          <td>1428</td>
-          <td>1485</td>
-          <td>1542</td>
-          <td>1580</td>
-          <td>1638</td>
-        </tr>
-        <tr>
-          <td>2H</td>
-          <td>2856</td>
-          <td>2971</td>
-          <td>3085</td>
-          <td>3161</td>
-          <td>3276</td>
-        </tr>
-        <tr>
-          <th rowspan="2">训练</th>
-          <td rowspan="2">红玉髓</td>
-          <td rowspan="2">Increase experience gained from kills by …</td>
-          <td>1H</td>
-          <td>2.5%</td>
-          <td>3%</td>
-          <td>3.5%</td>
-          <td>4%</td>
-          <td>4.5%</td>
-        </tr>
-        <tr>
-          <td>2H</td>
-          <td>5%</td>
-          <td>6%</td>
-          <td>7%</td>
-          <td>8%</td>
-          <td>9%</td>
-        </tr>
-        <tr>
-          <th rowspan="2">锋锐</th>
-          <td rowspan="2">火焰蛋白石</td>
-          <td rowspan="2">Increase Physical and Spell Penetration by …</td>
-          <td>1H</td>
-          <td>1428</td>
-          <td>1485</td>
-          <td>1542</td>
-          <td>1580</td>
-          <td>1638</td>
-        </tr>
-        <tr>
-          <td>2H</td>
-          <td>2856</td>
-          <td>2971</td>
-          <td>3085</td>
-          <td>3161</td>
-          <td>3276</td>
-        </tr>
-        <tr>
-          <th rowspan="2">决意</th>
-          <td rowspan="2">黄水晶</td>
-          <td rowspan="2">When you gain Ultimate you have a … chance to gain 1 additional ultimate.</td>
-          <td>1H</td>
-          <td>19.1%</td>
-          <td>21.2%</td>
-          <td>23.2%</td>
-          <td>25.4%</td>
-          <td>27.5%
-          </td></tr>
-        <tr>
-          <td>2H</td>
-          <td>38.2%</td>
-          <td>42.4%</td>
-          <td>46.4%</td>
-          <td>50.8%</td>
-          <td>55%</td>
-        </tr>
-        <tr>
-          <th>奈恩磨砺</th>
-          <td>强效奈恩核心</td>
-          <td colspan="2">Increases Damage of this weapon by …</td>
-          <td>11%</td>
-          <td>12%</td>
-          <td>13%</td>
-          <td>14%</td>
-          <td>15%</td>
-        </tr>
-      </table>
+      <div class="tableContainer">
+        <table class="defaultTable">
+          <tr>
+            <th rowspan="2">特质</th>
+            <th rowspan="2">材料</th>
+            <th rowspan="2" colspan="2">效果</th>
+            <th colspan="5">数值</th>
+          </tr>
+          <tr>
+            <th>普通</th>
+            <th>优良</th>
+            <th>上乘</th>
+            <th>史诗</th>
+            <th>传奇</th>
+          </tr>
+          <tr>
+            <th rowspan="2">动力</th>
+            <td rowspan="2">橄榄石</td>
+            <td rowspan="2">Increase healing done by …</td>
+            <td>1H</td>
+            <td>2.5%</td>
+            <td>3%</td>
+            <td>3.5%</td>
+            <td>4%</td>
+            <td>4.5%/td>
+          </tr>
+          <tr>
+            <td>2H</td>
+            <td>5%</td>
+            <td>6%</td>
+            <td>7%</td>
+            <td>8%</td>
+            <td>9%</td>
+          </tr>
+          <tr>
+            <th rowspan="2">充能</th>
+            <td rowspan="2">紫水晶</td>
+            <td rowspan="2">Increase your chance to apply status effects by …</td>
+            <td>1H</td>
+            <td>97.5%</td>
+            <td>102.5%</td>
+            <td>107.5%</td>
+            <td>112.5%</td>
+            <td>117.5%</td>
+          </tr>
+          <tr>
+            <td>2H</td>
+            <td>195%</td>
+            <td>205%</td>
+            <td>215%</td>
+            <td>225%</td>
+            <td>235%</td>
+          </tr>
+          <tr>
+            <th rowspan="2">精确</th>
+            <td rowspan="2">红宝石</td>
+            <td rowspan="2">Increases Weapon and Spell Critical values by …</td>
+            <td>1H</td>
+            <td>1.6%</td>
+            <td>2.1%</td>
+            <td>2.6%</td>
+            <td>3.1%</td>
+            <td>3.6%</td>
+          </tr>
+          <tr>
+            <td>2H</td>
+            <td>3.2%</td>
+            <td>4.2%</td>
+            <td>5.2%</td>
+            <td>6.2%</td>
+            <td>7.2%</td>
+          </tr>
+          <tr>
+            <th>注魔</th>
+            <td>翡翠</td>
+            <td colspan="2">Increase weapon enchantment effect by … and reduces enchantment cooldown by 50%</td>
+            <td>10%</td>
+            <td>15%</td>
+            <td>20%</td>
+            <td>25%</td>
+            <td>30%</td>
+          </tr>
+          <tr>
+            <th rowspan="2">防御</th>
+            <td rowspan="2">绿松石</td>
+            <td rowspan="2">Increases Physical and Spell Resistance by …</td>
+            <td>1H</td>
+            <td>1428</td>
+            <td>1485</td>
+            <td>1542</td>
+            <td>1580</td>
+            <td>1638</td>
+          </tr>
+          <tr>
+            <td>2H</td>
+            <td>2856</td>
+            <td>2971</td>
+            <td>3085</td>
+            <td>3161</td>
+            <td>3276</td>
+          </tr>
+          <tr>
+            <th rowspan="2">训练</th>
+            <td rowspan="2">红玉髓</td>
+            <td rowspan="2">Increase experience gained from kills by …</td>
+            <td>1H</td>
+            <td>2.5%</td>
+            <td>3%</td>
+            <td>3.5%</td>
+            <td>4%</td>
+            <td>4.5%</td>
+          </tr>
+          <tr>
+            <td>2H</td>
+            <td>5%</td>
+            <td>6%</td>
+            <td>7%</td>
+            <td>8%</td>
+            <td>9%</td>
+          </tr>
+          <tr>
+            <th rowspan="2">锋锐</th>
+            <td rowspan="2">火焰蛋白石</td>
+            <td rowspan="2">Increase Physical and Spell Penetration by …</td>
+            <td>1H</td>
+            <td>1428</td>
+            <td>1485</td>
+            <td>1542</td>
+            <td>1580</td>
+            <td>1638</td>
+         </tr>
+         <tr>
+            <td>2H</td>
+            <td>2856</td>
+            <td>2971</td>
+            <td>3085</td>
+            <td>3161</td>
+            <td>3276</td>
+         </tr>
+         <tr>
+            <th rowspan="2">决意</th>
+            <td rowspan="2">黄水晶</td>
+            <td rowspan="2">When you gain Ultimate you have a … chance to gain 1 additional ultimate.</td>
+            <td>1H</td>
+            <td>19.1%</td>
+            <td>21.2%</td>
+            <td>23.2%</td>
+            <td>25.4%</td>
+            <td>27.5%</td>
+         </tr>
+          <tr>
+            <td>2H</td>
+            <td>38.2%</td>
+            <td>42.4%</td>
+            <td>46.4%</td>
+            <td>50.8%</td>
+            <td>55%</td>
+          </tr>
+          <tr>
+            <th>奈恩磨砺</th>
+            <td>强效奈恩核心</td>
+            <td colspan="2">Increases Damage of this weapon by …</td>
+            <td>11%</td>
+            <td>12%</td>
+            <td>13%</td>
+            <td>14%</td>
+            <td>15%</td>
+          </tr>
+        </table>
+      </div>
       <p>护甲特质</p>
       <p>珠宝特质</p>
       <br>
