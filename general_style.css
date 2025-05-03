@@ -205,6 +205,8 @@ position: absolute;
 #默认表格样式
 .defaultTable {
   border-collapse: collapse;
+  margin: auto;
+  border: 0px;
 }
 
 .defaultTable th, td {
