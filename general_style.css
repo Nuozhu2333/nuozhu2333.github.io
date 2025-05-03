@@ -202,11 +202,12 @@ position: absolute;
   display: block;
 }
 
-table {
+#默认表格样式
+.defaultTable {
   border-collapse: collapse;
 }
 
-th, td {
+.defaultTable th, td {
   border: 1px solid black;
   padding: 8px;
 }
