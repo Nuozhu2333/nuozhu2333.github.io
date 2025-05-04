@@ -202,7 +202,15 @@ position: absolute;
   display: block;
 }
 
-/* 默认表格样式 */
+table {
+  border: 0px;
+}
+
+img {
+    max-width: 600px;
+}
+
+/* 表格可滚动 */
 .tableContainer {
   overflow-x: auto;
 }
