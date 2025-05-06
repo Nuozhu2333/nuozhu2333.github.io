@@ -214,6 +214,13 @@ img {
 .defaultTable {
   max-width: 100%;
   border-collapse: collapse;
+  border: 0px;
+}
+
+.defaultTable th .defaultTable td { 
   border: 1px solid black;
   text-align: center;
+  padding: 10px;
+  word-wrap: break-word; 
 }
+
