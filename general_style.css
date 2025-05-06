@@ -202,11 +202,6 @@ position: absolute;
   display: block;
 }
 
-table {
-  overflow-x: auto;
-  border: 0px;
-}
-
 img {
     max-width: 600px;
 }
