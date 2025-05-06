@@ -217,7 +217,7 @@ img {
   border: 0px;
 }
 
-.defaultTable th .defaultTable td {
+.defaultTable tr .defaultTable td {
   border: 1px solid black;
   padding: 8px;
   text-align: center;
