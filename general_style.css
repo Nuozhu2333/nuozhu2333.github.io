@@ -217,7 +217,19 @@ img {
   border: 0px;
 }
 
-.defaultTable tr .defaultTable td {
+.defaultTable th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.defaultTable tr {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.defaultTable td {
   border: 1px solid black;
   padding: 8px;
   text-align: center;
