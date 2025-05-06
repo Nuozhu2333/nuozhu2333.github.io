@@ -215,10 +215,5 @@ img {
   max-width: 100%;
   border-collapse: collapse;
   border: 0px;
-}
-
-.defaultTable th, td {
-  border: 1px solid black;
-  padding: 8px;
   text-align: center;
 }
