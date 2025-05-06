@@ -214,6 +214,6 @@ img {
 .defaultTable {
   max-width: 100%;
   border-collapse: collapse;
-  border: 0px;
+  border: 1px solid black;
   text-align: center;
 }
