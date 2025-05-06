@@ -203,6 +203,7 @@ position: absolute;
 }
 
 table {
+  overflow-x: auto;
   border: 0px;
 }
 
