@@ -1,0 +1,224 @@
+a {
+  text-decoration: none; 
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+img {
+  max-width: 600px;
+}
+
+.normalLink {
+  text-decoration: underline; 
+  color: blue;
+}
+
+.normalLink:visited {
+  color: blue;
+}
+
+.sideNavigator {
+  position: fixed;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  background-image: url('/background.jpg');  
+  background-size: cover; 
+  background-position: center; 
+  overflow-x: hidden;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  user-select: none;
+}
+
+.sideNavigator a {
+  color: #B0B0B0 ;
+}
+
+.sideNavigator a:not(.closeButton):not(.navigateUpButton) {
+  padding: 8px 8px 8px 32px;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.sideNavigator a:hover {
+  color: #f1f1f1;
+}
+
+/* 打开按钮 */
+.openButton {
+  font-size: 20px;
+  cursor: pointer;
+  position: fixed;
+  left: 20px;
+  user-select: none;
+}
+
+/* 关闭按钮 */
+.closeButton {
+  position: absolute;
+  font-size: 20px;
+  top: 12.5px;
+  left: 20px;
+  margin-left: 0px;
+  user-select: none;
+}
+
+/* 返回按钮 */
+ .navigateUpButton {
+  position: absolute;  
+  font-size: 20px;
+  top: 12.5px;
+  right: 20px;
+  user-select: none;
+}
+
+.links {
+  transition: opacity 0.3s ease, visibility 0s 0.3s; 
+  opacity: 1;
+  visibility: visible;
+}
+
+#links.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.copyrightContainer {
+  position: fixed;
+  width: 250px;
+  bottom: 10px;
+  display: flex;       
+  flex-direction: column; 
+  align-items: center;
+  color: #B0B0B0;
+  transition: opacity 0.3s ease, visibility 0s 0.3s; 
+  opacity: 1;
+  visibility: hidden;
+}
+
+#copyrightContainer.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.copyrightContainer p, img {
+ margin: 0 10px;
+}
+
+/* 标题栏 */
+.titleBar {
+  position: fixed;
+  height: 50px;
+  width: 100vw;   
+  top: 0;             
+  left: 0;    
+  display: flex;
+  align-items: center; 
+  background-color: white;
+  user-select: none;
+}
+
+/* 标题文本 */
+.title {
+  position: fixed;
+  font-size: 16px;
+  left: 50px;
+  user-select: none;
+}
+
+/* 主容器 */
+.mainContainer {
+  margin-left:50px;
+  margin-top:75px;
+}
+
+/* 信息框 */
+.tooltip {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 480px;
+  max-height: 100%;
+  overflow: auto;
+  z-index: 1000;
+  display: none; 
+}
+
+/* 信息框关闭按钮 */
+.tooltip .close-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* 信息框内容 */
+.tooltip-content {
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+}
+
+/* 返回顶部按钮 */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+#backToTop.show {
+  display: block;
+}
+
+/* 表格可滚动 */
+.tableContainer {
+  overflow-x: auto;
+}
+
+.defaultTable {
+  max-width: 100%;
+  border-collapse: collapse;
+  border: 0px;
+}
+
+.defaultTable th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.defaultTable tr {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.defaultTable td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
