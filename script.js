@@ -1,3 +1,7 @@
+window.onload = function() {
+  document.body.innerHTML = "休站中，糯竹正在对小站进行技术升级以为您带来更好的体验。";
+};
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("copyright").style.visibility = "visible";
