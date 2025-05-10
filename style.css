@@ -9,7 +9,6 @@ a:visited {
 
 img {
   margin: 0;
-  vertical-align: middle;
   max-width: 100%;
 }
 
@@ -111,7 +110,7 @@ img {
   visibility: hidden;
 }
 
-.copyrightContainer p, img {
+.copyrightContainer p, .copyrightContainer img {
  margin: 0 10px;
 }
 
