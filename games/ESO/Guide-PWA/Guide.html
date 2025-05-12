@@ -8,13 +8,14 @@
     <title>ESO新手指南</title>
     <script src="/script.js"></script>
   </head>
-<body>
- <div class="titleBar"> 
-<a class="openButton" onclick="openNav()">☰</a>
-    <p class="title">ESO新手指南</p>
-  </div>
-  <div id="sideNavigator" class="sideNavigator">
-    <a class="closeButton" onclick="closeNav()" href="javascript:void(0)" >☰</a>
+  <body>
+    <div class="titleBar"> 
+      <a class="openButton" onclick="openNav()">☰</a>
+      <p class="title">ESO新手指南</p>
+    </div>
+    <div id="sideNavigator" class="sideNavigator">
+ 
+      <a class="closeButton" onclick="closeNav()" href="javascript:void(0)" >☰</a>
     <a class="navigateUpButton" href="javascript:history.back()">◁</a>
 
     <div id="links" class="links">
@@ -25,17 +26,16 @@
     <a href="/games.html">游戏</a>
     <a href="/res.html">资源</a>
     <br>
-</div>
-    <div id="copyrightContainer" class="copyrightContainer">
-    <p>© 糯竹 2022-2025</p>
-    <br>
-    <p>Powered by</p>
-    <br>
-    <a style="padding:0" href="https://github.com/"><svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default"><path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z" fill="white"></path>
-</svg></a>
     </div>
-  </div>
-  <div class="mainContainer">
+      <div id="copyrightContainer" class="copyrightContainer">
+        <p>© 糯竹 2022-2025</p>
+        <br>
+        <p>Powered by</p>
+        <br>
+    <a style="padding:0" href="https://github.com/"><svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default"><path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z" fill="white"></path></svg></a>
+      </div>
+    </div>
+    <div class="mainContainer">
       <div id="tooltip" class="tooltip">
         <button class="close-btn" id="closeBtn" onclick="closeTooltip()">&times;</button>
         <div id="tooltipContent" class="tooltip-content"></div>
@@ -699,8 +699,8 @@
           <tr>
             <th rowspan="2">动力</th>
             <td rowspan="2">橄榄石</td>
-            <td rowspan="2">Increase healing done by …</td>
-            <td>1H</td>
+            <td rowspan="2">造成的治疗提升……</td>
+            <td>单手</td>
             <td>2.5%</td>
             <td>3%</td>
             <td>3.5%</td>
@@ -708,7 +708,7 @@
             <td>4.5%/td>
           </tr>
           <tr>
-            <td>2H</td>
+            <td>双手</td>
             <td>5%</td>
             <td>6%</td>
             <td>7%</td>
@@ -718,8 +718,8 @@
           <tr>
             <th rowspan="2">充能</th>
             <td rowspan="2">紫水晶</td>
-            <td rowspan="2">Increase your chance to apply status effects by …</td>
-            <td>1H</td>
+            <td rowspan="2">施加状态效果的几率提升……</td>
+            <td>单手</td>
             <td>97.5%</td>
             <td>102.5%</td>
             <td>107.5%</td>
@@ -727,7 +727,7 @@
             <td>117.5%</td>
           </tr>
           <tr>
-            <td>2H</td>
+            <td>双手</td>
             <td>195%</td>
             <td>205%</td>
             <td>215%</td>
@@ -737,8 +737,8 @@
           <tr>
             <th rowspan="2">精确</th>
             <td rowspan="2">红宝石</td>
-            <td rowspan="2">Increases Weapon and Spell Critical values by …</td>
-            <td>1H</td>
+            <td rowspan="2">物理与法术暴击率提升……</td>
+            <td>单手</td>
             <td>1.6%</td>
             <td>2.1%</td>
             <td>2.6%</td>
@@ -746,7 +746,7 @@
             <td>3.6%</td>
           </tr>
           <tr>
-            <td>2H</td>
+            <td>双手</td>
             <td>3.2%</td>
             <td>4.2%</td>
             <td>5.2%</td>
@@ -756,7 +756,7 @@
           <tr>
             <th>注魔</th>
             <td>翡翠</td>
-            <td colspan="2">Increase weapon enchantment effect by … and reduces enchantment cooldown by 50%</td>
+            <td colspan="2">武器附魔效果提升……，且武器附魔冷却时间降低50%</td>
             <td>10%</td>
             <td>15%</td>
             <td>20%</td>
@@ -766,8 +766,8 @@
           <tr>
             <th rowspan="2">防御</th>
             <td rowspan="2">绿松石</td>
-            <td rowspan="2">Increases Physical and Spell Resistance by …</td>
-            <td>1H</td>
+            <td rowspan="2">物理与法术抗性提升……</td>
+            <td>单手</td>
             <td>1428</td>
             <td>1485</td>
             <td>1542</td>
@@ -775,7 +775,7 @@
             <td>1638</td>
           </tr>
           <tr>
-            <td>2H</td>
+            <td>双手</td>
             <td>2856</td>
             <td>2971</td>
             <td>3085</td>
@@ -785,8 +785,8 @@
           <tr>
             <th rowspan="2">训练</th>
             <td rowspan="2">红玉髓</td>
-            <td rowspan="2">Increase experience gained from kills by …</td>
-            <td>1H</td>
+            <td rowspan="2"><span style="color: red;">击杀怪物</span>所得经验提升……</td>
+            <td>单手</td>
             <td>2.5%</td>
             <td>3%</td>
             <td>3.5%</td>
@@ -794,7 +794,7 @@
             <td>4.5%</td>
           </tr>
           <tr>
-            <td>2H</td>
+            <td>双手</td>
             <td>5%</td>
             <td>6%</td>
             <td>7%</td>
@@ -804,8 +804,8 @@
           <tr>
             <th rowspan="2">锋锐</th>
             <td rowspan="2">火焰蛋白石</td>
-            <td rowspan="2">Increase Physical and Spell Penetration by …</td>
-            <td>1H</td>
+            <td rowspan="2">物理和法术穿透提升……</td>
+            <td>单手</td>
             <td>1428</td>
             <td>1485</td>
             <td>1542</td>
@@ -813,7 +813,7 @@
             <td>1638</td>
          </tr>
          <tr>
-            <td>2H</td>
+            <td>双手</td>
             <td>2856</td>
             <td>2971</td>
             <td>3085</td>
@@ -823,8 +823,8 @@
          <tr>
             <th rowspan="2">决意</th>
             <td rowspan="2">黄水晶</td>
-            <td rowspan="2">When you gain Ultimate you have a … chance to gain 1 additional ultimate.</td>
-            <td>1H</td>
+            <td rowspan="2">当你获得终极点时，你有……的概率额外获得1点终极点</td>
+            <td>单手</td>
             <td>19.1%</td>
             <td>21.2%</td>
             <td>23.2%</td>
@@ -832,7 +832,7 @@
             <td>27.5%</td>
          </tr>
           <tr>
-            <td>2H</td>
+            <td>双手</td>
             <td>38.2%</td>
             <td>42.4%</td>
             <td>46.4%</td>
@@ -842,7 +842,7 @@
           <tr>
             <th>奈恩磨砺</th>
             <td>强效奈恩核心</td>
-            <td colspan="2">Increases Damage of this weapon by …</td>
+            <td colspan="2">该武器的伤害提升……</td>
             <td>11%</td>
             <td>12%</td>
             <td>13%</td>
@@ -855,7 +855,8 @@
       <p>珠宝特质</p>
       <br>
       <h4>4.3.8 家具制作</h4>
-      <p></p>
+      <p>家具制作就如同烹饪一般，需要学习配方后在相应制作台制作。</p>
+      <p>制作家具也可以获得灵感。</p>
       <br>
       <h4>4.3.9 制作委托与大师委托</h4>
       <p></p>
@@ -863,11 +864,14 @@
       <h4>4.3.10 蜕变</h4>
       <p></p>
       <br>
+      <h4>4.3.11 获取制作材料</h4>
+      <p></p>
+      <br>
       <p>创建时间：2025/2/5</p>
-      <p>上次修订时间：2025/5/8</p>
+      <p>上次修订时间：2025/5/12</p>
       <br>
       <P><b>本文章授权给@EchoWFlechazo和@hua_su，允许其使用本文章的部分或全部内容。</b></P>
-    <P><span style="color: red;"><b>本文章严禁bilibili@科尔托先生（UID 1871878997）使用。糯竹永远不会授权他（她，或它）使用本文章的部分或全部内容。如果发现其有抄袭行为，请向平台举报，并要求其永久删除侵权内容。</b></span></P>
+    <P><span style="color: red;"><b>本文章严禁bilibili@科尔托先生（UID 1871878997）使用。糯竹永远不会授权他（她，或它）使用本文章的任何内容。如果发现任何抄袭行为，请向平台举报，并要求其永久删除侵权内容。</b></span></P>
     <br>
   </div>
   <button id="backToTop" onclick="scrollToTop()">↑</button>
