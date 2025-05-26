@@ -8,6 +8,10 @@
     <title>糯竹的窝登奶Build</title>
     <script src="/script.js"></script>
     <script>
+      function onLoad(){
+        document.write("本页面尚在维护中！");
+      }
+      
     function showAnswer() {
       document.getElementById("answer").innerText = "参考答案：次级狂怒和次级信念都可以通过砸地施加给队友，后者是奶妈必带的技能；而回蓝的词条在不缺资源的版本下可有可无，所以总体而言这套装备不常用。";
       document.getElementById("button").innerText = "已显示参考答案";
@@ -15,7 +19,7 @@
   }
     </script>
   </head>
-<body>
+<body onload="onLoad()">
  <div class="titleBar"> 
 <a class="openButton" onclick="openNav()">☰</a>
     <p class="title">糯竹的窝登奶Build</p>
