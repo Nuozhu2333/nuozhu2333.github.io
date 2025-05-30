@@ -1,0 +1,733 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/avatar.png">
+    <link rel="stylesheet" href="/style.css">
+    <title>糯竹的奶妈Build</title>
+    <script src="/script.js"></script>
+    <script>
+      function onLoad(){
+        alert("本页面尚在维护中！");
+      }
+      
+    function showAnswer() {
+      document.getElementById("answer").innerText = "参考答案：次级狂怒和次级信念都可以通过砸地施加给队友，后者是奶妈必带的技能；而回蓝的词条在不缺资源的版本下可有可无，所以总体而言这套装备不常用。";
+      document.getElementById("button").innerText = "已显示参考答案";
+      document.getElementById("button").disabled = true
+  }
+    </script>
+  </head>
+<body onload="onLoad()">
+ <div class="titleBar"> 
+<a class="openButton" onclick="openNav()">☰</a>
+    <p class="title">糯竹的奶妈Build</p>
+  </div>
+  <div id="sideNavigator" class="sideNavigator">
+    <a class="closeButton" onclick="closeNav()" href="javascript:void(0)" >☰</a>
+    <a class="navigateUpButton" href="javascript:history.back()">◁</a>
+
+    <div id="links" class="links">
+    <a href="/index.html">主页</a>
+    <a href="/blogs.html">博客</a>
+    <a href="/articles.html">文章</a>
+    <a href="/applications.html">应用</a>
+    <a href="/games.html">游戏</a>
+    <a href="/res.html">资源</a>
+    <br>
+</div>
+    <div id="copyrightContainer" class="copyrightContainer">
+    <p>© 糯竹 2022-2025</p>
+    <br>
+    <p>Powered by</p>
+    <br>
+    <a style="padding:0" href="https://github.com/"><svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default"><path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z" fill="white"></path>
+</svg></a>
+    </div>
+  </div>
+  <div class="mainContainer">
+      <div id="tooltip" class="tooltip">
+        <button class="close-btn" id="closeBtn" onclick="closeTooltip()">&times;</button>
+        <div id="tooltipContent" class="tooltip-content"></div>
+      </div>
+      <h1>糯竹的窝登奶Build</h1>
+      <center><img src="res/Warden_Healer.png" width="205" height="365" alt="亚龙人窝登奶幻化"></center>
+      <center><p>亚龙人窝登奶幻化</p></center>
+      <br>
+      <p>玩了这么久的奶妈了，也算是稍微有了一些经验。在这里写一篇窝登奶教程，跟大家分享一下自己的心得。</p>
+      <p>为啥是窝登奶教程呢？因为我只玩过圣殿奶、窝登奶和一点点龙骑奶（别问，问就是整活），虽说包括了奶妈通用经验，但不涉及其他职业，姑且还是称之为窝登奶教程。</p>
+      <p>先说好，我能力有限，只玩PVE，PVP内容与我无关。这其中的经验大概只能支撑到V试炼，至于HM或者三合一不在我的考虑范围内，有说错的也请不要骂我qwq。</p>
+      <br>
+      <h2>1.奶妈基础</h2>
+      <p>在开始之前，请你思考这样几个问题：</p>
+      <p>①奶妈的作用是什么？换言之，奶妈需要做什么工作？</p>
+      <p>②奶妈的首要任务是什么？换言之，奶妈最需要关注的是什么，次要关注的是什么？</p>
+      <p>③奶妈该如何确保自己工作的完成？换言之，除了自己的能力之外，需要什么硬件设施？</p>
+      <br>
+      <p>如果你能很快地回答上来这三个问题，恭喜你，你可以去奶试炼了（bushi）。</p>
+      <p>但如果你对这些问题没有头绪，也不需要气馁，这篇文章会就这三个问题展开，一一解答你的疑惑。</p>
+      <br>
+      <h3>1.1奶妈是什么</h3>
+      <p>奶妈，即治疗者（Healer），是团队中治疗队伍并施加增减益，参与机制的支援类角色。一般而言，四人本中需要一个奶妈，12人试炼中需要两个。</p>
+      <p>你也许听说过，四人本里奶妈没有什么屁用，一坦三输出胜过奶妈多矣。此话亦真，也亦假。无论其他人怎么说，都请先相信你自己，不要被其他人的看法左右。</p>
+      <br>
+      <h4>1.2开始之前的准备</h4>
+      <p>如果你想要成优秀的奶妈，我必须先给你打个预防针：这条路上充满了艰难险阻，会遇到非常多的困难。你也许会想到要放弃，但请一定要坚持下来！</p>
+      <p>实际上，奶妈应该是三个位置中最好上手的，但是要做到精通是很困难的，我也处于是能玩，但远远达不到厉害的程度，所以再说一遍，如果有说错了的也请不要骂我qwq。</p>
+      <br>
+      <p>首先就是心态要好。这不仅仅是说因为你的过失团灭了之后，你仍然需要保持良好的心态，更为关键的是，无论队友是不是因为你的错误而死，你都需要保持冷静并且随时做好救场的准备。</p>
+      <p>mephisto_z大佬曾指出，坦克遇到危机关头不要慌，坦克慌了基本就要黄了。这对奶妈而言其实也一样，你能否在危急关头出合适的buff（如开屏障）？你能否致命时机送上救命的一口奶？这些都考验你对机制的熟悉、理解程度和心理素质。</p>
+      <p>其实吧，和输出不同，坦克和奶妈更像是站在幕后默默付出的工具人。坦奶们可能不会有那种像输出一样毛到了全队最高的高光时刻，更多的时间都是在维持自己的循环，做着无言的buff机，但是，正是坦奶们默默的付出，为输出们创造了相对稳定的输出环境和良好的buff条件，也才有输出们一次次的突破自我。你也选择了奶妈这条默默付出的道路，请允许我对你说：你是一个高尚的人。</p>
+      <br>
+      <h3>1.3 奶妈需要干什么</h3>
+      <p>让我们欣赏一组大佬们的总结：</p>
+      <br>
+      <p>奶妈可以当成是奶人版的法系输出。——科学</p>
+      <br>
+      <p>你把队友当做桩子，hot当成dot，给队友的buff当做给怪上的debuff，这样就好理解了。——天佑破晓</p>
+      <br>
+      <p>从大佬们的话中发现了什么？奶妈和输出有共通之处，或者更进一步，奶妈也是输出，只不过输出的对象是队友。</p>
+      <p>我们都知道，输出在战斗时需要干什么？当然是对怪输出了。非常好！那么请问，奶妈在战斗时需要干什么？当然是对队友输出啦，也就是奶人。</p>
+      <p>你这么想就大错特错了，要我说，奶妈的工作并不是单纯奶人，而是在确保自己生存的情况下奶人。</p>
+      <p>为什么？我们反过来想想，奶妈死了会出现什么情况？</p>
+      <p>如果奶妈死了，输出和坦克会失去治疗来源，如果地上有大量dot或出现高额直伤，很容易接连减员导致团灭。所以，请务必在确保自己生存的情况下奶人。</p>
+      <p>如果治疗对你已经不是难题，你应该思考如何增益队友，为队友创造良好的输出环境。</p>
+      <p>其中，增益包括对于队友的buff与对于怪的debuff，我们举几个例子：</p>
+      <br>
+      <p><b>①进攻类buff：</b>如高级力量、高级勇气、次级预知，能直接提升队伍输出</p>
+      <p><b>②防御型buff：</b>如高级信念，次级守护、次级坚毅，能够增加队伍容错</p>
+      <p><b>③对怪物的debuff：</b>如高级破甲、怯懦、次级脆弱，直接作用于怪物，能帮助提升输出或者减轻队伍压力</p>
+      <p><b>④对队伍的支援类buff：</b>如利刃头给队友回资源、高级智慧buff和给队友推球</p>
+      <p><b>⑤护盾：</b>这个会在之后详细讲解</p>
+      <br>
+      <p>你需要调整自己的装备和技能来使队伍buff最大化，例如，试炼中坦克和奶妈会沟通好自己要穿什么带什么技能。例如，队伍里有死灵坦，他带了冰川巨像（俗称胖子），那么奶妈就不需要穿大德鲁伊德维里克了。</p>
+      <p>如果buff已经选好了，你所需要做的就是在战斗期间维持buff，然后，你就会发现，干，奶妈怎么这么忙！</p>
+      <p>是的呢，不忙还能叫奶妈吗？奶妈是没有时间摸鱼的。只要稍微摸一摸鱼，buff覆盖率就会很直观地反映出来。我见过最炸裂的一个窝登奶，做到了7%的高级信念（只在开始的时候放了一次冰甲），20%的次级坚毅（正常情况下应该是100%），虽然是极端状况，但还是希望大家引以为戒。</p>
+      <p>如果你已经能维持相当不错的buff覆盖了，你可以去尝试试更高难度的内容挑战自己了！本教程完（不是）。</p>
+      <br>
+      <p>这才是刚刚开始呢！让我们进入下一个部分，正式开始你的奶妈之路。</p>
+      <br>
+      <h3>1.4 奶妈的种族、加点、梦达斯、食物选择</h3>
+      <p>首先说明一点，和其他PVE内容一样，如果你并不追求极致，那种族并不会成为障碍，你可以自由选择你喜欢的种族。</p>
+      <br>
+      <p>比较适合的种族有：布莱顿人、亚龙人和高精灵，亮点如下：</p>
+      <p>布莱顿人：2310法抗；130点额外回蓝；7%法术减耗</p>
+      <p>亚龙人：造成的治疗提升6%；饮用药水时，回复3125生命、魔力和耐力，人称小三回</p>
+      <p>高精灵：258点法伤；使用技能时，回复数值较低的一项资源</p>
+      <br>
+      <p><b>加点：</b>64点蓝（这跟法系输出是共通的）</p>
+      <br>
+      <p><b>CP：</b></p>
+      <p>绿CP：无影响，可自由选用。</p>
+      <p>蓝CP：</p>
+      <p>一定需要的CP：复苏、迅速新生和抚慰浪潮。</p>
+      <p>剩下一个可以灵活选择，例如战斗技巧加爆伤（虽说奶妈一般不堆暴击）、命悬一线在危急关头给盾、预知在嗑药多的时候有奇效，等等等等。</p>
+      <p>红CP：</p>
+      <p>可以选用无限活力和强化加最大血量和护甲，矫健和专家闪避可以不耗耐挣脱和翻滚。</p>
+      <p>我自己是挺担心资源问题的，所以我会带虹吸法术和血腥复苏。</p>
+      <p>此外，强烈推荐敏捷，不仅在需要大量走位的情况下更占优，平常跑图用起来也很舒服，不论我玩什么这个都是必带的。</p>
+      <br>
+      <p><b>梦达斯：</b></p>
+      <p>奶妈一般选择仪式座增加治疗量，蓝量不够选择侍灵座回蓝。</p>
+      <br>
+      <p><b>食物：</b></p>
+      <p>我没想到的是，这一点也能引发很大的争议。不过，从侧面上也能看出其重要性。</p>
+      <p>首先，不管你是多少级，我都建议你维持身上有食物增益，最差也应该是加蓝上限的食物，因为蓝量会影响法术伤害，从而影响你的治疗量。</p>
+      <p>我个人很推荐那种同时加血加蓝的食物，比如说独孤城粟米三文鱼汤，兼具回蓝效果的也不错，例如强效巫母之酿和发条青柑肉片（假如吃得起的话）。</p>
+      <p>不过，在没有资源压力的状况下，我尤其推荐骷髅糖。跟发条青柑肉片比起来，它不仅能加更多血和蓝，也就是说，更高的治疗量和更高的容错，更为重要的是，它还会加耐力上限。这对需要经常翻滚躲伤害的场合颇为友好。</p>
+      <br>
+      <h2>1.5 奶妈的技能</h3>
+      <p>我们首先解释一些专有名词。</p>
+      <p>Hot，即healing over time，持续治疗效果</p>
+      <p>Hps，即healing per second，每秒治疗量</p>
+      <p>Aoh，即area of healing，治疗区域</p>
+      <p>瞬抬，瞬间治疗</p>
+      <p>Spam，在dot（类比奶妈就是hot）生效期间一直使用的输出（治疗）技能</p>
+      <p>Buff，对队友施加的增益效果</p>
+      <p>Debuff，对怪施加的减益效果</p>
+      <p>重击，这里默认是完全蓄力的重攻击</p>
+      <br>
+      <h4>技能分类</h4>
+      <p><b>①瞬抬技能：</b>瞬间回血。例如奶杖三砸地、圣殿生命之息、窝登蘑菇。</p>
+      <p><b>②地面技能：</b>在地面施放的技能，想要换位置只能重新铺设。比如奶圈、圣殿净化圈、龙骑火山灰、窝登花圈。一般都是hot技能，不过花圈最后有一个瞬抬效果。</p>
+      <p><b>③Buff奶：</b>挂在队友身上的奶技，不用担心队友走位奶不到。如奶线、黄伟哥。</p>
+      <p><b>④Buff技能：</b>给队友上buff用的。比如龙骑火岩武器、窝登冰甲、圣殿灿烂光环。</p>
+      <p><b>⑤Debuff技能：</b>对怪使用。如剑盾穿透护甲，死灵大招胖子，窝登的苍蝇。</p>
+      <p><b>⑥护盾技能：</b>给队友上护盾，相当于额外血条。注意：有护盾的情况下，如果血量降为0还是会死；湮灭伤害无视护盾。如无畏骨浪、龙骑破碎之盾、奶杖盾和屏障。</p>
+      <p><b>⑦辅助类技能：</b>给队友回资源，比如圣殿投矛和无畏推球，或者是实现特定效果，比如用心火嘲讽。</p>
+      <p><b>⑧其他技能：</b>诸如死灵复活大，龙骑无敌，不在讨论范围内。</p>
+      <br>
+      <p>在前面，我们讲过奶妈需要调整自己的装备和技能来使队伍buff收益最大化，因此选择什么样的技能，怎样选择技能就成了一个重要的问题。那么，就让我们进入下一步，窝登奶的技能选择。</p>
+      <br>
+      <h2>2.窝登奶技能选择</h2>
+      <p>这里只介绍可能会用到的技能，其他技能等你发挥。</p>
+      <br>
+      <h3>职业-动物伙伴</h3>
+      <table border="0">
+        <tr>
+          <td><img src="res/Feral_Guardian.png"></td>
+          <td><p>大招熊，两个进阶都可选用，单人做任务的时候可以带，或者是挂着蹭被动（这种情况下这个大招就是废的，熊占主副手两个格子）。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Deep_Fissure.png"></td>
+          <td><p>灼烧进阶为深海撕裂，帮助团队上大小破甲（一般是坦克提供）。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Swarm.png"></td>
+          <td><p>虫群，两个进阶都可选用，提供次级脆弱debuff。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Betty_Netch.png"></td>
+          <td>
+            <p>雌性气母，一个技能同时解决资源问题和法术伤害问题，不消耗资源的同时还附带净化效果，堪称神技。根据资源选回蓝回耐进阶。窝登奶大概率带的技能。</p>
+            <p>P.S.如果资源不够没法治疗自己，可以靠狂搓气母蹭回血被动苟命。狂搓气母也可以消除自己的debuff。</p>
+            <p>一个争议点：气母究竟是不是必需的？如果你打hm甚至三合一，大力丸是当水喝的，气母提供双伤的作用大大降低，为了队伍buff大概率会下掉；但如果平时打本只喝渣蓝，为了维持双伤面板，气母就是必需的。</p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="res/Falcons_Swiftness.png"></td>
+          <td><p>猎鹰迅捷，很少带，需要移速时可以考虑，但仅针对自身，无法增益队友，不推荐。</p></td>
+        </tr>
+      </table>
+      <p>所有被动都要点。</p>
+      <br>
+      <h3>职业-绿色平衡</h3>
+      <table border="0">
+        <tr>
+          <td><img src="res/Secluded_Grove.png"></td>
+          <td><p>大招种树，终极点消耗非常少，因此诞生出了一种种树窝登流。不过PVE里，一般是用号角+屏障的组合，种树用得不多（但由于其流转快，仍然可选）。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Enchanted_Growth.png"></td>
+          <td><p>真菌增长，俗称蘑菇，一般进阶为神奇生长，为受治疗的队友提供小回蓝回耐buff，但注意它的范围是扇形，治疗时需要离人群稍远，不如奶杖3砸地直观。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Budding_Seeds.png"></td>
+          <td><p>治疗之种进阶为萌发之种，既是hot，又是瞬抬，还有协同效果，窝登奶必带技能！</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Living_Vines.png"></td>
+          <td><p>藤蔓生物，进阶为吸血藤蔓在PvP中常用，花棚生物在短期内受到大量伤害的环境可以考虑，但因为施加判定非常令人恼火加之只在少数情况下有奇效，总体不常用。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Lotus_Flower.png"></td>
+          <td><p>莲花，这里提一嘴，因为少数情况下可以用它拿高级预知buff，同时轻重击都能治疗队友，不过不常用就是了。</p></td>
+        </tr>
+      </table>
+      <p>所有被动都要点。尤其是最后的熟成进阶提供次级坚毅buff，就因为这一个被动，窝登奶成为了试炼中不可替代的角色，这也是我认为窝登是最强奶妈的缘故。</p>
+      <br>
+      <h3>职业-凛冬之拥</h3>
+      <table border="0">
+        <tr>
+          <td><img src="res/Frost_Cloak.png"></td>
+          <td>
+            <p>寒霜斗篷，进阶为大寒霜斗篷，给36米范围内队友上高级信念buff，仅此一家。窝登奶必带技能。</p>
+            <p>另一个进阶寒霜堡垒一般是坦克带或者PVP使用，奶妈带的话范围过小覆盖不够。</p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="res/Polar_Wind.png"></td>
+          <td><p>极地之风，用得很少，一般是坦克用来回血。进阶强劲极风很难奶到队友，且治疗量受生命上限影响，奶妈基本不会带。</p></td>
+        </tr>
+      </table>
+      <p>所有被动都要点。</p>
+      <br>
+      <h3>武器-毁灭法杖</h3><p>（奶妈把奶杖作为主手毁灭法杖作为副手，我副手一直都带冰杖，后面装备篇会我讲解冰杖和电杖的区别）</p>
+      <table border="0">
+        <tr>
+          <td><img src="res/Crushing_Shock.png"></td>
+          <td><p>力量冲击，进阶为破碎电击，带打断词条，用于远程打断。单人做任务的时候可以作为spam技能。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Elemental_Blockade.png"></td>
+          <td><p>元素之墙，进阶为元素封锁，用于触发冰杖附魔，并且给盾。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Elemental_Susceptibility.png"></td>
+          <td><p>元素虚弱，进阶为元素易伤，对怪施加高级破甲并给予异常状态，只有在需要提供破甲时才用带。</p></td>
+        </tr>
+      </table>
+      <p>所有被动都要点。</p>
+      <p>注意三杖专精点了之后格挡耗蓝，不过由于重击给盾，个人还是十分推荐点的。</p>
+      <br>
+      <h3>武器-恢复法杖</h3>
+      <table border="0">
+        <tr>
+          <td><img src="res/Panacea.png"></td>
+          <td><p>大招灵丹妙药是废物，不用管它。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Healing_Springs.png"></td>
+          <td><p>大治疗术，如果用大师奶必带，但即使不是大师奶也推荐带。可以进阶为杰出的治疗增加持续时间，但更推荐新手进阶为治疗之泉增加回蓝，我属于很怕缺资源的那种人，所以一直用的治疗之泉。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Radiating_Regeneration.png"></td>
+          <td><p>再生，进阶为辐射再生，俗称奶线，无论队友站在如何偏难怪的位置都能奶到，并且是挂在身上的buff类奶技，非常适合走位的时候施放。奶妈必带技能。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Combat_Prayer.png"></td>
+          <td><p>守护祝福，进阶为战斗祈祷，俗称砸地，不限人数瞬抬，并施加次级狂怒和次级信念buff，奶妈必带技能。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Healing_Ward.png"></td>
+          <td><p>坚固结界，似乎经常用进阶治疗结界，为什么这么说？因为奶杖盾给的盾量非常可怜，只有目标伤势严重的情况下护盾才会更强。所以一般是不带这个技能的，如果要带也是搭配黑玫瑰奶杖施加高级活力buff使用。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Force_Siphon.png"></td>
+          <td><p>力量虹吸，一般没有用。</p></td>
+        </tr>
+      </table>
+      <p>所有被动都要点。</p>
+      <br>
+      <p><b>护甲线</b>：穿什么点什么，如果你穿三种甲蹭无畏被动的话，建议全点。</p>
+      <br>
+      <h3>公会-斗士公会</h3>
+      <table border="0">
+        <tr>
+          <td><img src="res/Ring_of_Preservation.png"></td>
+          <td><p>守护之环（Ring of Protection），进阶为守护之环（Ring of Preservation），少见的耐系hot技能，美中不足的是范围实在太小。</p></td>
+        </tr>
+      </table>
+      <p>根据需要点被动。</p>
+      <br>
+      <h3>公会-无畏者</h3>
+      <table border="0">
+        <tr>
+          <td><img src="res/Overflowing_Altar.png"></td>
+          <td><p>鲜血祭坛，进阶为满溢祭坛，属于放着就不用管了的的技能，谁没有吃到是他自己的事情。奶妈大概率带的技能。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Inner_Rage.png"></td>
+          <td><p>内心之火，进阶为怒火中烧，少数情况下奶妈需要嘲怪时用，建议练一个备着。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Bone_Surge.png"></td>
+          <td><p>白骨盾牌进阶为骨浪，因为护盾效果受生命上限影响，更多情况是坦克带，但还是建议练一个备着。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Energy_Orb.png"></td>
+          <td><p>死灵法球，进阶为能量法球，俗称推球，协同可以给队友回资源。除了圣殿不强制（还是建议带上，投矛只能一个人激活协同），其他所有奶妈都必须带的技能，谁不带我压力谁。</p></td>
+        </tr>
+      </table>
+      <p>无畏被动这么香，不需要多说，必点。</p>
+      <br>
+      <h3>联盟战争-突袭</h3>
+      <table border="0">
+        <tr>
+          <td><img src="res/Aggressive_Horn.png"></td>
+          <td><p>战争号角，进阶为进攻号角，提升队伍资源上限并且给高级力量buff，奶妈必带技能。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Echoing_Vigor.png"></td>
+          <td><p>活力，进阶为回响活力，俗称黄伟哥，高贵的挂在身上的buff类奶技，而且耗耐，可以平衡法耐消耗。奶妈大概率带的技能。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Charging_Maneuver.png"></td>
+          <td><p>快速机动，进阶为冲锋行动，提升移速用，耗耐惊人，注意资源消耗。</p></td>
+        </tr>
+      </table>
+      <p>持续攻击是一定会点的，不用多说。</p>
+      <br>
+      <h3>联盟战争-支援</h3>
+      <table border="0">
+        <tr>
+          <td><img src="res/Replenishing_Barrier.png"></td>
+          <td><p>屏障，两个进阶均可选用，复活屏障带hot效果，滋养屏障大招流转加快。高难本下承伤高，屏障持续时间低，更推荐滋养屏障。奶妈必带技能。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Purge.png"></td>
+          <td><p>净化，为队友祛除debuff，用得较少。耗蓝较多。</p></td>
+        </tr>
+        <tr>
+          <td><img src="res/Mystic_Guard.png"></td>
+          <td><p>守卫，进阶为神秘守卫，帮队友扛伤害。少数情况下用。</p></td>
+        </tr>
+      </table>
+      <p>带屏障需要点魔力援助被动。</p>
+      <br>
+      <p><b>种族技能</b>必点。</p>
+      <br>
+      <p><b>制作技能</b>看需求点，炼金药用被动能增加药水持续时间，需要点满。</p>
+      <br>
+      <p>我在这里给出我的技能组，以供大家参考.不过，这些技能的选用都是我的个人喜好，大家可以根据实际情况调整。例如，你可以把血盆下了换成其他技能，如果蓝量充足也可以不带气母。但其他技能一般是需要的。</p>
+      <p>P.S.我这里纯粹是按自己怎么舒服怎么来，如果追求极致，可以把气母跟大寒霜斗篷换个位置。气母放主手，大寒霜斗篷放副手，可使主手回蓝更高，副手双抗更高，从而实现收益最大化。我这么放纯粹是因为习惯了，而且我平时的内容也不需要如此抠细节，但如果你追求HM或三合一等高难度内容，你可以在此方面多多加以考虑。</p>
+      <br>
+      <table border="0">
+        <tr>
+          <td><img src="res/Frost_Cloak.png" width="48"></td>
+          <td><img src="res/Healing_Springs.png" width="48"></td>
+          <td><img src="res/Combat_Prayer.png" width="48"></td>
+          <td><img src="res/Budding_Seeds.png" width="48"></td>
+          <td><img src="res/Radiating_Regeneration.png" width="48"></td>
+          <td><img src="res/Replenishing_Barrier.png" width="48"></td>
+        </tr>
+        <tr>
+          <td><img src="res/Energy_Orb.png" width="48"></td>
+          <td><img src="res/Echoing_Vigor.png" width="48"></td>
+          <td><img src="res/Overflowing_Altar.png" width="48"></td>
+          <td><img src="res/Elemental_Blockade.png" width="48"></td>
+          <td><img src="res/Blue_Betty.png" width="48"></td>
+          <td><img src="res/Aggressive_Horn.png" width="48"></td>
+        </tr>
+      </table>
+      <br>
+      <h2>3.装备选择</h2>
+      <p>在前面我们已经提到，你需要调整自己的装备和技能来使队伍buff最大化，这就导致奶妈的装备实际上是很固定的。</p>
+      <p>例如在试炼中，两个奶妈一个人穿spcpp，另一个人穿rojo，这种情况下收益最大（也有用建筑大师提供高级杀戮buff的搭配）。</p>
+      <p>穿法力治愈+劫掠者的奶妈被称为spcpp奶（简称spc奶），穿决胜时机+约尔沃德的指引的奶妈则被称为rojo奶。</p>
+      <p>在有些情况下，需要有人在站人群外将伤害带出人群，如rg的一王二王。这种情况被称为kite。一般来说，会让spc奶当kite奶，因为rojo奶重击触发高级杀戮有距离限制，去kite可能导致高级杀戮无法覆盖所有人；而spc高级勇气只需要过度治疗，触发简单，更适合作为kite奶。</p>
+      <p>因为我玩的是亚龙人，没有额外的法伤加成，在只有自身高级巫术而没有任何其他法伤buff的情况下高级杀戮持续时间只有16.4秒，所以我猜这是其中一个考量因素。</p>
+      <p>所以，在四人本中，奶妈一般不考虑rojo，但在spc的基础上，奶妈的选择更自由，如法力治愈+建筑大师、法力治愈+强力突袭，也可以选择法力治愈+撒西勒勇士（不过撒西勒似乎坦克穿得更多），可以根据需要选择。</p>
+      <p>（其他穿法也不是不行，但对团队总体增益而言没有那么优秀。）</p>
+      <p>下面是几种常用的装备。</p>
+      <br>
+      <div>
+        <center><table sytle="text-align: center; width: 100%; max-width: 600px; overflow-x: auto; display: block;">
+          <tr sytle="text-align: center;">
+            <td><p>名称</p></td>
+            <td><p>效果</p></td>
+            <td><p>类型</p></td>
+            <td><p>分析</p></td>
+          </tr>
+          <tr>
+            <td>法力治愈</td>
+            <td><img src="res/Spell_Power_Cure.png" alt="法力治愈"></td>
+            <td>轻甲</td>
+            <td>白金塔是15年帝都DLC的装备，到现在仍然是奶妈毕业装xD</td>
+          </tr>
+          <tr>
+            <td>劫掠者的收获</td>
+            <td><img src="res/Pillagers_Profit.png" alt="劫掠者的收获"></td>
+            <td>轻甲</td>
+            <td>官中翻译有误，我这里渣翻一下：“5件套：在战斗中施放一项终极技能时，每2秒向12米范围内的其他11名队友提供相当于你所消耗数5%的终极点，至多20点，持续10秒。每45秒内你的队友只能受到一次该套装效果增益。”</td>
+          </tr>
+          <tr>
+            <td>决胜时机</td>
+            <td><img src="res/Roaring_Opportunist.png" alt="决胜时机"></td>
+            <td>轻甲</td>
+            <td>需要搭配约尔沃德的指引使用，否则不如不用（本人真实感受）</td>
+          </tr>
+          <tr>
+            <td>约尔沃德的指引</td>
+            <td><img src="res/Jorvulds_Guidance.png" alt="约尔沃德的指引"></td>
+            <td>轻甲</td>
+            <td>主要用于延长决胜时机效果至16.8秒，此外延长增益时间，让你少按几次技能，留时间抽重击</td>
+          </tr>
+          <tr>
+            <td>建筑大师</td>
+            <td><img src="res/Master_Architect.png" alt="建筑大师"></td>
+            <td>轻甲</td>
+            <td>四人本常用，试炼用则需要两个人（OT和工具人）使用保证全覆盖</td>
+          </tr>
+          <tr>
+            <td>强力突袭</td>
+            <td><img src="res/Powerful_Assault.png" alt="强力突袭"></td>
+            <td>中甲</td>
+            <td>注意是中甲，只取首饰和冰杖</td>
+          </tr>
+        </table></center>
+      </div>
+      <br>
+      <p>下面是一些不主流的装备，但也可以考虑使用。</p>
+      <br>
+      <div>
+        <center><table <table sytle="text-align: center;">
+          <tr sytle="text-align: center;">
+            <td><p>名称</p></td>
+            <td><p>效果</p></td>
+            <td><p>类型</p></td>
+            <td><p>分析</p></td>
+          </tr>
+          <tr>
+            <td>奥尔奥瑞姆的法衣</td>
+            <td><img src="res/Vestment_of_Olorime.png" alt="奥尔奥瑞姆的法衣"></td>
+            <td>轻甲</td>
+            <td>理论上说应该是spc的上位替代，但实际上不如spc方便；但在雯妈眼中，可以<del>变废为宝</del>给坦克合理利用</td>
+          </tr>
+          <tr>
+            <td>空心牙之渴</td>
+            <td><img src="res/Hollowfang_Thirst.png" alt="空心牙之渴"></td>
+            <td>轻甲</td>
+            <td>时代的眼泪，当前版本不太缺资源，所以资源套的重要性下降</td>
+          </tr>
+          <tr>
+            <td>凛冬之憩</td>
+            <td><img src="res/Winters_Respite.png" alt="凛冬之憩"></td>
+            <td>轻甲</td>
+            <td>非常推荐的新手过渡套，弥补初期CP不够导致治疗量不足的问题，而且地图套可以买，价格也较为低廉（但不推荐老登用这套，因为只是纯加血而无法提供buff，经常看到CP2000+的老外用，看着就很不专业的样子）</td>
+          </tr>
+        </table></center>
+      </div>
+      <br>
+      <p>下面是一些常用的怪物头。</p>
+      <br>
+      <div>
+        <center><table <table sytle="text-align: center;">
+          <tr sytle="text-align: center;">
+            <td><p>名称</p></td>
+            <td><p>效果</p></td>
+            <td><p>类型</p></td>
+            <td><p>分析</p></td>
+          </tr>
+          <tr>
+            <td>大德鲁伊德维里克</td>
+            <td><img src="res/Archdruid_Devyric.png" alt="大德鲁伊德维里克"></td>
+            <td>怪物套</td>
+            <td>重击可以提供高级脆弱，Rojo可以考虑</td>
+          </tr>
+          <tr>
+            <td>地血</td>
+            <td><img src="res/Earthgore.png" alt="地血"></td>
+            <td>怪物套</td>
+            <td>移除AoE效果</td>
+          </tr>
+          <tr>
+            <td>娜扎莱</td>
+            <td><img src="res/Nazaray.png" alt="娜扎莱"></td>
+            <td>怪物套</td>
+            <td>一般是坦克带，但奶妈的大招流转快，也可以考虑使用</td>
+          </tr>
+          <tr>
+            <td>夜焰</td>
+            <td><img src="res/Nightflame.png" alt="夜焰"></td>
+            <td>怪物套</td>
+            <td>纯补血头，可以拿来过渡</td>
+          </tr>
+          <tr>
+            <td>炼狱奥泽赞</td>
+            <td><img src="res/Ozezan_the_Inferno.png" alt="炼狱奥泽赞"></td>
+            <td>怪物套</td>
+            <td>过量治疗给护甲和次级活力，极大提升队伍生存能力，个人非常推荐</td>
+          </tr>
+          <tr>
+            <td>利刃交响曲</td>
+            <td><img src="res/Symphony_of_Blades.png" alt="利刃交响曲"></td>
+            <td>怪物套</td>
+            <td>应该是全游戏最强的资源套</td>
+          </tr>
+        </table></center>
+      </div>
+      <br>
+      <p>下面是一些常用的古物和竞技场武器。</p>
+      <br>
+            <div>
+        <center><table <table sytle="text-align: center;">
+          <tr sytle="text-align: center;">
+            <td><p>名称</p></td>
+            <td><p>效果</p></td>
+            <td><p>类型</p></td>
+            <td><p>分析</p></td>
+          </tr>
+          <tr>
+            <td>盛大复苏</td>
+            <td><img src="res/Grand_Rejuvenation.png" alt="盛大复苏"></td>
+            <td>奶杖</td>
+            <td>搭配大治疗术使用，使奶圈同时具有回少量资源的作用（施放时才给盛大复苏buff）</td>
+          </tr>
+          <tr>
+            <td>治疗师结界</td>
+            <td><img src="res/Menders_Ward.png" alt="治疗师结界"></td>
+            <td>奶杖</td>
+            <td>搭配坚固结界使用，可以用于ss奶冰墓</td>
+          </tr>
+          <tr>
+            <td>毁灭肩甲</td>
+            <td><img src="res/Spaulder_of_Ruin.png" alt="毁灭肩甲"></td>
+            <td>轻甲-肩部</td>
+            <td>牺牲自己资源，给队友双伤，一般是Rojo奶带</td>
+          </tr>
+          <tr>
+            <td>埃尔诺菲的珍珠项链</td>
+            <td><img src="res/Pearls_of_Ehlnofey.png" alt="埃尔诺菲的珍珠项链"></td>
+            <td>项链</td>
+            <td>通过控制自己的蓝量在50%以下快速获得终极点，一般是spc奶带，可以使用奶线刷U，注意耐系奶技也可触发（如黄伟哥）</td>
+          </tr>
+        </table></center>
+      </div>
+      <br> 
+      <center><p>思考题，为什么石头盟约这套装备不常用？</p></center>
+      <center><img src="res/Stones_Accord.png" alt="石头盟约"></center>
+      <center><button id="button" style="user-select:none;" onClick="showAnswer()">点击显示参考答案</button></center>
+      <center><p id="answer"></p></center>
+      <br>
+      <p>至于装备的穿着，也和其他位置搭配一样遵循“三选二”原则，即：怪物套、古物和竞技场武器三种装备中最多只能选两种。</p>
+      <p>下面给出我的装备搭配。</p>
+      <br>
+      <table class="defaultTable">
+        <tr>
+          <td><b>头部</b></td>
+          <td>炼狱奥泽赞面甲</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>肩部</b></td>
+          <td>炼狱奥泽赞护肩</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>胸部</b></td>
+          <td>约尔沃德的指引长袍</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>手部</b></td>
+          <td>约尔沃德的指引手套</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>腰部</b></td>
+          <td>约尔沃德的指引饰带</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>腿部</b></td>
+          <td>约尔沃德的指引长裤</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>脚部</b></td>
+          <td>约尔沃德的指引鞋子</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>项链</b></td>
+          <td>决胜时机的完美护符</td>
+          <td>注魔</td>
+          <td><span style="color: gold;">真正超凡提高魔法损害雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>戒指1</b></td>
+          <td>决胜时机的完美戒指</td>
+          <td>注魔</td>
+          <td><span style="color: gold;">真正超凡提高魔法损害雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>戒指2</b></td>
+          <td>决胜时机的完美戒指</td>
+          <td>注魔</td>
+          <td><span style="color: gold;">真正超凡提高魔法损害雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>主手武器</b></td>
+          <td>大师完美恢复法杖</td>
+          <td>动力</td>
+          <td><span style="color: gold;">真正超凡武器伤害雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>副手武器</b></td>
+          <td>完美决胜时机寒冰法杖</td>
+          <td>注魔</td>
+          <td><span style="color: gold;">真正超凡削弱雕文</span></td>
+        </tr>
+      </table>
+      <br>
+      <table class="defaultTable">
+        <tr>
+          <td><b>头部</b></td>
+          <td>利刃交响曲面具</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>肩部</b></td>
+          <td>利刃交响曲肩袢</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>胸部</b></td>
+          <td>初学者胸铠</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>手部</b></td>
+          <td>法力治愈手套</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>腰部</b></td>
+          <td>完美劫掠者饰带</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>腿部</b></td>
+          <td>法力治愈长裤</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>脚部</b></td>
+          <td>法力治愈足履</td>
+          <td>神性</td>
+          <td><span style="color: gold;">真正超凡魔力雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>项链</b></td>
+          <td>埃尔诺菲的珍珠项链</td>
+          <td>奥术</td>
+          <td><span style="color: gold;">真正超凡魔力回复雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>戒指1</b></td>
+          <td>完美劫掠者指环</td>
+          <td>奥术</td>
+          <td><span style="color: gold;">真正超凡魔力回复雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>戒指2</b></td>
+          <td>完美劫掠者指环</td>
+          <td>奥术</td>
+          <td><span style="color: gold;">真正超凡魔力回复雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>主手武器</b></td>
+          <td>法力治愈恢复法杖</td>
+          <td>动力</td>
+          <td><span style="color: gold;">真正超凡武器伤害雕文</span></td>
+        </tr>
+        <tr>
+          <td><b>副手武器</b></td>
+          <td>完美劫掠者寒冰法杖</td>
+          <td>注魔</td>
+          <td><span style="color: gold;">真正超凡削弱雕文</span></td>
+        </tr>
+      </table>
+      <br>
+      <p>身体特质一律选择神性，附魔法力上限。</p>
+      <p>珠宝特质和附魔较为自由，特质可以选奥术或注魔，附魔可以选择提升法术伤害附魔或魔力回复附魔。</p>
+      <p>副手武器我一般会带冰杖，因为冰杖重击给盾，冰墙提供投射物护盾、次级破甲debuff和减速效果，装备冰杖时格挡耗蓝且有格挡减耗效果，个人比较喜欢。</p>
+      <p>电杖也是可以考虑的，因为电杖能为团队提供失衡效果。不过，由于电杖重击无法蓄力，所以rojo一般用冰杖，spcpp可考虑电杖。</p>
+      <p>P.S.少数build，如ec死灵奶，副手可能会使用火杖。</p>
+      <p>至于武器特质和附魔，主手奶杖我一般用动力+武器伤害，决意和吸蓝的组合也是可以的；副手我一般用注魔+削弱，因为破甲附魔可以由坦克提供。</p>
+      <br>
+      <h2>4.个人心得</h2>
+      <p>下面是我个人玩奶妈的一些心得。</p>
+      <p>This page is under construction.</p>
+      <br>
+      <p>创建时间：2024/10/26</p>
+      <p>上次修订时间：2024/05/30</p>
+  <button id="backToTop" onclick="scrollToTop()">↑</button>
+  <script>
+    const backToTopButton = document.getElementById("backToTop");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.classList.add("show");
+      } else {
+        backToTopButton.classList.remove("show");
+      }
+    };
+</script>
+  </div>
+</body>
+</html>
