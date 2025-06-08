@@ -7,10 +7,14 @@ a:visited {
   color: black;
 }
 
-img {
+img:not(table img) {
   max-width: min(100%, 600px);
   margin: 0 auto;  
   display: block;
+}
+
+table img {
+  max-width: 64px;
 }
 
 .normalLink {
