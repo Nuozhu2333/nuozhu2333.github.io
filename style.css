@@ -7,7 +7,7 @@ a:visited {
   color: black;
 }
 
-img:not(table img){
+img {
   max-width: min(100%, 600px);
   margin: 0 auto;  
   display: block;
