@@ -95,16 +95,16 @@ function showTooltip(intent) {
             content = "<center><font style=\'align:center; color: gold;\'>完美穿刺疗愈</font></center><br>（2件完美套）增加3％受到的治疗<br>（2件套）当你用穿刺造成伤害时，你将治疗自身2653点生命，并获得相当于治疗量或过度治疗量的法术和物理抗性，持续5秒。治疗受你的生命上限影响。";
             break;
           case "法力治愈":  
-            content = "<center><font style=\'align:center; color: gold;\'>法力治愈</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>法力治愈</font></center><br>（2件套）增加1096魔力上限<br>（3件套）增加1096魔力上限<br>（4件套）增加129武器伤害和法术伤害<br>（5件套）当你对自己或盟友过量治疗时，治疗目标会获得高级勇气，使其武器伤害和法术伤害提高430，持续5秒。";
             break;
           case "完美劫掠者的收获":  
-            content = "<center><font style=\'align:center; color: gold;\'>完美劫掠者的收获</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>完美劫掠者的收获</font></center><br>（2件套）增加4%造成的治疗<br>（3件套）永久获得次级庇护，使你在地下城、试炼和竞技场中受到的怪物伤害降低5%。<br>（4件套）增加1096魔力上限<br>（5件完美套）增加129魔力恢复<br>（5件套）战斗中施放终极技能时，将消耗的终极点的2%分配给12米内最多11名其他队伍成员，每2秒触发一次，持续10秒。队伍成员每45秒只能受此套装增益一次。";
             break;
           case "完美决胜时机":  
-            content = "<center><font style=\'align:center; color: gold;\'>完美决胜时机</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>完美决胜时机</font></center><br>（2件套）增加1487攻击穿透<br>（3件套）永久获得次级杀戮，使你对地下城、试炼、竞技场怪物造成的伤害提高5%<br>（4件套）增加129武器伤害和法术伤害<br>（5件完美套）增加1096魔力上限<br>（5件套）完成蓄满力的重攻击之后，你和最多5名小队成员获得高级杀戮，对地下城、试炼、竞技场怪物造成的伤害提高10%，每600法术伤害或拥有6300魔力可使效果持续1秒。每个目标每22秒仅能受到一次决胜时机影响。最多持续12秒。";
             break;
           case "约尔沃德的指引":  
-            content = "<center><font style=\'align:center; color: gold;\'>约尔沃德的指引</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>约尔沃德的指引</font></center><br>（2件套）增加129魔力恢复<br>（3件套）增加129魔力恢复<br>（4件套）增加4%造成的治疗<br>（5件套）战斗时，所有你对自己和友方施加的高级增益、次级增益和伤害护盾的持续时间提高40%。";
             break;
           case "建筑大师":  
             content = "<center><font style=\'align:center; color: gold;\'>建筑大师</font></center><br>";
@@ -134,7 +134,7 @@ function showTooltip(intent) {
             content = "<center><font style=\'align:center; color: gold;\'>利刃交响曲</font></center><br>";
             break;
           case "完美盛大复苏":  
-            content = "<center><font style=\'align:center; color: gold;\'>完美盛大复苏</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>完美盛大复苏</font></center><br>（2件完美套）增加877魔力上限<br>（2件套）大治疗术的初始治疗给予你和受影响的队伍成员盛大复苏，持续6秒，每2秒回复224点魔力和耐力。";
             break;
           case "完美治疗师结界":  
             content = "<center><font style=\'align:center; color: gold;\'>完美治疗师结界</font></center><br>";
@@ -143,10 +143,10 @@ function showTooltip(intent) {
             content = "<center><font style=\'align:center; color: gold;\'>毁灭肩甲</font></center><br>";
             break;
           case "埃尔诺菲的珍珠项链":  
-            content = "<center><font style=\'align:center; color: gold;\'>埃尔诺菲的珍珠项链</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>埃尔诺菲的珍珠项链</font></center><br>（1件套）每当你在战斗中使用资源施放治疗技能，且主要资源低于50%时，获得高级英勇，持续1.5秒，每1.5秒获得3终极点。";
             break;     
           case "石头盟约":  
-            content = "<center><font style=\'align:center; color: gold;\'>石头盟约<br>（2件套）增加1096魔力上限<br>（3件套）增加4%造成的治疗<br>（4件套）增加1096魔力上限<br>（5件套）在使用范围效果治疗时，施加次级狂怒和次级信念给被治疗的盟友，持续4秒。如果被治疗的盟友已经拥有来自石头盟约的次级狂怒或次级信念，则恢复550点魔力。该项恢复每5秒可触发一次。</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>石头盟约</font></center><br>（2件套）增加1096魔力上限<br>（3件套）增加4%造成的治疗<br>（4件套）增加1096魔力上限<br>（5件套）在使用范围效果治疗时，施加次级狂怒和次级信念给被治疗的盟友，持续4秒。如果被治疗的盟友已经拥有来自石头盟约的次级狂怒或次级信念，则恢复550点魔力。该项恢复每5秒可触发一次。";
             break;
           default:
             console.log("值不在预期范围内");
