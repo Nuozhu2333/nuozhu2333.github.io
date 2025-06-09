@@ -107,40 +107,40 @@ function showTooltip(intent) {
             content = "<center><font style=\'align:center; color: gold;\'>约尔沃德的指引</font></center><br>（2件套）增加129魔力恢复<br>（3件套）增加129魔力恢复<br>（4件套）增加4%造成的治疗<br>（5件套）战斗时，所有你对自己和友方施加的高级增益、次级增益和伤害护盾的持续时间提高40%。";
             break;
           case "建筑大师":  
-            content = "<center><font style=\'align:center; color: gold;\'>建筑大师</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>建筑大师</font></center><br>（2件套）增加1096魔力上限<br>（3件套）永久获得次级杀戮，使你对地下城、试炼、竞技场怪物造成的伤害提高5%。<br>（4件套）增加129武器伤害和法术伤害<br>（5件套）当你在战斗中使用终极技能时，每消耗10点终极点，自身和周围28 米内最近的5名队伍成员就能获得1秒的高级杀，使你们对地下城、试炼、竞技场怪物造成的伤害提高10%。";
             break;
           case "完美奥尔奥瑞姆的法衣":  
-            content = "<center><font style=\'align:center; color: gold;\'>完美奥尔奥瑞姆的法衣</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>完美奥尔奥瑞姆的法衣</font></center><br>（2件套）增加129魔力恢复<br>（3件套）永久获得次级庇护，使你在地下城、试炼和竞技场中受到的怪物伤害降低5%。<br>（4件套）增加129魔力恢复<br>（5件完美套）增加1096魔力上限<br>（5件套）在战斗中施放会在地面上留下效果的技能会产生一个力量之环，持续5秒。你和圆环内的队伍成员会获得高级勇气，持续20秒，使武器伤害和法术伤害提高430，持续20秒。该效果每10秒可触发一次。";
             break;
           case "空心牙之渴":  
-            content = "<center><font style=\'align:center; color: gold;\'>空心牙之渴</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>空心牙之渴</font></center><br>（2件套）增加657暴击率<br>（3件套）增加1096魔力上限<br>（4件套）增加657暴击率<br>（5件套）对目标造成暴击治疗或暴击伤害时，在目标位置生成一个血球。2秒后血球爆炸，为你和血球6米范围内的队伍成员恢复1750魔力，并附加次级活力，持续9秒，其受到的治疗和伤害护盾强度提高6%。该效果每9秒可触发一次。";
             break;
           case "凛冬之憩":  
-            content = "<center><font style=\'align:center; color: gold;\'>凛冬之憩</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>凛冬之憩</font></center><br>（2件套）增加129魔力恢复<br>（3件套）增加1096魔力上限<br>（4件套）增加1096魔力上限<br>（5件套）在战斗中，施放可在地面上留下效果的技能时会召唤出一个治疗寒霜之环，持续10秒。在该圆环内时，每2秒可为你和队伍成员恢复1125生命。该效果每10秒可以生效一次，且受魔力上限或耐力上限中较高的数值影响。";
             break;
           case "大德鲁伊德维里克":  
-            content = "<center><font style=\'align:center; color: gold;\'>大德鲁伊德维里克</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>大德鲁伊德维里克</font></center><br>（1件套）增加1487攻击穿透<br>（2件套）使用重攻击造成伤害时，1.2秒后对目标7米乘5米区域内至多6名敌人造成650电击伤害伤害，并施加持续7秒的高级脆弱，其所受伤害提高10%。该效果每15秒仅生效一次，且受武器伤害或法术伤害中较高的数值影响。";
             break;
           case "地血":  
-            content = "<center><font style=\'align:center; color: gold;\'>地血</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>地血</font></center><br>（1件套）增加4%造成的治疗<br>（2件套）当你治疗自己或一名生命值低于50%的队伍成员时，你会在其下方召唤一个血池，立即移除所有有害范围效果，并在2秒后治疗该区域内生命值最低的队伍成员，每2秒治疗1702点生命，持续8秒。该效果每20秒可触发一次，并受魔力上限或耐力上限中较高的数值影响。";
             break;
           case "夜焰":  
-            content = "<center><font style=\'align:center; color: gold;\'>夜焰</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>夜焰</font></center><br>（1件套）增加1096魔力上限<br>（2件套）对自己或友方使用治疗技能时有20%几率召唤一个图腾，持续6秒。该图腾每1秒治疗其5米范围内的友方704生命。该效果每10秒生效一次，且受魔力上限或耐力上限中较高的一项影响。";
             break;
           case "炼狱奥泽赞":  
-            content = "<center><font style=\'align:center; color: gold;\'>炼狱奥泽赞</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>炼狱奥泽赞</font></center><br>（1件套）增加129魔力恢复<br>（2件套）对你或一名盟友造成过量治疗后，其将获得4272护甲，持续1.1秒。受到治疗的目标获得次级活力，持续1.1秒，受到的治疗和伤害护盾强度提高6%。";
             break;
           case "利刃交响曲":  
-            content = "<center><font style=\'align:center; color: gold;\'>利刃交响曲</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>利刃交响曲</font></center><br>（1件套）增加4%造成的治疗<br>（2件套）治疗主要资源不足50%的小队成员时，对其施加美瑞蒂亚之援助，每1秒回复570魔力或耐力，持续6秒。该效果每个目标每6秒可生效一次，无法作用于自身，且回复的资源取决于目标的最高资源上限。";
             break;
           case "完美盛大复苏":  
             content = "<center><font style=\'align:center; color: gold;\'>完美盛大复苏</font></center><br>（2件完美套）增加877魔力上限<br>（2件套）大治疗术的初始治疗给予你和受影响的队伍成员盛大复苏，持续6秒，每2秒回复224点魔力和耐力。";
             break;
           case "完美治疗师结界":  
-            content = "<center><font style=\'align:center; color: gold;\'>完美治疗师结界</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>完美治疗师结界</font></center><br>（2件完美套）增加103魔力恢复<br>（2件套）坚固结界为目标施加高级活力，持续4秒，其受到的治疗和伤害护盾强度提高12%。";
             break;
           case "毁灭肩甲":  
-            content = "<center><font style=\'align:center; color: gold;\'>毁灭肩甲</font></center><br>";
+            content = "<center><font style=\'align:center; color: gold;\'>毁灭肩甲</font></center><br>（1件套）激活蹲伏姿态可打开或关闭范围12米的尊严光环。光环内最多6名小队成员可获得260武器伤害和法术伤害。每有一名受益于尊严光环的目标，你的生命回复、魔力回复和耐力回复将会降低70。";
             break;
           case "埃尔诺菲的珍珠项链":  
             content = "<center><font style=\'align:center; color: gold;\'>埃尔诺菲的珍珠项链</font></center><br>（1件套）每当你在战斗中使用资源施放治疗技能，且主要资源低于50%时，获得高级英勇，持续1.5秒，每1.5秒获得3终极点。";
