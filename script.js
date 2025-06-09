@@ -27,7 +27,7 @@ function scrollToTop() {
 function showTooltip(intent) {
    const tooltipContent = document.getElementById("tooltipContent");
    const tooltip = document.getElementById("tooltip");
-   let content = "No eligible items found"
+   let content = "无结果"
    
       if (tooltipContent && tooltip) {
         switch (intent) {
@@ -93,6 +93,57 @@ function showTooltip(intent) {
             break;
           case "完美穿刺疗愈":  
             content = "<center><font style=\'align:center; color: gold;\'>完美穿刺疗愈</font></center><br>（2件完美套）增加3％受到的治疗<br>（2件套）当你用穿刺造成伤害时，你将治疗自身2653点生命，并获得相当于治疗量或过度治疗量的法术和物理抗性，持续5秒。治疗受你的生命上限影响。";
+            break;
+          case "法力治愈":  
+            content = "<center><font style=\'align:center; color: gold;\'>法力治愈</font></center><br>";
+            break;
+          case "完美劫掠者的收获":  
+            content = "<center><font style=\'align:center; color: gold;\'>完美劫掠者的收获</font></center><br>";
+            break;
+          case "完美决胜时机":  
+            content = "<center><font style=\'align:center; color: gold;\'>完美决胜时机</font></center><br>";
+            break;
+          case "约尔沃德的指引":  
+            content = "<center><font style=\'align:center; color: gold;\'>约尔沃德的指引</font></center><br>";
+            break;
+          case "建筑大师":  
+            content = "<center><font style=\'align:center; color: gold;\'>建筑大师</font></center><br>";
+            break;
+          case "完美奥尔奥瑞姆的法衣":  
+            content = "<center><font style=\'align:center; color: gold;\'>完美奥尔奥瑞姆的法衣</font></center><br>";
+            break;
+          case "空心牙之渴":  
+            content = "<center><font style=\'align:center; color: gold;\'>空心牙之渴</font></center><br>";
+            break;
+          case "凛冬之憩":  
+            content = "<center><font style=\'align:center; color: gold;\'>凛冬之憩</font></center><br>";
+            break;
+          case "大德鲁伊德维里克":  
+            content = "<center><font style=\'align:center; color: gold;\'>大德鲁伊德维里克</font></center><br>";
+            break;
+          case "地血":  
+            content = "<center><font style=\'align:center; color: gold;\'>地血</font></center><br>";
+            break;
+          case "夜焰":  
+            content = "<center><font style=\'align:center; color: gold;\'>夜焰</font></center><br>";
+            break;
+          case "炼狱奥泽赞":  
+            content = "<center><font style=\'align:center; color: gold;\'>炼狱奥泽赞</font></center><br>";
+            break;
+          case "利刃交响曲":  
+            content = "<center><font style=\'align:center; color: gold;\'>利刃交响曲</font></center><br>";
+            break;
+          case "完美盛大复苏":  
+            content = "<center><font style=\'align:center; color: gold;\'>完美盛大复苏</font></center><br>";
+            break;
+          case "完美治疗师结界":  
+            content = "<center><font style=\'align:center; color: gold;\'>完美治疗师结界</font></center><br>";
+            break;
+          case "毁灭肩甲":  
+            content = "<center><font style=\'align:center; color: gold;\'>毁灭肩甲</font></center><br>";
+            break;
+          case "埃尔诺菲的珍珠项链":  
+            content = "<center><font style=\'align:center; color: gold;\'>埃尔诺菲的珍珠项链</font></center><br>";
             break;
           default:
             console.log("值不在预期范围内");
