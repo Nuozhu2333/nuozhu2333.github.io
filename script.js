@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const copyrightElement = document.getElementById('copyright');
-    copyrightElement.textContent = '123';
+    copyrightElement.textContent = '© 糯竹 2022-2025';
 });
 
 function openNav() {
