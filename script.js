@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const copyrightElement = document.getElementById('copyright');
+    copyrightElement.textContent = '123';
+});
+
 function openNav() {
   document.getElementById("sideNavigator").style.width = "250px";
   const links = document.getElementById("links");
@@ -8,7 +13,6 @@ function openNav() {
     copyrightContainer.style.visibility = "visible";
     copyrightContainer.classList.remove("hidden");
    }, 170)
-
 }
  
 function closeNav() {
