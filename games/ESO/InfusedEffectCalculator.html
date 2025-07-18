@@ -101,7 +101,7 @@
   <div class="mainContainer">
     <div class="container">
       <h1>护甲注魔计算器</h1>
-      <p>请输入注魔衣服数量（优先放置于大件位置之后再放置于小件位置）：</p>
+      <p>请输入注魔护甲数量（优先放置于大件位置之后再放置于小件位置）：</p>
       <input type="number" id="gearInput" placeholder="请输入1至7之间的数字">
       <button onclick="calculate()">计算</button>
       <div id="error" class="error"></div>
@@ -124,7 +124,7 @@
             }
             
             if (gearPieces < 1 || gearPieces > 7) {
-                errorElement.textContent = `错误，衣服数应为1至7，而你输入的衣服数为${gearPieces}`;
+                errorElement.textContent = `错误，护甲数应为1至7，而你输入的护甲数为${gearPieces}`;
                 return;
             }
 
@@ -142,9 +142,9 @@
             const healingDoneLoss = 13*(9.1/100*(majorPieces + minorPieces)).toFixed(1);
             
             resultElement.innerHTML = `
-                <p>${gearPieces}件衣服注魔比全神性多${magickaDiff}魔力</p>
-                <p>在使用侍灵座时，${gearPieces}件衣服注魔比全神性少${magickaRecoveryLoss}魔力回复</p>
-                <p>在使用仪式座时，${gearPieces}件衣服注魔比全神性少${healingDoneLoss}%造成的治疗</p>
+                <p>${gearPieces}件护甲注魔比全神性多${magickaDiff}魔力</p>
+                <p>在使用侍灵座时，${gearPieces}件护甲注魔比全神性少${magickaRecoveryLoss}魔力回复</p>
+                <p>在使用仪式座时，${gearPieces}件护甲注魔比全神性少${healingDoneLoss}%造成的治疗</p>
             `;
             resultElement.style.display = 'block';
         }
