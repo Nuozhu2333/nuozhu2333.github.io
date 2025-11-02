@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -37,17 +38,48 @@
     </div>
   </div>
   <div class="mainContainer">
-      <h1>游戏</h1>
-      <table style="width:100%; max-width: 600px;" border="0">
-        <tr>
-          <td style="width: 250px;"><a href="games/ESO.html"><img src="games/ESO/res/ESO.jpg" alt="ESO" width="250" height="auto"></a></td>
-          <td style="text-align: center;"><a href="games/ESO.html">ESO</a></td>
-        </tr>
-        <tr>
-          <td style="width: 250px;"><a href="games/Okami.html"><img src="games/Okami/res/Okami.jpg" alt="Okami" width="250" height="auto"></a></td>
-          <td style="text-align: center;"><a href="games/Okmai.html">Okami</a></td>
-        </tr>
-      </table>
+    <h1>游戏</h1>
+    <div class="cards-grid">
+      <div class="cardview">
+        <a href="games/ESO.html">
+          <img src="games/ESO/res/ESO.jpg" alt="ESO">
+          <div class="cardview-content">
+            <h3>ESO</h3>
+            <p>《上古卷轴OL》是一款由Zenimax Online Studio开发的MMORPG。</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="cardview">
+        <a href="games/Titanfall2.html">
+          <img src="games/Titanfall2/res/Titanfall2.jpg" alt="Titanfall 2">
+          <div class="cardview-content">
+            <h3>泰坦陨落2</h3>
+            <p>《泰坦陨落2》是一款由Respawn Entertainment开发的FPS游戏。</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="cardview">
+        <a href="games/Okami.html">
+          <img src="games/Okami/res/Okami.jpg" alt="Okami">
+          <div class="cardview-content">
+            <h3>Okami</h3>
+            <p>《大神》是一款由卡普空开发的RPG。</p>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("sideNavigator").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("sideNavigator").style.width = "0";
+    }
+  </script>
 </body>
 </html>
