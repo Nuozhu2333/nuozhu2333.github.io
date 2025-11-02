@@ -36,6 +36,7 @@ img {
   transition: 0.5s;
   padding-top: 60px;
   user-select: none;
+  z-index:999;
 }
 
 .sideNavigator a {
@@ -126,6 +127,7 @@ img {
   align-items: center; 
   background-color: white;
   user-select: none;
+  z-index:998;
 }
 
 /* 标题文本 */
