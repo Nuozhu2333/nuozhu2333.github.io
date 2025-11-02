@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    closeNav()
     const copyrightElement = document.getElementById('copyright');
     copyrightElement.textContent = '© 糯竹 2022-2025';
 });
@@ -14,11 +15,17 @@ function openNav() {
     copyrightContainer.classList.remove("hidden");
    }, 170)
 }
- 
+    
 function closeNav() {
-  document.getElementById("sideNavigator").style.width = "0";
-  document.getElementById("links").classList.add("hidden");
-  document.getElementById("copyrightContainer").classList.add("hidden");
+    const sideNav = document.getElementById("sideNavigator");
+    const links = document.getElementById("links");
+    const copyrightContainer = document.getElementById("copyrightContainer");
+    links.classList.add("hidden");
+    copyrightContainer.classList.add("hidden");
+    // 延迟关闭侧边栏，让内容隐藏动画先完成
+    setTimeout(() => {
+        sideNav.classList.remove("open");
+    }, 100);
 }
 
 function scrollToTop() {
@@ -173,3 +180,4 @@ function showTooltip(intent) {
         console.error("Tooltip element not found!");
       }
     }
+
