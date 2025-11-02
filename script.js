@@ -20,12 +20,14 @@ function closeNav() {
     const sideNav = document.getElementById("sideNavigator");
     const links = document.getElementById("links");
     const copyrightContainer = document.getElementById("copyrightContainer");
+    
     links.classList.add("hidden");
     copyrightContainer.classList.add("hidden");
+    
     // 延迟关闭侧边栏，让内容隐藏动画先完成
     setTimeout(() => {
-        sideNav.classList.remove("open");
-    }, 170);
+        sideNav.style.width = "0";
+    }, 100);
 }
 
 function scrollToTop() {
@@ -180,5 +182,6 @@ function showTooltip(intent) {
         console.error("Tooltip element not found!");
       }
     }
+
 
 
