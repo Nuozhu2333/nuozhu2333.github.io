@@ -25,7 +25,7 @@ function closeNav() {
     // 延迟关闭侧边栏，让内容隐藏动画先完成
     setTimeout(() => {
         sideNav.classList.remove("open");
-    }, 100);
+    }, 170);
 }
 
 function scrollToTop() {
@@ -180,4 +180,5 @@ function showTooltip(intent) {
         console.error("Tooltip element not found!");
       }
     }
+
 
