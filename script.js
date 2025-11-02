@@ -13,7 +13,7 @@ function openNav() {
   setTimeout(() => { 
     copyrightContainer.style.visibility = "visible";
     copyrightContainer.classList.remove("hidden");
-   }, 170)
+   }, 150)
 }
     
 function closeNav() {
@@ -27,7 +27,7 @@ function closeNav() {
     // 延迟关闭侧边栏，让内容隐藏动画先完成
     setTimeout(() => {
         sideNav.style.width = "0";
-    }, 100);
+    }, 50);
 }
 
 function scrollToTop() {
@@ -102,7 +102,7 @@ function showTooltip(intent) {
             content = "<center><font style=\'align:center; color: gold;\'>完美珠光结界</font></center><br>（2件套）增加1206生命上限<br>（3件套）永久获得次级庇护，使你在地下城、试炼和竞技场中受到的怪物伤害降低5%<br>（4件套）增加4％受到的治疗<br>（5件完美套）增加1206生命上限<br>（5件套）给予你和最多11位小队成员珠光结界。这一增益可持续到角色死后。珠光结界将基于存活的小队成员人数提升武器伤害和法术伤害，最高可达180。当前武器伤害和法术伤害为180。珠光结界将基于已死小队成员人数，提升对非玩家敌人的减伤，效果不超过66%。当前减伤为0%。";
             break;       
           case "强力突袭":  
-            content = "<center><font style=\'align:center; color: gold;\'>强力突袭</font></center><br>（2件套）增加1206生命上限<br>（3件套）增加1096耐力上限<br>（4件套）增加129武器伤害和法术伤害<br>（5件套）当你在战斗中施放一个突袭技能时，你和5米内至多12名小队成员获得307武器伤害和法术伤害，持续15秒。";
+            content = "<center><font style=\'align:center; color: gold;\'>强力突袭</font></center><br>（2件套）增加1206生命上限<br>（3件套）增加1096耐力上限<br>（4件套）增加129武器伤害和法术伤害<br>（5件套）当你在战斗中施放一个突袭技能时，你和12米内至多5名小队成员获得307武器伤害和法术伤害，持续15秒。";
             break;
           case "完美穿刺疗愈":  
             content = "<center><font style=\'align:center; color: gold;\'>完美穿刺疗愈</font></center><br>（2件完美套）增加3％受到的治疗<br>（2件套）当你用穿刺造成伤害时，你将治疗自身2653点生命，并获得相当于治疗量或过度治疗量的法术和物理抗性，持续5秒。治疗受你的生命上限影响。";
@@ -182,6 +182,7 @@ function showTooltip(intent) {
         console.error("Tooltip element not found!");
       }
     }
+
 
 
 
