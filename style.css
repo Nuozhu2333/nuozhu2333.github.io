@@ -141,7 +141,7 @@ img {
 .mainContainer {
   margin: 50px 30px 20px;
   padding: 0px;
-  max-width: 1200px;
+  max-width: max(1200px, 100%);
   margin-right: auto;
 }
   
@@ -309,3 +309,4 @@ img {
   padding: 8px;
   text-align: center;
 }
+
