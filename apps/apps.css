@@ -1,0 +1,129 @@
+    .mainContainer {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .app-header {
+      display: flex;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .app-icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .app-info {
+      flex: 1;
+    }
+
+    .app-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .app-developer {
+      font-size: 16px;
+      opacity: 0.9;
+      margin-bottom: 15px;
+    }
+
+    .rating-text {
+      font-size: 16px;
+    }
+
+    .screenshots {
+      margin: 30px 0;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #33b5e5;
+      border-bottom: 2px solid #33b5e5;
+      padding-bottom: 5px;
+    }
+
+    .screenshot-container {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+
+    .screenshot {
+      width: 200px;
+      height: auto;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      flex-shrink: 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .description, .download, .additional-info {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .description p {
+      margin-bottom: 15px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .info-item {
+      margin-bottom: 10px;
+    }
+
+    .info-label {
+      font-weight: bold;
+      color: #33b5e5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .app-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .app-icon {
+        margin: 0 auto 20px;
+      }
+
+      .screenshot {
+        width: 150px;
+        height: 260px;
+      }
+    }
