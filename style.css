@@ -15,11 +15,11 @@ img {
 
 .normalLink {
   text-decoration: underline; 
-  color: #FF33B5E5;
+  color: #33B5E5;
 }
 
 .normalLink:visited {
-  color: #FF33B5E5;
+  color: #33B5E5;
 }
 
 .sideNavigator {
@@ -310,6 +310,7 @@ img {
   padding: 8px;
   text-align: center;
 }
+
 
 
 
