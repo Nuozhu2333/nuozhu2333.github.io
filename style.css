@@ -15,11 +15,11 @@ img {
 
 .normalLink {
   text-decoration: underline; 
-  color: #33B5E5;
+  color: #33b5e5;
 }
 
 .normalLink:visited {
-  color: #33B5E5;
+  color: #33b5e5;
 }
 
 .sideNavigator {
@@ -90,7 +90,7 @@ img {
 .links {
   transition: opacity 0.3s ease, visibility 0s 0.3s; 
   opacity: 1;
-  visibility: visible
+  visibility: visible;
   margin-top: 50px;
 }
 
@@ -106,7 +106,7 @@ img {
   display: flex;       
   flex-direction: column; 
   align-items: center;
-  color: #B0B0B0;
+  color: #b0b0b0;
   transition: opacity 0.3s ease, visibility 0s 0.3s; 
   opacity: 1;
   visibility: hidden;
@@ -315,13 +315,3 @@ img {
   padding: 8px;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
