@@ -91,7 +91,7 @@ img {
   transition: opacity 0.3s ease, visibility 0s 0.3s; 
   opacity: 1;
   visibility: visible
-  margin-top: 50px;;
+  margin-top: 50px;
 }
 
 #links.hidden {
@@ -315,6 +315,7 @@ img {
   padding: 8px;
   text-align: center;
 }
+
 
 
 
