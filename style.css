@@ -37,18 +37,10 @@ img {
   padding-top: 60px;
   user-select: none;
   z-index:999;
-}
-
-.sideNavigator::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 12px; /* 圆角大小 */
-  background: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.1) 100%);
-  pointer-events: none;
   border-radius: 0 12px 12px 0;
+  /* 添加内边距防止内容被圆角遮挡 */
+  padding: 10px 0;
+  box-sizing: border-box;
 }
 
 .sideNavigator a {
@@ -322,6 +314,7 @@ img {
   padding: 8px;
   text-align: center;
 }
+
 
 
 
