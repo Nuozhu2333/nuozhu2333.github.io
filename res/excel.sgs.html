@@ -57,9 +57,19 @@
       <p>这个游戏最开始是几个爱好者在Excel上用宏写的小游戏，算是“用爱发电”的良心产品；但走向商业化，则不可避免地使其变质。如今开发商已提桶跑路，官网上最新版本也已经是22年的，对此，我只想说：好死，慢走不送。</p>
       <p>想想也是，即使是那个国内游戏蛮荒生长的年代，这东西不过是拿来杀时间的小游戏罢了，那现在，也就让它回归最本真的模样，无聊的时候拿来杀杀时间吧。</p>
       <br>
-      <p>创建时间：2025/2/6</p>
-      <p>上次修订时间：2025/2/6</p>
-      <br>
+      <p>创建时间：2025/02/06</p>
+      <p>上次修订时间：2025/02/06</p>
+      <button id="backToTop" onclick="scrollToTop()">↑</button>
+  <script>
+    const backToTopButton = document.getElementById("backToTop");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.classList.add("show");
+      } else {
+        backToTopButton.classList.remove("show");
+      }
+    };
+</script>
   </div>
 </body>
 </html>
