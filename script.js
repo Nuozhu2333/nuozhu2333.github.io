@@ -160,6 +160,9 @@ function showTooltip(intent) {
             break;     
           case "石头盟约":  
             content = "<center><font style=\'align:center; color: gold;\'>石头盟约</font></center><br>（2件套）增加1096魔力上限<br>（3件套）增加4%造成的治疗<br>（4件套）增加1096魔力上限<br>（5件套）在使用范围效果治疗时，施加次级狂怒和次级信念给被治疗的盟友，持续4秒。如果被治疗的盟友已经拥有来自石头盟约的次级狂怒或次级信念，则恢复550点魔力。该项恢复每5秒可触发一次。";
+            break;        
+          case "初学者护甲":  
+            content = "<center><font style=\'align:center; color: gold;\'>初学者护甲</font></center><br>（1件套）增加1454生命上限<br>（2件套）增加1454生命上限<br>（3件套）增加1454耐力上限";
             break;
           default:
             console.log("值不在预期范围内");
@@ -182,6 +185,7 @@ function showTooltip(intent) {
         console.error("Tooltip element not found!");
       }
     }
+
 
 
 
