@@ -185,8 +185,3 @@ function showTooltip(intent) {
         console.error("Tooltip element not found!");
       }
     }
-
-
-
-
-
