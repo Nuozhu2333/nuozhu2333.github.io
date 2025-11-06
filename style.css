@@ -59,7 +59,7 @@ img {
   color: #f1f1f1;
 }
 
-/* 打开按钮 */
+/*打开导航栏按钮*/
 .openButton {
   font-size: 20px;
   cursor: pointer;
@@ -68,7 +68,7 @@ img {
   user-select: none;
 }
 
-/* 关闭按钮 */
+/*关闭导航栏按钮*/
 .closeButton {
   position: absolute;
   font-size: 20px;
@@ -121,7 +121,7 @@ img {
  margin: 0 10px;
 }
 
-/* 标题栏 */
+/*标题栏*/
 .titleBar {
   position: fixed;
   height: 50px;
@@ -136,7 +136,7 @@ img {
   z-index:998;
 }
 
-/* 标题文本 */
+/*标题文本*/
 .title {
   position: fixed;
   font-size: 16px;
@@ -144,8 +144,9 @@ img {
   user-select: none;
 }
 
+/*主容器*/
 .mainContainer {
-  margin: 60px 50px;
+  margin: 60px 0 0 50px;
   padding: 0px;
   max-width: max(1200px, 100%);
   margin-right: auto;
@@ -315,3 +316,4 @@ img {
   padding: 8px;
   text-align: center;
 }
+
