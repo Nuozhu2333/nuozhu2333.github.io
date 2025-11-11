@@ -41,6 +41,7 @@
 
 .screenshots {
     margin: 30px 0;
+    padding: 10px;
 }
 
 .section-title {
@@ -60,7 +61,6 @@
 
 .screenshot {
     width: 250px;
-    padding: 10px;
     height: auto;
     border-radius: 12px;
     display: flex;
