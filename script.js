@@ -3,9 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const copyrightElement = document.getElementById('copyright');
     copyrightElement.textContent = '© 糯竹 2022-2026';
     const viewportHeight = window.innerHeight;
-    
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const copyrightContainer = document.getElementById('copyrightContainer');
+        const viewportHeight = window.innerHeight;
     if (viewportHeight < 400) {
-        copyrightElement.style.visibility = "hidden";
+        copyrightContainer.style.visibility = "hidden";
+        // 监听窗口大小变化
+        window.addEventListener('resize', checkViewportHeight);
     }
 });
 
@@ -189,3 +195,4 @@ function closeTooltip() {
         console.error("Tooltip element not found!");
     }
 }
+
