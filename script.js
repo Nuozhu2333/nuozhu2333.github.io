@@ -7,12 +7,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const copyrightContainer = document.getElementById('copyrightContainer');
+    
+    // 定义检查函数
+    function checkViewportHeight() {
         const viewportHeight = window.innerHeight;
-    if (viewportHeight < 400) {
-        copyrightContainer.style.visibility = "hidden";
-        // 监听窗口大小变化
-        window.addEventListener('resize', checkViewportHeight);
+        if (viewportHeight < 400) {
+        
+            copyrightContainer.style.display = "none";
+        } else {
+            copyrightContainer.style.display = "block";
+        }
     }
+    
+    // 初始检查
+    checkViewportHeight();
+    
+    // 监听窗口大小变化
+    window.addEventListener('resize', checkViewportHeight);
 });
 
 function openNav() {
@@ -195,4 +206,5 @@ function closeTooltip() {
         console.error("Tooltip element not found!");
     }
 }
+
 
