@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 定义检查函数
     function checkViewportHeight() {
         const viewportHeight = window.innerHeight;
-        if (viewportHeight < 400) {
+        if (viewportHeight < 600) {
         
             copyrightContainer.style.visibility = "hidden";
         } else {
@@ -206,6 +206,7 @@ function closeTooltip() {
         console.error("Tooltip element not found!");
     }
 }
+
 
 
 
