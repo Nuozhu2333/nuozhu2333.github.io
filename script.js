@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    closeNav()
+    closeNav();
     const copyrightElement = document.getElementById('copyright');
     copyrightElement.textContent = '© 糯竹 2022-2026';
     const viewportHeight = window.innerHeight;
-    if (viewportHeight) < 400 {
-        copyrightElement.visibility = "hidden";
+    
+    if (viewportHeight < 400) {
+        copyrightElement.style.visibility = "hidden";
     }
 });
 
@@ -179,14 +180,12 @@ function showTooltip(intent) {
       }
     }
 
-    // 关闭 Tooltip
-    function closeTooltip() {
-      const tooltip = document.getElementById("tooltip");
-
-      if (tooltip) {
-        tooltip.style.display = "none"; // 隐藏 Tooltip
-      } else {
+// 关闭 Tooltip
+function closeTooltip() {
+    const tooltip = document.getElementById("tooltip");
+    if (tooltip) {
+        tooltip.style.display = "none";
+    } else {
         console.error("Tooltip element not found!");
-      }
     }
-
+}
