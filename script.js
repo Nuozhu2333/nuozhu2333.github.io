@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     closeNav()
     const copyrightElement = document.getElementById('copyright');
-    copyrightElement.textContent = '© 糯竹 2022-2025';
+    copyrightElement.textContent = '© 糯竹 2022-2026';
+    const viewportHeight = window.innerHeight;
+    if (viewportHeight) < 400 {
+        copyrightElement.visibility = "hidden"
+    }
 });
 
 function openNav() {
