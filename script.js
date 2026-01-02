@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const viewportHeight = window.innerHeight;
         if (viewportHeight < 400) {
         
-            copyrightContainer.style.display = "none";
+            copyrightContainer.style.visibility = "hidden";
         } else {
-            copyrightContainer.style.display = "block";
+            copyrightContainer.style.visibility = "visible";
         }
     }
     
@@ -206,5 +206,6 @@ function closeTooltip() {
         console.error("Tooltip element not found!");
     }
 }
+
 
 
