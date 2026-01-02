@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     copyrightElement.textContent = '© 糯竹 2022-2026';
     const viewportHeight = window.innerHeight;
     if (viewportHeight) < 400 {
-        copyrightElement.visibility = "hidden"
+        copyrightElement.visibility = "hidden";
     }
 });
 
@@ -189,3 +189,4 @@ function showTooltip(intent) {
         console.error("Tooltip element not found!");
       }
     }
+
