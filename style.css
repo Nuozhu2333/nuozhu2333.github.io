@@ -154,7 +154,8 @@ img {
 
 /*主容器*/
 .mainContainer {
-  width: min(100%, 800px);
+  width: 100%;
+  max-width: 800px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   margin: 0 auto;
   margin-top: 50px; 
@@ -315,4 +316,5 @@ img {
   padding: 8px;
   text-align: center;
 }
+
 
