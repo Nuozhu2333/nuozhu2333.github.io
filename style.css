@@ -157,7 +157,7 @@ img {
 /*主容器*/
 .mainContainer {
   flex: 1; 
-  width: 100%; 
+  width: calc(100% - 40px); 
   max-width: 800px; 
   box-shadow: 0 0 10px rgba(0,0,0,0.1); 
   margin: 0 auto; 
@@ -319,5 +319,6 @@ img {
   padding: 8px;
   text-align: center;
 }
+
 
 
