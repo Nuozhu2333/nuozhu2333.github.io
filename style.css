@@ -159,6 +159,7 @@ img {
   margin: 0 auto;
   margin-top: 50px; 
   padding: 20px; 
+  background-color: white; 
 }
   
 .mainContainer h1 {
@@ -314,3 +315,4 @@ img {
   padding: 8px;
   text-align: center;
 }
+
