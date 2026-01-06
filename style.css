@@ -1,3 +1,10 @@
+body {
+  background-image: url("/bkg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 a {
   text-decoration: none; 
   color: black;
@@ -151,10 +158,6 @@ img {
   margin: 0 auto;
   margin-top: 50px; 
   padding: 20px; 
-  background-image: url("/bkg.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 }
   
 .mainContainer h1 {
@@ -166,7 +169,7 @@ img {
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
   justify-items: center;
 }
@@ -218,13 +221,6 @@ img {
 }
 
 /* 响应式调整 */
-@media (max-width: 800px) {
-  .cards-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  }
-}
-
 @media (max-width: 480px) {
   .cards-grid {
     grid-template-columns: 1fr;  
@@ -317,5 +313,3 @@ img {
   padding: 8px;
   text-align: center;
 }
-
-
