@@ -124,7 +124,7 @@ img {
 .titleBar {
   position: fixed;
   height: 50px;
-  width: 100vw;   
+  width: 100%;   
   top: 0;             
   left: 0;    
   display: flex;
@@ -318,5 +318,6 @@ img {
   padding: 8px;
   text-align: center;
 }
+
 
 
