@@ -150,7 +150,8 @@ img {
   padding: 0px;
   width: min(800px, 100%);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  margin-right: auto;
+  margin: 0 auto;
+  margin-top: 50px; 
 }
   
 .mainContainer h1 {
@@ -214,7 +215,7 @@ img {
 }
 
 /* 响应式调整 */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .cards-grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
@@ -317,5 +318,3 @@ img {
   padding: 8px;
   text-align: center;
 }
-
-
