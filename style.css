@@ -170,7 +170,7 @@ img {
 
 .cardview {
   width: 100%;
-  max-width: 300px;
+  max-width: 240px;
   background: white;
   border-radius: 12px;
   border: 1px solid black;
@@ -318,6 +318,7 @@ img {
   padding: 8px;
   text-align: center;
 }
+
 
 
 
