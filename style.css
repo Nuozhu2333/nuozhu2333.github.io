@@ -32,7 +32,6 @@ img {
   background-size: cover; 
   background-position: center; 
   overflow-x: hidden;
-  overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   user-select: none;
@@ -318,3 +317,4 @@ img {
   padding: 8px;
   text-align: center;
 }
+
