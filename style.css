@@ -146,10 +146,15 @@ img {
 /*主容器*/
 .mainContainer {
   width: min(800px, 100%);
+  height: 100%;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   margin: 0 auto;
   margin-top: 50px; 
-  padding: 20px;
+  padding: 20px; 
+  background-image: url("res/bkg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
   
 .mainContainer h1 {
@@ -312,3 +317,4 @@ img {
   padding: 8px;
   text-align: center;
 }
+
