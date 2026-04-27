@@ -26,11 +26,11 @@ img {
 
 .normalLink {
   text-decoration: underline; 
-  color: #33b5e5;
+  color: #008CBA;
 }
 
 .normalLink:visited {
-  color: #33b5e5;
+  color: #008CBA;
 }
 
 .sideNavigator {
@@ -252,6 +252,7 @@ img {
   overflow: auto;
   z-index: 1000;
   display: none; 
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 /* 信息框关闭按钮 */
@@ -319,6 +320,3 @@ img {
   padding: 8px;
   text-align: center;
 }
-
-
-
