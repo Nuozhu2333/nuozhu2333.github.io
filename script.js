@@ -60,12 +60,11 @@ function scrollToTop() {
 }
 
 function showTooltip(intent) {
-    const tooltipOverlay = document.getElementById('customTooltipOverlay');
-    const tooltipContentDiv = document.getElementById('tooltipDisplayContent');
-    const closeTooltipBtn = document.getElementById('tooltipCloseBtn');
+   const tooltipContent = document.getElementById("tooltipContent");
+   const tooltip = document.getElementById("tooltip");
    let content = "无结果"
    
-      if (tooltipContentDiv) {
+      if (tooltipContent && tooltip) {
         switch (intent) {
           case "属性点：生命":  
             content = "<center><font style=\'align:center; color: red;\'>属性点：生命</font></center><br><font style=\'color: red;\'>生命上限</font>提升122点";
@@ -198,32 +197,12 @@ function showTooltip(intent) {
       }
     }
 
-    function showTooltip(intentKey) {
-        if (!tooltipOverlay || !tooltipContentDiv) return;
-        const htmlContent = getTooltipContent(intentKey);
-        tooltipContentDiv.innerHTML = htmlContent;
-        // 添加show类触发淡入淡出 + 卡片上升
-        tooltipOverlay.classList.add('show');
+// 关闭 Tooltip
+function closeTooltip() {
+    const tooltip = document.getElementById("tooltip");
+    if (tooltip) {
+        tooltip.style.display = "none";
+    } else {
+        console.error("Tooltip element not found!");
     }
-
-    // 关闭tooltip
-    function closeTooltip() {
-        if (tooltipOverlay) {
-            tooltipOverlay.classList.remove('show');
-        }
-    }
-
-    // 点击外部半透明区域关闭 (注意overlay在显示时pointer-events:auto，点击背景即可关闭)
-    if (tooltipOverlay) {
-        tooltipOverlay.addEventListener('click', function(e) {
-            // 如果点击的目标是overlay本身（背景），而不是内部卡片，则关闭
-            if (e.target === tooltipOverlay) {
-                closeTooltip();
-            }
-        });
-    }
-
-    // 关闭按钮事件
-    if (closeTooltipBtn) {
-        closeTooltipBtn.addEventListener('click', closeTooltip);
-    }
+}
