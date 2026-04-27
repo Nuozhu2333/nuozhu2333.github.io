@@ -60,11 +60,12 @@ function scrollToTop() {
 }
 
 function showTooltip(intent) {
-   const tooltipContent = document.getElementById("tooltipContent");
-   const tooltip = document.getElementById("tooltip");
+    const tooltipOverlay = document.getElementById('customTooltipOverlay');
+    const tooltipContentDiv = document.getElementById('tooltipDisplayContent');
+    const closeTooltipBtn = document.getElementById('tooltipCloseBtn');
    let content = "无结果"
    
-      if (tooltipContent && tooltip) {
+      if (tooltipContentDiv) {
         switch (intent) {
           case "属性点：生命":  
             content = "<center><font style=\'align:center; color: red;\'>属性点：生命</font></center><br><font style=\'color: red;\'>生命上限</font>提升122点";
@@ -197,11 +198,6 @@ function showTooltip(intent) {
       }
     }
 
-    const tooltipOverlay = document.getElementById('customTooltipOverlay');
-    const tooltipContentDiv = document.getElementById('tooltipDisplayContent');
-    const closeTooltipBtn = document.getElementById('tooltipCloseBtn');
-
-    // 显示tooltip (与toast容器动画完全同模式)
     function showTooltip(intentKey) {
         if (!tooltipOverlay || !tooltipContentDiv) return;
         const htmlContent = getTooltipContent(intentKey);
