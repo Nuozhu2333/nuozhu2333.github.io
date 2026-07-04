@@ -66,6 +66,9 @@ function showTooltip(intent) {
    
       if (tooltipContent && tooltip) {
         switch (intent) {
+          case "荣誉与敬意":  
+            content = "<center><font style=\'align:center; color: red;\'>荣誉与敬意</font></center><br>玩《对马岛之魂》玩的";
+            break;
           case "属性点：生命":  
             content = "<center><font style=\'align:center; color: red;\'>属性点：生命</font></center><br><font style=\'color: red;\'>生命上限</font>提升122点";
             break;
