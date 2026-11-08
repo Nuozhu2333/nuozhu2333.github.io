@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="data:image/png;base64,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gKXtDc2/Q61W07vvvisOfJGeS3p6Op08eZIiIiK6fE+eZVkhgYhp7gCYCIyObkf21Ks17eLgwYNUWloqDnyR3gXvk89xXLsaQXsGwNbsBLzhr7cM6ntdrTlQSaVS+uijjygtLU0c+BZCDIO0MJcvX6bjx4/j66+/RmFhIS5fvoyKigoYDIYWIcYSiQSOjo5QqVTIzMwE8FuGWj5FNtPGoZXWzpzbFTAmqbdNUalU+OijjzB69Gg+jbvYT0X6Bvv376fAwECaPHky6fV6M8OWTCZrkTFIJpMJ4ce9ebZvS6vhOI7s7OxIpVLR66+/ThcuXBCNeyIPDyEhIaTX68nf35/c3NzM4vpNTzM2NeyhjUGFHjDQ0c6g57MZ8fH4kZGRtGHDBnGwi4gAwMGDB4WBbppPj2Ga0pXxAgEmg6ujdoD2DISw0IA39YmQSqW0aNEiSk5OpuPHj4uDXkSkLbKzs2nkyJG0ePFi8vPzEwaYVCo18zXoiMMRWhEAzV+7n6u1gd6a/wLHcbRx40Zx0IuI3C+ZmZl0+fJlmjNnDi1ZsoT8/PyEwcYLBIlE0uJY9NaWC8OHDxdiFtrbYWgr1qA1N2PT7EMKhYJ27txJeXl54oGovQDRutpLOXPmDB08eBDfffcdcnNz4e/vj9u3b+PChQsAWp52A0A41LT5rgKfDNUUhmHAsiyAph0Go9EIvV4PhUKBiRMnYtasWeA4DjqdDu7u7kxmZibl5ubC29sbXl5eYr/qJYgN1cfIycmhhoYGlJSUoLCwEIcOHcKBAwdgNBrx/PPPIzIyEl988QW2b98OpVIJDw8PrF27FtXV1aisrERMTAyMRiP+9a9/4fTp05DL5XBycsKwYcPw8ssvi/1FRERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERESkg/z/ZN2bl2PLnGwAAAAASUVORK5CYII=" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover" />
+  <title>对马岛之魂：奇谭模式完全新手教程</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      line-height: 1.6;
+      padding: 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    p, ul, ol, .table-wrapper {
+      margin-bottom: 1rem;
+    }
+
+    ul, ol {
+      padding-left: 1.8rem;
+    }
+
+    li {
+      margin-bottom: 0.3rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1.8rem 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 500px;
+      max-width: 100%;
+      table-layout: fixed;
+      word-break: break-word;
+      text-align: center;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 0.6rem 0.3rem;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      white-space: normal;
+      vertical-align: middle;
+    }
+
+    th {
+      font-weight: 600;
+    }
+
+    caption {
+      caption-side: top;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0.5rem;
+      border: 1px solid black;
+      border-bottom: none;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #7a624e;
+      background: #f3ede6;
+      padding: 0.25rem 0.8rem;
+      border-left: 4px solid #b0845c;
+      border-radius: 0 8px 8px 0;
+      margin: 0.8rem 0;
+    }
+
+    [style*="color: Lime"] { color: #4caf50 !important; }
+    [style*="color: DodgerBlue"] { color: #2196f3 !important; }
+    [style*="color: BlueViolet"] { color: #8a2be2 !important; }
+    [style*="color: DarkOrange"] { color: #ff8c00 !important; }
+
+    img, svg, iframe {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 0.75rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+      .table-wrapper {
+        margin: 1rem 0;
+      }
+      th, td {
+        padding: 0.4rem 0.2rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      body {
+        padding: 2rem 1.5rem;
+      }
+    }
+
+    p[style*="text-align: right"] {
+      margin-top: -0.5rem;
+      font-size: 0.9em;
+      color: #000;
+    }
+
+    span[style*="font-size: 24px"] {
+      font-size: 1.5rem !important;
+      line-height: 1;
+      color: #000;
+      font-weight: 500;
+    }
+
+    br {
+      display: block;
+      content: "";
+      margin: 0.2rem 0;
+    }
+
+    td:last-child, th:last-child {
+      word-break: break-word;
+    }
+
+    .toc {
+      border: 1px solid black;
+      padding: 1.2rem 1.8rem;
+      margin: 1.8rem 0 2rem 0;
+    }
+
+    .toc h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 2px solid black;
+      display: inline-block;
+      letter-spacing: 1px;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .toc li {
+      margin-bottom: 0.35rem;
+      line-height: 1.5;
+    }
+
+    .toc a {
+      color: black;
+      text-decoration: none;
+      transition: color 0.2s, border-bottom 0.2s;
+      border-bottom: 1px dotted transparent;
+    }
+
+    .toc .toc-h2 {
+      font-weight: 600;
+      margin-top: 0.6rem;
+      font-size: 1.05rem;
+    }
+
+    .toc .toc-h3 {
+      padding-left: 1.2rem;
+      font-size: 0.95rem;
+      color: black;
+    }
+
+    .toc .toc-h4 {
+      padding-left: 2.4rem;
+      font-size: 0.9rem;
+      color: black;
+    }
+
+    h2, h3, h4 {
+      scroll-margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>对马岛之魂：奇谭模式完全新手教程</h1>
+  <br>
+  <p style="text-align: center; color: grey;"><i>By Anonymous</i></p>
+
+  <nav class="toc" aria-label="目录">
+    <h2>目录</h2>
+    <ul>
+      <li><a href="#preface">前言</a></li>
+      <li><a href="#preface-gameplay">这个游戏的玩法是什么？</a></li>
+      <li><a href="#preface-purchase">游戏购买</a></li>
+      <li><a href="#preface-prepare">开始前的准备工作</a></li>
+      <li><a href="#preface-qa">相关Q&amp;A</a></li>
+
+      <li class="toc-h2"><a href="#chapter1">1. 职业与游戏玩法</a></li>
+      <li class="toc-h3"><a href="#ch1-1">1.1 职业概览</a></li>
+      <li class="toc-h3"><a href="#ch1-2">1.2 职业技能搭配</a></li>
+      <li class="toc-h3"><a href="#ch1-3">1.3 职业选择</a></li>
+      <li class="toc-h3"><a href="#ch1-4">1.4 游戏玩法</a></li>
+
+      <li class="toc-h2"><a href="#chapter2">2. 装备</a></li>
+      <li class="toc-h3"><a href="#ch2-1">2.1 装备气值与品质</a></li>
+      <li class="toc-h3"><a href="#ch2-2">2.2 装备获取</a></li>
+      <li class="toc-h3"><a href="#ch2-3">2.3 装备升级与精通</a></li>
+      <li class="toc-h3"><a href="#ch2-4">2.4 装备一览</a></li>
+      <li class="toc-h3"><a href="#ch2-5">2.5 装备推荐</a></li>
+
+      <li class="toc-h2"><a href="#chapter3">3. 敌人与机制介绍</a></li>
+      <li class="toc-h3"><a href="#ch3-1">3.1 认识你的敌人</a></li>
+      <li class="toc-h3"><a href="#ch3-2">3.2 机制介绍</a></li>
+      <li class="toc-h3"><a href="#ch3-3">3.3 机制总结</a></li>
+
+      <li class="toc-h2"><a href="#chapter4">4. 个人经验</a></li>
+      <li class="toc-h3"><a href="#ch4-1">4.1 生存</a></li>
+      <li class="toc-h3"><a href="#ch4-2">4.2 输出</a></li>
+      <li class="toc-h3"><a href="#ch4-3">4.3 场外因素</a></li>
+      <li class="toc-h3"><a href="#ch4-4">4.4 这是挂吗？</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="preface">前言</h2>
+  <p>《对马岛之魂》登陆PC已有两年半，网络上攻略业已不少，但似乎鲜有完全针对新手的教程。因此，我斗胆根据自己的经验编写这一教程，旨在为刚开始游玩对马岛之魂奇谭模式，乃至此前从未接触过动作游戏的玩家提供一些参考。</p>
+  <p><b>叠甲：</b>我本人仅为休闲玩家，平时也就打打每周梦魇故事，随缘野排黄金白金生存，白七、伊代的试炼、速通之类的进阶玩法一概不碰，因此本人游戏理解必然有所偏颇，构筑、玩法与机制详情，都请以大佬们提供的为准。</p>
+  <br>
+
+  <h3 id="preface-gameplay">这个游戏的玩法是什么？</h3>
+  <p>作为动作游戏，对马岛之魂奇谭模式（以下简称“奇谭”）考验玩家的反应与快速决策能力，同时对团队协作有一定要求。如果你追求爽快且符合直觉的动作体验，且喜欢与其他玩家合作，奇谭很可能是你的菜。</p>
+  <ul>
+    <li>奇谭具有装备收集与数值成长要素，并提供一定构筑自由度。</li>
+    <li>奇谭具有对抗式PVE模式。全成就要求游玩该模式，但可以逃课单刷。</li>
+    <li>奇谭具有一些高难内容供终局游玩。</li>
+    <li><del>奇谭可能是一款TPS游戏。</del></li>
+  </ul>
+  <br>
+
+  <h3 id="preface-purchase">游戏购买</h3>
+  <p>本作在PS4、PS5、PC端均有发行。这里给出在线购买链接。</p>
+  <p><a href="https://www.playstation.com/zh-hans-hk/games/ghost-of-tsushima/" target="_blank">PS商店</a>（港服PS5定价568HKD）</p>
+  <p><a href="https://store.steampowered.com/app/2215430/" target="_blank">Steam</a>（国区定价398CNY，史低238.8CNY）</p>
+  <br>
+
+  <h3 id="preface-prepare">开始前的准备工作</h3>
+  <p>一台游戏设备，电脑与PS游戏机均可。</p>
+  <p>PSN账号。</p>
+  <p>加速器。</p>
+  <p>如果你在PS端游玩，你需要开通会员以进行联机。PC端无需会员即可联机。该游戏支持跨平台联机。</p>
+  <p>（可选）使用游戏手柄。手柄是对马岛之魂原生输入方式，且手柄比键鼠支持更多进阶操作。</p>
+  <p>（可选）在尝试奇谭前先游玩对马岛之魂单人战役，熟悉敌人AI与操作 <del>当然如果你先玩奇谭可以反过来熟悉战役中的操作</del>。</p>
+  <p>（可选）找一个朋友或是大佬，抱他大腿。</p>
+  <br>
+
+  <h3 id="preface-qa">相关Q&amp;A</h3>
+  <p><b>Q：</b><i>这游戏怎么买便宜？</i></p>
+  <p><b>A：</b>PS端可以买光盘；也可以开二档会员，每月HKD105港币（PS港服，未考虑打折情况）；PC端可等Steam打折，或在第三方平台买CDK。</p>
+  <p><b>Q：</b><i>我只想玩奇谭，可以不买战役吗？</i></p>
+  <p><b>A：</b>PS端可以。索尼曾推出奇谭独立购买选项，售价HKD158（PS港服，未考虑打折情况）；PC端无此选项。</p>
+  <p><b>Q：</b><i>这个游戏联机要会员？</i></p>
+  <p><b>A：</b>PS平台游戏联机都需要索尼会员，不开会员只能自己一个人玩；但PC平台不需要会员也能联机。</p>
+  <br>
+
+  <h2 id="chapter1">1. 职业与游戏玩法</h2>
+  <h3 id="ch1-1">1.1 职业概览</h3>
+  <h4>武士</h4>
+  <p>近战职业，帅就完了。生存战亦有堵点开大流。</p>
+  <p><span style="font-size: 24px;">“</span><i>八幡の怒り！</i></p>
+  <br>
+
+  <h4>猎人</h4>
+  <p>主要依赖远程攻击，搭配速射技巧、爆炸箭与无视距离锁头大招，可以说是断档式地强。</p>
+  <p><span style="font-size: 24px;">“</span><i>うちつねの眼わ！</i></p>
+  <br>
+
+  <h4>浪人</h4>
+  <p>全能型选手，输出有鸿毛金苦无乱杀，辅助有治疗与削弱技能，还有全游戏唯一的复活队友大招。</p>
+  <br>
+
+  <h4>刺客</h4>
+  <p>机制强力，逃课操作众多，控场能力强，大佬带新首选。</p>
+  <br>
+
+  <h3 id="ch1-2">1.2 职业技能搭配</h3>
+  <p>实际上，技能选择较为固定。这里就只介绍常用技能，其他技能可自行尝试。</p>
+  <h4>武士</h4>
+  <p>主动技能首选选1技能勾魂，吸血，提升生存能力。</p>
+  <p>第一行被动技能选2技能，提升25%近战伤害。</p>
+  <p>第二行被动技能选3技能，提升1点决心。</p>
+  <p>第三行被动技能选2技能，大招增加两个目标。</p>
+  <br>
+
+  <h4>猎人</h4>
+  <p>主动技能选2技能爆炸箭；1技能失衡箭和3技能灵魂弓手也可考虑。</p>
+  <p>第一行被动技能选4技能，增加一个可装备的传奇物品。</p>
+  <p>第二行被动技能选2技能，提升25%状态效果伤害。</p>
+  <p>第三行被动技能选2技能，大招增加两个目标。</p>
+  <br>
+
+  <h4>浪人</h4>
+  <p>主动技能选2技能疗愈焚香，治疗队友。</p>
+  <p>第一行被动技能选1技能，提升战鬼兵器伤害；若需装备更多传奇物品，则选4技能。</p>
+  <p>第二行被动技能选4技能，受到治疗时队友也会受到治疗。</p>
+  <p>第三行被动技能选1技能，大招附加持续治疗。</p>
+  <br>
+
+  <h4>刺客</h4>
+  <p>主动技能首选选3技能能量涌动，治疗队友；如果没有，其他技能也可考虑。</p>
+  <p>第一行被动技能选4技能，增加一个可装备的传奇物品。</p>
+  <p>第二行被动技能选4技能，毒药同时造成伤害。</p>
+  <p>第三行被动技能选1技能，大招增加两个目标。</p>
+  <br>
+  <br>
+
+  <h3 id="ch1-3">1.3 职业选择</h3>
+  <p>我知道你要问了，哪个职业最强？</p>
+  <p>那我会说一句废话：会玩的人玩什么都强。</p>
+  <p>其实我觉得抛开强度，自己喜欢的职业才是最好的。</p>
+  <p>如果一定要推荐，我个人建议先从武士开始，因为武士的吸血技能可保证基础生存；次选刺客，上手难度较低；而猎人和浪人比较依赖后期装备，成型较晚，推荐后期刷出传奇装备再集中练习。</p>
+  <br>
+
+  <h3 id="ch1-4">1.4 游戏玩法</h3>
+  <p>奇谭中有以下游戏玩法：</p>
+  <ul>
+    <li>故事：双人副本</li>
+    <li>生存战：四人塔防游戏</li>
+    <li>对决：对抗式PVE</li>
+    <li>突袭：高难度四人副本</li>
+  </ul>
+  <br>
+
+  <h4>故事</h4>
+  <p>两人组队推进剧情。</p>
+  <p>每个故事分为三个章节，每个章节都给一件装备，完成故事再给一件装备。</p>
+  <p>白银或更高难度会随机增加模组机制，且在三个章节中随机刷新行善的卷轴与鬼兵宝箱（会出4个怪，打完给一件装备）；最后一章的门口可以开启行善的诅咒（困难模式），完成可获得额外货币。</p>
+  <br>
+
+  <h4>生存战</h4>
+  <p>消灭区域中的敌人，并阻止敌人占领区域。</p>
+  <p>杀死敌人或完成波次可获得勾玉。波次间隙可消耗勾玉购买礼物辅助防守 <del>你非要在波次当中想买也不是不行</del>。</p>
+  <p>每3波存在一个头目波次，会增加模组机制与精英敌人。完成头目波次后将重启已丢失的防御区。</p>
+  <p>每完成一个头目波次给一件装备。完成生存战后再给一件装备。</p>
+  <br>
+
+  <h4>对决</h4>
+  <p>更快消灭场上敌人，并完成三波背水一战防守。</p>
+  <p>击杀敌人以获得勾玉，将勾玉献祭给神灵以阻挠对面玩家。献祭65勾玉后开始背水一战防守，共三波，先完成者胜。</p>
+  <p>每完成一波背水之战防守给一件装备。胜利额外获得一件装备。</p>
+  <p>中途退出没有排队惩罚，但退出后不会有人补进队伍，所以建议最好不要中途退出 <del>虽说队友没法顺着网线来打你</del>。</p>
+  <p>你可以不匹配，仅自行练习。</p>
+  <br>
+
+  <h4>突袭</h4>
+  <p>流程较长的四人副本，前两章为战斗+解谜，最后一章为Boss战。</p>
+  <p>充满了跳跳乐与各种折磨人的机制。建议先看视频攻略，然后在群里找大佬带，并确保自己可以开麦。</p>
+  <br>
+
+  <p><b>推荐游玩顺序：</b>先从故事模式开始，把所有故事打通以解锁快速游玩故事，然后完成各生存战，并自行练习对决。气值到35开始打白银难度；气值到80开始打黄金难度；气值到105后开始打白金生存；气值到110后再尝试打每周梦魇挑战和伊代；120气满气后，尝试挑战终局内容，如伊代的试炼、白七等。</p>
+  <p>故事和生存推荐野排，伊代推荐在群里找大佬带。</p>
+  <br>
+
+  <h2 id="chapter2">2. 装备</h2>
+  <h3 id="ch2-1">2.1 装备气值与品质</h3>
+  <p>每件装备都有气值。气值可视作装备等级，且最高气值为120气。</p>
+  <p>总气值为五件装备气值的算术平均值。<b>总气值越高，造成伤害越多，受到伤害越少。</b>总气值最高为120气。</p>
+  <br>
+  <p>装备品质从低到高依次为：<span style="color: Lime;">稀有</span>、<span style="color: DodgerBlue;">罕见</span>、<span style="color: BlueViolet;">史诗</span>、<span style="color: DarkOrange;">传说</span>（绿蓝紫橙，这个不用多说了），从蓝色装备开始，装备将提供一个词条；从紫色装备开始，装备将额外提供一项特质。默认情况下，只能装备一个橙色装备。</p>
+  <br>
+
+  <h3 id="ch2-2">2.2 装备获取</h3>
+  <p>每次完成任务都可获得装备。随着任务完成数增多，获得装备的气值也越高。任务难度越高，获得装备的气值也越高。</p>
+  <div class="table-wrapper">
+    <table border="1">
+      <tr><td>难度</td><td>最高装备气值</td></tr>
+      <tr><td>青铜</td><td>35</td></tr>
+      <tr><td>白银</td><td>80</td></tr>
+      <tr><td>黄金</td><td>105</td></tr>
+      <tr><td>白金</td><td>110</td></tr>
+      <tr><td>梦魇</td><td>110</td></tr>
+      <tr><td>突袭</td><td>110</td></tr>
+    </table>
+  </div>
+  <br>
+
+  <h3 id="ch2-3">2.3 装备升级与精通</h3>
+  <p>消耗货币以提升装备气值与品质，或刷新词条与特质。</p>
+  <p>装备达到110气后，需消耗2000精华将其绑定到某一职业，方可继续提升其气值。</p>
+  <p>绑定后，需要在装备时完成5个精通挑战。每完成一个挑战会将该装备气值提升2点。完成所有精通任务并将装备提升至120气，可为其解锁一个额外词条。</p>
+  <p>首次绑定装备并开启精通挑战后，完成黄金及以上难度的任务会概率掉落诅咒装备。装备诅咒装备时完成诅咒任务可将之净化，并根据其类型获得相应诅咒代币，可用于跳过精通挑战，或用于刷新词条或特质。</p>
+  <p><b>注意：如果指定了刷新的词条与特质，刷新其他词条与特质需要消耗诅咒代币，或是随机刷新全部词条。</b></p>
+  <br>
+
+  <h3 id="ch2-4">2.4 装备一览</h3>
+  <div class="table-wrapper">
+    <table border="1">
+      <caption>装备一览</caption>
+      <thead>
+        <tr><th>类型</th><th>装备名称</th><th>传奇装备</th><th>备注</th></tr>
+      </thead>
+      <tbody>
+        <tr><td rowspan="10">刀</td><td>磐石太刀</td><td>否</td><td>磐石架势</td></tr>
+        <tr><td>流水太刀</td><td>否</td><td>流水架势</td></tr>
+        <tr><td>疾风太刀</td><td>否</td><td>疾风架势</td></tr>
+        <tr><td>皎月太刀</td><td>否</td><td>皎月架势</td></tr>
+        <tr><td>大师太刀</td><td>是</td><td>可使用所有架势</td></tr>
+        <tr><td>磐石之击</td><td>是</td><td>磐石架势，对失衡敌人使用天之一刀造成范围伤害</td></tr>
+        <tr><td>义经之手</td><td>是</td><td>流水架势，30%概率击倒失衡敌人</td></tr>
+        <tr><td>正宗利刃</td><td>是</td><td>疾风架势，20%概率造成双倍近战伤害</td></tr>
+        <tr><td>鬼切安纲</td><td>是</td><td>皎月架势，敌人失衡有30%概率击倒附近敌人</td></tr>
+        <tr><td>猿神之怒</td><td>是</td><td>皎月架势，禁用普通招架，完美招架变为三段</td></tr>
+
+        <tr><td rowspan="9">远程武器</td><td>半弓</td><td>否</td><td>-</td></tr>
+        <tr><td>长弓</td><td>否</td><td>仅限猎人绑定，可通过词条更改</td></tr>
+        <tr><td>炸弹包</td><td>否</td><td>仅限浪人绑定，刺客可用</td></tr>
+        <tr><td>吹筒</td><td>否</td><td>仅限刺客绑定，浪人可用</td></tr>
+        <tr><td>鸿毛幽魂</td><td>是</td><td>箭矢弹道不下坠</td></tr>
+        <tr><td>鹿视</td><td>是</td><td>锁头三发</td></tr>
+        <tr><td>水漂之弓</td><td>是</td><td>箭矢爆头弹向周围敌人</td></tr>
+        <tr><td>禁药</td><td>是</td><td>炸点产生范围治疗，武士可用</td></tr>
+        <tr><td>九霄之刺</td><td>是</td><td>20%概率非鬼兵必杀</td></tr>
+
+        <tr><td rowspan="15">护身符</td><td>近战护身符</td><td>否</td><td>-</td></tr>
+        <tr><td>远程护身符</td><td>否</td><td>-</td></tr>
+        <tr><td>潜行护身符</td><td>否</td><td>-</td></tr>
+        <tr><td>效用护身符</td><td>否</td><td>-</td></tr>
+        <tr><td>武士护身符</td><td>否</td><td>仅限武士</td></tr>
+        <tr><td>猎人护身符</td><td>否</td><td>仅限猎人</td></tr>
+        <tr><td>浪人护身符</td><td>否</td><td>仅限浪人</td></tr>
+        <tr><td>刺客护身符</td><td>否</td><td>仅限刺客</td></tr>
+        <tr><td>燕净的忏悔</td><td>是</td><td>满血增伤15%</td></tr>
+        <tr><td>弁庆的最后阵地</td><td>是</td><td>75%概率免疫箭矢</td></tr>
+        <tr><td>天谴</td><td>是</td><td>天之一刀50%概率召唤闪电</td></tr>
+        <tr><td>神圣之铁</td><td>是</td><td>削弱对你造成近战伤害的敌人</td></tr>
+        <tr><td>一息尚存</td><td>是</td><td>每5分钟免疫一次死亡</td></tr>
+        <tr><td>将军的坚毅</td><td>是</td><td>免疫毒素和致盲</td></tr>
+        <tr><td>疗愈音符</td><td>是</td><td>敲鼓复活队友并附加持续治疗</td></tr>
+
+        <tr><td rowspan="7">战鬼兵器1</td><td>苦无</td><td>否</td><td>-</td></tr>
+        <tr><td>投掷泥土</td><td>否</td><td>-</td></tr>
+        <tr><td>黏性弹</td><td>否</td><td>-</td></tr>
+        <tr><td>魂之苦无</td><td>是</td><td>击杀减少所有物品/技能冷却时间10秒</td></tr>
+        <tr><td>三条夫人的奇袭</td><td>是</td><td>削弱击中的敌人</td></tr>
+        <tr><td>神明之触</td><td>是</td><td>炸点产生范围治疗</td></tr>
+        <tr><td>熔岩弹</td><td>是</td><td>炸点产生烟雾</td></tr>
+
+        <tr><td rowspan="7">战鬼兵器2</td><td>烟雾弹</td><td>否</td><td>-</td></tr>
+        <tr><td>铁蒺藜</td><td>否</td><td>-</td></tr>
+        <tr><td>疗愈葫芦</td><td>否</td><td>仅能受伤后使用</td></tr>
+        <tr><td>矢形迷雾</td><td>是</td><td>持续范围治疗</td></tr>
+        <tr><td>恶鬼之种</td><td>是</td><td>削弱进入的敌人</td></tr>
+        <tr><td>坚二的共饮佳酿</td><td>是</td><td>范围治疗</td></tr>
+        <tr><td>决心葫芦</td><td>是</td><td>使用时获得决心；可以满血使用</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>注1：传奇太刀自带对应架势大师词条（洗出来的额外词条也算）。</p>
+  <p>注2：此处省略各装备特质，有需要的可以在 <a href="https://ghostfranchise.fandom.com/wiki/Gear" target="_blank">Wiki</a> 上查看。</p>
+  <br>
+
+  <h3 id="ch2-5">2.5 装备推荐</h3>
+  <p>好的又到了我最喜欢的瞎掰扯环节了。这里的装备仅为个人推荐，请根据自身喜好，或是安装大佬推荐进行选择。</p>
+  <p>这里基于我个人的游玩风格，推荐新手使用如下装备。</p>
+
+  <div class="table-wrapper">
+    <table border="1">
+      <caption>新手过渡装备</caption>
+      <thead>
+        <tr><th rowspan="2">装备类型</th><th colspan="4">职业</th><th rowspan="2">备注</th></tr>
+        <tr><th>武士</th><th>猎人</th><th>浪人</th><th>刺客</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>刀</td><td colspan="4">皎月太刀</td><td>需要皎月大师词条；皎月架势可造成范围伤害</td></tr>
+        <tr><td>远程武器</td><td colspan="2">任意远程武器</td><td>炸弹包</td><td>吹筒</td><td>炸弹包需要黑火药弹词条</td></tr>
+        <tr><td>护身符</td><td colspan="4">任意护身符</td><td>-</td></tr>
+        <tr><td>战鬼兵器1</td><td colspan="4">苦无</td><td>基础冷却时间较短，且立即生效，不像黏性弹有前摇</td></tr>
+        <tr><td>战鬼兵器2</td><td colspan="4">烟雾弹</td><td>游戏中最强战鬼兵器，创造一个存在时间极长的软无敌区域，可用于复活队友</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>新手气值提升极快，应当<b>优先选用更高气值装备</b>，而不是认词条与品质。</p>
+  <br>
+
+  <p>这里同时给一套毕业装备作为参考。更多毕业构筑可加Q群<a href="https://qm.qq.com/q/h0PywT4Lfi" target="_blank">331511362</a>，在群文件中查看。</p>
+
+  <div class="table-wrapper">
+    <table border="1">
+      <caption>武士毕业装备参考</caption>
+      <thead>
+        <tr><th rowspan="2">类别</th><th rowspan="2">装备名</th><th colspan="2">特质</th><th colspan="2">词条</th><th rowspan="2">备注</th></tr>
+        <tr><th>特质1</th><th>特质2</th><th>词条1</th><th>词条2</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>刀</td><td>皎月太刀</td><td>近战伤害</td><td>终极技能伤害</td><td>皎月大师</td><td>焰之道</td><td>-</td></tr>
+        <tr><td>远程武器</td><td>鸿毛幽魂</td><td>拉弓速度</td><td>重装速度</td><td>穿盔弹药</td><td>爆头补偿</td><td>可换成禁药</td></tr>
+        <tr><td>护身符</td><td>武士护身符</td><td>近战伤害</td><td>终极技能伤害</td><td>生命值提高</td><td>神助之击</td><td>-</td></tr>
+        <tr><td>战鬼兵器1</td><td>苦无</td><td>近战伤害</td><td>击杀后冷却时间缩短</td><td>下狠手</td><td>隐剑鬼爪</td><td>生存战可换成黏性弹堵出生点</td></tr>
+        <tr><td>战鬼兵器2</td><td>烟雾弹</td><td>冷却时间缩短</td><td>击杀后冷却时间缩短</td><td>军需品</td><td>好运</td><td>可换成铁蒺藜</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+
+  <div class="table-wrapper">
+    <table border="1">
+      <caption>猎人毕业装备参考</caption>
+      <thead>
+        <tr><th rowspan="2">类别</th><th rowspan="2">装备名</th><th colspan="2">特质</th><th colspan="2">词条</th><th rowspan="2">备注</th></tr>
+        <tr><th>特质1</th><th>特质2</th><th>词条1</th><th>词条2</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>刀</td><td>皎月太刀</td><td>终极技能伤害</td><td>完美招架判定时间</td><td>皎月大师</td><td>焰之道</td><td>-</td></tr>
+        <tr><td>远程武器</td><td>鸿毛幽魂</td><td>远程伤害</td><td>重装速度</td><td>穿盔弹药</td><td>爆头补偿</td><td>可换成水漂之弓</td></tr>
+        <tr><td>护身符</td><td>猎人护身符</td><td>终极技能伤害</td><td>猎人能力范围</td><td>污秽箭</td><td>神佑箭</td><td>这里说一下，水漂弓往敌人堆里放大招有奇效</td></tr>
+        <tr><td>战鬼兵器1</td><td>魂之苦无</td><td>战鬼兵器伤害</td><td>击杀后冷却时间缩短</td><td>下狠手</td><td>隐剑鬼爪</td><td>-</td></tr>
+        <tr><td>战鬼兵器2</td><td>烟雾弹</td><td>冷却时间缩短</td><td>击杀后冷却时间缩短</td><td>军需品</td><td>好运</td><td>-</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+
+  <div class="table-wrapper">
+    <table border="1">
+      <caption>浪人毕业装备参考</caption>
+      <thead>
+        <tr><th rowspan="2">类别</th><th rowspan="2">装备名</th><th colspan="2">特质</th><th colspan="2">词条</th><th rowspan="2">备注</th></tr>
+        <tr><th>特质1</th><th>特质2</th><th>词条1</th><th>词条2</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>刀</td><td>皎月太刀</td><td>完美招架判定时间</td><td>鬼兵伤害</td><td>皎月大师</td><td>焰之道</td><td>-</td></tr>
+        <tr><td>远程武器</td><td>炸弹包</td><td>爆炸半径</td><td>状态效果伤害</td><td>黑火药弹</td><td>闪光弹</td><td>炸弹包飞天基础知识，爆炸半径决定炸点位置</td></tr>
+        <tr><td>护身符</td><td>潜行护身符</td><td>战鬼兵器伤害</td><td>鬼兵伤害</td><td>生命值提高</td><td>嗜血招架</td><td>嗜血招架可以换成别的</td></tr>
+        <tr><td>战鬼兵器1</td><td>魂之苦无</td><td>战鬼兵器伤害</td><td>击杀后冷却时间缩短</td><td>下狠手</td><td>隐剑鬼爪</td><td>魂之苦无别踏马见面就扔嗷，是拿来K头的！K到两个即可重置冷却！</td></tr>
+        <tr><td>战鬼兵器2</td><td>烟雾弹</td><td>冷却时间缩短</td><td>击杀后冷却时间缩短</td><td>军需品</td><td>好运</td><td>-</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+
+  <div class="table-wrapper">
+    <table border="1">
+      <caption>刺客毕业装备参考</caption>
+      <thead>
+        <tr><th rowspan="2">类别</th><th rowspan="2">装备名</th><th colspan="2">特质</th><th colspan="2">词条</th><th rowspan="2">备注</th></tr>
+        <tr><th>特质1</th><th>特质2</th><th>词条1</th><th>词条2</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>刀</td><td>正宗利刃</td><td>近战伤害</td><td>鬼兵伤害</td><td>皎月架势</td><td>淬毒之刃</td><td>大招可吃到正宗刀双倍加成；非吹筒刺客可换焰之道</td></tr>
+        <tr><td>远程武器</td><td>吹筒</td><td>状态效果持续时间</td><td>状态效果伤害</td><td>穿盾弹药</td><td>穿盔弹药</td><td>可下普通苦无，换成传奇远程</td></tr>
+        <tr><td>护身符</td><td>潜行护身符</td><td>战鬼兵器伤害</td><td>击杀后冷却时间缩短</td><td>决心提高</td><td>生命值提高</td><td>可选：刺客护身符，但会亏战鬼兵器伤害</td></tr>
+        <tr><td>战鬼兵器1</td><td>魂之苦无</td><td>战鬼兵器伤害</td><td>击杀后冷却时间缩短</td><td>下狠手</td><td>隐剑鬼爪</td><td>可换成普通苦无，用传奇远程</td></tr>
+        <tr><td>战鬼兵器2</td><td>烟雾弹</td><td>冷却时间缩短</td><td>击杀后冷却时间缩短</td><td>军需品</td><td>好运</td><td>可换成铁蒺藜</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+
+  <h2 id="chapter3">3. 敌人与机制介绍</h2>
+  <p>强烈建议先游玩单人战役，对照战役中的敌人来学习。</p>
+  <br>
+
+  <h3 id="ch3-1">3.1 认识你的敌人</h3>
+  <p>俗话说得好，“知己知彼，百战不殆”，我们来认识一下奇谭里的敌人类型。</p>
+  <h4>单刀兵</h4>
+  <p>人畜无害的普通小兵。</p>
+  <p><span style="font-size: 24px;">“</span><i>不是哥们，你怎么就死了？</i></p>
+  <br>
+
+  <h4>双持刀兵</h4>
+  <p>会用白光的刀兵。</p>
+  <p><span style="font-size: 24px;">“</span><i>撕！！！——裂！！！——</i></p>
+  <br>
+
+  <h4>大刀兵</h4>
+  <p>拿着一把大刀的刀兵。</p>
+  <br>
+
+  <h4>浪人</h4>
+  <p>会用红光和白光连招的刀兵。</p>
+  <br>
+
+  <h4>盾兵</h4>
+  <p>会用红光、会用焰之道的盾兵。</p>
+  <br>
+
+  <h4>重盾兵</h4>
+  <p>会冲向你用红光的盾兵。招式大开大合，比较好看抬手。</p>
+  <p><span style="font-size: 24px;">“</span><i>看我一盾把你拍飞出去！</i></p>
+  <br>
+
+  <h4>长枪兵</h4>
+  <p>会用长枪戳人，或是横扫。会闪白光。</p>
+  <p><span style="font-size: 24px;">“</span><i>Bro别拿你那根针扎我了……</i></p>
+  <br>
+
+  <h4>暴兵</h4>
+  <p>红光转圈，或是闪红光把你抛出去。</p>
+  <p><span style="font-size: 24px;">“</span><i>爱的魔力转圈圈……</i></p>
+  <br>
+
+  <h4>弓箭手</h4>
+  <p>人畜无害弓箭手，每天都在纠结究竟是给你刷火箭还是毒箭，友军挡了弹道他还会提醒人家。这么可爱的弓箭手，你爱了吗？</p>
+  <p><span style="font-size: 24px;">“</span><i>Доошоо! Доошоо!</i></p>
+  <br>
+
+  <h4>闪光弹兵</h4>
+  <p>往你脚下丢闪光弹，近身还会小刀刀划你胸口。</p>
+  <p><span style="font-size: 24px;">“</span><i>不如闪光。</i></p>
+  <br>
+
+  <h4>狗</h4>
+  <p>人畜无害的小狗。</p>
+  <p><span style="font-size: 24px;">“</span><i>汪汪汪！</i></p>
+  <br>
+
+  <h4>蒙古将领</h4>
+  <p>穿金甲的蒙古人。会带盾。</p>
+  <p><span style="font-size: 24px;">“</span><i>羊蹄山里小怪个个都这水平……</i></p>
+  <br>
+
+  <h4>熊</h4>
+  <p>熊扑你的时候，起跳躲避判定。</p>
+  <p><span style="font-size: 24px;">“</span><i>你也喜欢飞行吗？</i></p>
+  <br>
+
+  <h4>戟兵</h4>
+  <p>会转圈圈然后红光砸地。</p>
+  <p><span style="font-size: 24px;">“</span><i>吾乃天地！</i></p>
+  <br>
+
+  <h4>武器大师（？）</h4>
+  <p>可以切好几种武器（双刀、剑盾、长枪）的怪。</p>
+  <br>
+
+  <h4>祭司</h4>
+  <p>壹岐岛DLC引入，强化范围内的敌人（普攻变白光，白光变红光，同时增加敌人韧性）。战斗就是正常长枪兵AI.</p>
+  <br>
+
+  <h4>伊代的信徒</h4>
+  <p>所在之处形成一层红色血雾，范围内敌人迅速回血。战斗时会在地面释放范围伤害，近战有白光攻击。优先解决。</p>
+  <p><span style="font-size: 24px;">“</span><i>我很善良啦，雪女可比我恶心多了……</i></p>
+  <br>
+
+  <h4>天狗</h4>
+  <p>发现玩家后会定期释放乌鸦追踪玩家，造成持续伤害。好几个扎堆同时放乌鸦很恶心。烟雾弹可以使其失去目标。优先解决。</p>
+  <p><span style="font-size: 24px;">“</span><i>（乌鸦叫）哇……哇……</i></p>
+  <br>
+
+  <h4>长枪鬼兵</h4>
+  <p>会发射鬼火、白光戳、红光横扫和冲刺的Pro Plus版长枪兵。他们还会带盾牌。另有紫色变体。</p>
+  <br>
+
+  <h4>胖子</h4>
+  <p>会砸地、转圈圈和在地上放范围伤害圈的暴兵。在出伤前跳跃可以免除伤害判定。另有紫色变体。</p>
+  <p><span style="font-size: 24px;">“</span><i>哥们你该减肥了……</i></p>
+  <br>
+
+  <h4>关刀鬼兵</h4>
+  <p>会瞬移和偷袭你的Pro Plus版长枪鬼兵。他的动作模组很多，建议使用道具打断他的连招。</p>
+  <br>
+
+  <h4>爆炸狗</h4>
+  <p>会爆炸的狗。它也是鬼兵。</p>
+  <br>
+
+  <h4>鬼魅弓手</h4>
+  <p>会瞬移的弓手。远程连射5支火焰箭，近程只射一支火焰箭。另有紫色变体。</p>
+  <br>
+
+  <h4>隐身怪</h4>
+  <p>会隐身的怪。闪电时显形。</p>
+  <p><span style="font-size: 24px;">“</span><i>鬼刀一开看不见！</i></p>
+  <br>
+
+  <h3 id="ch3-2">3.2 机制介绍</h3>
+  <p>以下是奇谈模式中常见机制。</p>
+  <h4>连结</h4>
+  <p>被连结的敌人需要在短时间内同时杀死，否则会互相复活。</p>
+  <br>
+
+  <h4>调和</h4>
+  <p>需要取得对应调和才能对具有相应调和的敌人正常造成伤害；取得调和后可以站在相应的石板上。</p>
+  <br>
+
+  <h4>魂灵之弓</h4>
+  <p>命中敌人可暂时解除其调和；快速敌人命中两次可永久解除其调和；快速命中鬼兵诅咒（半透明圆环）两次可打破鬼兵诅咒。</p>
+  <br>
+
+  <h4>魂灵灯笼</h4>
+  <p>使用或命中可揭露附近隐藏的敌人。</p>
+  <br>
+
+  <h4>火焰之灵</h4>
+  <p>火厢车向玩家开火。</p>
+  <br>
+
+  <h4>燃烧</h4>
+  <p>燃烧时将受到持续伤害。翻滚可解除燃烧状态。</p>
+  <br>
+
+  <h4>中毒</h4>
+  <p>中毒时将受到伤害，且无法做出反应。受到治疗即可解除。</p>
+  <br>
+
+  <h4>致盲</h4>
+  <p>屏幕变白，无法观察环境。</p>
+  <br>
+
+  <h4>尸爆</h4>
+  <p>敌人死亡后，尸体爆炸，对范围内玩家造成伤害。</p>
+  <br>
+
+  <h4>野火</h4>
+  <p>敌人死亡后，尸体开始燃烧，对范围内玩家造成持续伤害。</p>
+  <br>
+
+  <h4>生命上限降低</h4>
+  <p>降低玩家生命上限。如果生命值满，则生命上限降低解除后获得满生命值；如果生命值不满，则解除后生命值不变。</p>
+  <br>
+
+  <h4>战鬼连结</h4>
+  <p>玩家需要彼此靠近，否则将受到伤害。</p>
+  <br>
+
+  <h4>共享创伤</h4>
+  <p>玩家受伤时其他玩家也会受伤。</p>
+  <br>
+
+  <h4>生命流失</h4>
+  <p>受到持续伤害。</p>
+  <br>
+
+  <h4>伊代之眼</h4>
+  <p>在伊代的前两章会出现半透明的大血球，在其内部时间过长会被困住。此时可以让队友给你一箭或是等小怪给你一刀解除捆缚状态。但如果规定时间内没解除，则直接死亡。</p>
+  <br>
+
+  <h3 id="ch3-3">3.3 机制总结</h3>
+  <p>敌人和机制看起来不少，但静下心来拆解一下，就会发现绝大多数敌人使用了相似的动作模组，复杂的机制也不过是不同简单的机制相叠加，只是因为内容实在太多太杂，才展现出了极其惊人的复杂度。这种时候，新手上路难免会手忙脚乱、不知所措，但只要多学、多练、多问、多总结，抽丝剥茧，层层递进，多尝试利用已有的经验解决新问题，自己的能力在不知不觉间就会提升。这也是萌新成长为高手的必由之路。</p>
+  <br>
+
+  <h2 id="chapter4">4. 个人经验</h2>
+  <p>非常好吹水环节。这里需要提前说明，以下内容仅为我个人心得分享，不一定正确。</p>
+  <br>
+
+  <h3 id="ch4-1">4.1 生存</h3>
+  <p>我一直认为，无论在什么游戏中，生存都是玩家要学习的第一课。毕竟，只有活着才有输出。</p>
+  <p>奇谭绝大多数地方的生存压力都不算大。要我说，梦魇难度及以下，都不能说是有真正的生存压力。</p>
+  <p>但新手可能会问，那我为啥不明不白地就死了？既然如此，我们报个菜名看看。</p>
+  <ul>
+    <li>弓箭手暗箭伤人；</li>
+    <li>小怪连招连死；</li>
+    <li>被被爆炸狗炸死；</li>
+    <li>被胖子击飞；</li>
+    <li>被长枪鬼兵冲锋挑死；</li>
+    <li>被隐身怪丝滑带走；</li>
+    <li>中毒时被不讲武德群殴；</li>
+    <li>爽吃火焰之灵和尸爆。</li>
+  </ul>
+  <p>上面你中了几条？你找到自己的死亡原因了吗？如果你找到了，那我们不妨思考一下，这些伤害是非吃不可的吗？下次我们是否可以避免它们呢？</p>
+  <p>实际上，依靠经验积累，你可以知道什么样的特效和音效预示着危险；依靠肌肉记忆，你不假思索便能做出正确反应；即使预判失败、反应错误也无需气馁，而是应该总结这次失误的教训，将其转换为下一次成功的经验。</p>
+  <p>不断总结教训，这就是求生之道。</p>
+  <br>
+
+  <h3 id="ch4-2">4.2 输出</h3>
+  <p>如果生存对你而言已经不是问题了，那么可以考虑提升自己的输出了。</p>
+  <p>提升输出的第一点就是提升自己的数值。将气刷到120，把特质刷满。百分之几的差值确实不大，但好几个百分之几叠起来，这个差距可就不小了。</p>
+  <p>不过，数值的差距固然存在，但合适的操作也能弥补数值上的不足。如果掌握正确的方法，那么高输出也并非遥不可及。</p>
+  <p>我们应当知道以下要点：</p>
+  <ul>
+    <li>奇谭中拼刀的收益较低；</li>
+    <li>使敌人失衡比单纯砍肉给予更多决心；</li>
+    <li>爆头比射中身子给予更多决心；</li>
+    <li>你是战鬼，而不是境井仁，你不需要讲武士道，怎么有效就怎么来。</li>
+  </ul>
+  <p><span style="font-size: 24px;">“</span><i>毫无荣誉可言。</i></p>
+  <p style="text-align: right;">——志村大人</p>
+  <br>
+
+  <h3 id="ch4-3">4.3 场外因素</h3>
+  <p>我们以上所说的所有内容，诸如装备、构筑、游戏规则、生存和输出经验……等等等等，都是我们可以自行掌控的事物。但是，奇谭中有些东西，我们完全无法掌握，甚至根本无法预测。这就是我们接下来要讲的场外因素。这其中就包括一个最无法预测的因素：你的队友。</p>
+  <p>是的，人类是具有多样性的。你无法预测你的下一个队友究竟是什么样的。他可能技术一流，但脾气极差；他可能菜得抠脚，却很能给你情绪价值；他也可能从来不说话，只是默默地做好自己分内之事……不同玩家的游玩风格不尽相同，和不同的人组队，获得的游戏体验可能是截然相反的。这可能也是奇谭的魅力所在。</p>
+  <p>不过，我们还是回到游戏本身。奇谭中玩家的水平不可避免地会有高有低。假设你随机排了一个黄金故事，如果你的队友技术过硬，那你确实不需要担心；但如果你的队友也是萌新，那你该怎么办？</p>
+  <p>首先，不要慌。</p>
+  <p>你需要相信你的队友，更要相信你自己。放轻松，做好每一个动作。不要紧张，也不要担心是否会失败。享受游戏。就这样。</p>
+  <p>其次，打好配合。</p>
+  <p>别忘了奇谭是一个合作游戏，须知良好的配合能发挥1+1＞2的效果。除非你对自己的技术有绝对的信心，否则不要各自为战。</p>
+  <p>最好，善用交流。</p>
+  <p>无论是开麦还是标点（L2+R3或Ctrl+C）都可以。跟队友交流你的想法与战术，如果他不知道要干什么，告诉他他现在应该该怎么做。</p>
+  <p>如果队友倒了，在确保自己安全的前提下，尽快把他拉起来。如果可以的话，拉人前先放烟雾弹，创造一个相对安全的环境。奇谭拉人非常快，而且把人拉起来会给决心，甚至还有浪人大招这种完全不讲道理的群拉技能。拉个人不需要几秒钟，但对双方游戏体验都有很大提升。</p>
+  <br>
+  <p>还有一个不得不说的场外因素，就是网络问题。</p>
+  <p>奇谭的网络设计是这样的：只要有一个玩家卡了，其他人也会出现怪打不死、波次无法开始或结束等各种奇奇怪怪的问题，只有等卡了的玩家掉线或主动退出才能恢复正常。如果等不下去就只能退出重开了。</p>
+  <br>
+
+  <h3 id="ch4-4">4.4 这是挂吗？</h3>
+  <p>是的，奇谭是有人开挂的。但是，这个游戏同时存在一些官方承认的良性Bug（或者叫特性），而游戏数值又难免有种用脚填的美感，所以萌新甚至可能看谁都像挂。</p>
+  <p>这里我总结了一些看起来像挂，但实际上不是的操作。</p>
+  <ul>
+    <li>无限苦无：浪人只要保证一次K到2个头就能刷新苦无冷却时间，控制得好的话可以一直扔。</li>
+    <li>连珠箭：通过取消搭箭动画可实现速射，速射时蹲下可提升射速。</li>
+    <li>一箭三雕：如果是猎人，他可能用了水漂之弓；其他职业使用鹿视也能达成此效果。</li>
+    <li>回回爆头：使用手柄时开启辅助瞄准。</li>
+    <li>攒大招异常快：堵点失衡。</li>
+    <li>飞天：可搜索“炸弹跳”了解。</li>
+    <li>高伤害：可搜索“皎月三连”或“流水五连”了解。</li>
+    <li>跑路速度异常快：可搜索“冲斩取消”了解。</li>
+  </ul>
+  <p>以上部分内容涉及操作取消进阶操作，可自行了解。</p>
+
+  <h1 style="text-align: center;">祝大家游戏愉快！</h1>
+</body>
+</html>
